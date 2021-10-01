@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip">
+
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/xml_tjrapi_dialog_out_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- 标题 -->
+
+
+        <!-- 内容 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:text="支付金额"
+            android:layout_marginTop="20dip"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:id="@+id/tvBalanceCny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:text="¥0.00"
+            android:textColor="@color/cff8f01"
+            android:textSize="@dimen/font_size_30"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="请准确支付以上金额，否则导致订单失败"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_12" />
+
+        <!-- OK按钮 -->
+        <View style="@style/dividerLine_horizontal"
+            android:layout_marginTop="20dip"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+
+            <TextView
+                android:id="@+id/btnCopy"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="复制金额"
+                android:textColor="@color/c6175ae"
+                android:textSize="16sp" />
+            <View style="@style/dividerLine_vertical"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"/>
+            <TextView
+                android:id="@+id/btnOk"
+                android:layout_height="match_parent"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/xml_tjrapi_dialog_btn"
+                android:gravity="center"
+                android:minHeight="35dip"
+                android:paddingLeft="18dip"
+                android:paddingRight="18dip"
+                android:text="知道了"
+                android:textColor="@color/c6175ae"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Close 按钮 -->
+
+</RelativeLayout>

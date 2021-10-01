@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这个是Toolbar+右边有个文字菜单-->
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/toolbar"
+    >
+    <!--layout_gravity编译器没有这个属性,不知道为何,估计是as的问题,但其实有效果-->
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tvMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@drawable/abc_item_background_holo_dark"
+        android:gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text=""
+        android:textColor="@color/actionbar_light_title_color"
+        android:textSize="@dimen/font_size_14" />
+
+
+</androidx.appcompat.widget.Toolbar>
+

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+
+    <TextView
+        android:id="@+id/tvStockName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="白云机场600004"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_content_h1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/tvStockName"
+        android:orientation="vertical" >
+
+        <!-- 分时图 -->
+
+        <LinearLayout
+            android:id="@+id/ll_sharetimepain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="3dip"
+            tools:ignore="Orientation" />
+    </LinearLayout>
+
+    <!-- 行22 -->
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+
+        <!-- 金额 左边 -->
+
+        <LinearLayout
+            android:id="@+id/llLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/xml_index_sharetime_frame"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/index_txt_price"
+                style="@style/socialQuotationTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textColor="@color/red"
+                android:textSize="@dimen/shangzheng_currentprice" />
+
+            <RelativeLayout
+                android:id="@+id/stock_shangzhenindex_relativeLayout_2709"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/index_txt_amt"
+                    style="@style/socialQuotationTextStyle"
+                    android:layout_width="65dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="----"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_content_h1" />
+
+                <TextView
+                    android:id="@+id/index_txt_rate"
+                    style="@style/socialQuotationTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/index_txt_amt"
+                    android:minWidth="65dip"
+                    android:text="----"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_content_h1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/index_sharetime_relativeLayout_1127"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_content_h2" >
+
+                <TextView
+                    android:id="@+id/index_sharetime_txt_cash"
+                    style="@style/socialQuotationTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="金额"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_content_h1" />
+
+                <TextView
+                    android:id="@+id/index_txt_cjje"
+                    style="@style/socialQuotationTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/index_sharetime_txt_cash"
+                    android:minWidth="85dip"
+                    android:text="----亿"
+                    android:textColor="@color/cfff799"
+                    android:textSize="@dimen/text_size_content_h1" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 右边 -->
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dip"
+            android:orientation="horizontal" >
+
+            <!-- 左 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                android:paddingLeft="5dip" >
+
+                <TextView
+                    android:id="@+id/tvS1"
+                    style="@style/socialQuotationTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="上涨家数"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_content_h2" />
+
+                <TextView
+                    android:id="@+id/stock_someone_timesharing_txt_sell1_name"
+                    style="@style/socialQuotationTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="12dip"
+                    android:gravity="center"
+                    android:text="平盘家数"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_content_h2" />
+
+                <TextView
+                    android:id="@+id/stock_someone_timesharing_txt_buy1_name"
+                    style="@style/socialQuotationTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="12dip"
+                    android:gravity="center"
+                    android:text="下跌家数"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_content_h2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/index_txt_up"
+                    style="@style/socialQuotationTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="----"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_content_h2" />
+
+                <TextView
+                    android:id="@+id/index_txt_ping"
+                    style="@style/socialQuotationTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dip"
+                    android:gravity="right"
+                    android:text="----"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_content_h2" />
+
+                <TextView
+                    android:id="@+id/index_txt_down"
+                    style="@style/socialQuotationTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dip"
+                    android:gravity="right"
+                    android:text="----"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_size_content_h2" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

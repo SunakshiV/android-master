@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cf2f2f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvTaojinNetWork"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dip"
+                android:layout_marginTop="40dip">
+
+                <ImageView
+                    android:id="@+id/iv_web_logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/app_logo" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_web_logo"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:text="@string/app_full_name"
+                    android:textColor="@color/beebarGray"
+                    android:textSize="@dimen/font_size_15"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="当前版本"
+                    android:textColor="@color/beebarGray" />
+            </RelativeLayout>
+
+            <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150dip"-->
+            <!--android:background="@drawable/ic_home_about_me_bg" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/llshareTjr"-->
+                <!--style="@style/homeMineItem"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center_vertical|left"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                <!--style="@style/perval_home_ic_style"-->
+                <!--android:src="@drawable/ic_advert_shareapp" />-->
+
+                <!--<TextView-->
+                <!--style="@style/settingTextStyle"-->
+                <!--android:layout_marginLeft="8dip"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="分享红跳蚤" />-->
+
+                <!--<ImageView style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/llProtoco"
+                    style="@style/inSideSettingItem"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_marginLeft="0dip"
+                        android:layout_weight="1"
+                        android:text="关于我们" />
+
+                    <ImageView style="@style/commonAarrow" />
+                </LinearLayout>
+
+
+                <!--<FrameLayout-->
+                <!--android:id="@+id/flVideo"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dip"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/ic_video_img_bg" />-->
+                <!--<ImageView-->
+                <!--android:id="@+id/ivCenterPlay"-->
+                <!--android:layout_width="55dp"-->
+                <!--android:layout_height="55dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/ic_common_media_play_white"/>-->
+                <!--</FrameLayout>-->
+
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/llGuide"-->
+                <!--style="@style/homeMineItemBottomline"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center_vertical|left"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="24dip"-->
+                <!--android:layout_height="24dip"-->
+                <!--android:src="@drawable/ic_guide_icon" />-->
+
+                <!--<TextView-->
+                <!--style="@style/settingTextStyle"-->
+                <!--android:layout_marginLeft="8dip"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/welcomepage" />-->
+
+                <!--<ImageView style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/llMarketRate"-->
+                <!--style="@style/homeMineItemBottomline"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center_vertical|left"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                <!--style="@style/perval_home_ic_style"-->
+                <!--android:src="@drawable/ic_market_rate" />-->
+
+                <!--<TextView-->
+                <!--style="@style/settingTextStyle"-->
+                <!--android:layout_marginLeft="8dip"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/marketRate" />-->
+
+                <!--<ImageView style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+
+
+                <LinearLayout
+                    android:id="@+id/llAdvertAndCooperate"
+                    style="@style/inSideSettingItem"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_marginLeft="8dip"
+                        android:layout_weight="1"
+                        android:text="联系我们" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llHelp"
+                    style="@style/inSideSettingItem"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_marginLeft="8dip"
+                        android:layout_weight="1"
+                        android:text="服务条款" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/llVersion"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="30dip"-->
+            <!--android:background="@drawable/xml_home_about_me_version_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingBottom="10dip"-->
+            <!--android:paddingLeft="20dip"-->
+            <!--android:paddingRight="20dip"-->
+            <!--android:paddingTop="10dip">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvVersion"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="6dip"-->
+            <!--android:text="版本1"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/font_size_14" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dip"-->
+            <!--android:paddingLeft="6dip"-->
+            <!--android:text="已是最新版本"-->
+            <!--android:textColor="@color/ce5e5e5"-->
+            <!--android:textSize="@dimen/font_size_14" />-->
+            <!--</LinearLayout>-->
+
+            <!-- <Button -->
+            <!-- android:id="@+id/btnInstall" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerInParent="true" -->
+            <!-- android:background="@color/c58c0eb" -->
+            <!-- android:minHeight="40dip" -->
+            <!-- android:minWidth="60dip" -->
+            <!-- android:text="更新" -->
+            <!-- android:textColor="@color/white" -->
+            <!-- android:textSize="@dimen/font_size_16" -->
+            <!-- android:visibility="gone" > -->
+            <!-- </Button> -->
+
+            <!--<TextView-->
+            <!--android:id="@+id/btnInstall"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="12dip"-->
+            <!--android:layout_marginRight="12dip"-->
+            <!--android:layout_marginTop="30dip"-->
+            <!--android:background="@drawable/selector_rect_corner3_solid_ff4f12"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="15dip"-->
+            <!--android:text="更新"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/font_size_16"-->
+            <!--android:visibility="visible" />-->
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvTaojinNetWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center"
+        android:lineSpacingExtra="3dip"
+        android:text="Copyright ©2017\n南京红跳蚤电子商务有限公司"
+        android:textColor="@color/cb2b2b2"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone" />
+
+</LinearLayout>

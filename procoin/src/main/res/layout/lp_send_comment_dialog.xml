@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="35dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingTop="10dip">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发弹幕"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/c666175ae"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="15dip"
+        android:background="@color/cfafafa"
+        android:gravity="left|center_vertical"
+        android:hint="请输入您想说的"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="10dip"
+        android:paddingRight="100dip"
+        android:text=""
+        android:textColor="#232323"
+        android:textColorHint="#e6e6e6"
+        android:textSize="@dimen/font_size_18"
+        android:textStyle="bold" />
+
+
+    <TextView
+        style="@style/btn_style_4"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:layout_marginTop="30dip"
+        android:text="发送"
+        android:id="@+id/tvSend"/>
+</LinearLayout>
+

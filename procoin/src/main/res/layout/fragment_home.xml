@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackground"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cdlUSDT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dip"
+            >
+            <!--android:background="@drawable/shape_toolbar_gradient_bg"-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--app:layout_scrollFlags="scroll"-->
+                <!--&gt;-->
+                <!--android:background="@color/pageBackground"-->
+                <!--android:background="@color/cff8f01"-->
+                <!--android:background="@drawable/shape_toolbar_gradient_bg"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/c6175ae"
+                    android:orientation="vertical"
+                    android:paddingBottom="25dip"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:paddingTop="40dip"
+                    app:layout_scrollFlags="scroll">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="账户总资产(USDT)"
+                        android:textColor="@color/cccffffff"
+                        android:textSize="@dimen/font_size_12" />
+
+                    <TextView
+                        android:id="@+id/tvTolAssets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_40"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tvTolAssetsCny"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_16" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:layout_marginTop="20dip">
+
+                        <TextView
+                            android:id="@+id/llRechargeCoin"
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/shape_home_charge_bg"
+                            android:gravity="center"
+                            android:text="充币"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_12" />
+
+                        <TextView
+                            android:id="@+id/llWithDrawCoin"
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dip"
+                            android:background="@drawable/shape_home_charge_bg"
+                            android:gravity="center"
+                            android:text="提币"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_12" />
+
+                        <TextView
+                            android:id="@+id/llTransfer"
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dip"
+                            android:background="@drawable/shape_home_charge_bg"
+                            android:gravity="center"
+                            android:text="划转"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_12" />
+
+                        <TextView
+                            android:id="@+id/llLegalMoney"
+                            android:layout_width="0dip"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dip"
+                            android:background="@drawable/shape_home_charge_bg"
+                            android:gravity="center"
+                            android:text="法币购买"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_12" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white">
+                    <!--android:background="@drawable/xml_tab_bottom_line_bg2"-->
+                    <TextView
+                        android:id="@+id/tvDigitalAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="15dip"
+                        android:background="@drawable/xml_tab_bottom_line_bg"
+                        android:gravity="center"
+                        android:text="数字货币"
+                        android:textColor="@color/xml_usdt_tab_text"
+                        android:textSize="@dimen/font_size_14"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvStockAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip"
+                        android:background="@drawable/xml_tab_bottom_line_bg"
+                        android:gravity="center"
+                        android:minHeight="40dip"
+                        android:text="股指期货"
+                        android:textColor="@color/xml_usdt_tab_text"
+                        android:textSize="@dimen/font_size_14"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvFollowAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/xml_tab_bottom_line_bg"
+                        android:gravity="center"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip"
+                        android:text="跟单"
+                        android:textColor="@color/xml_usdt_tab_text"
+                        android:textSize="@dimen/font_size_14"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tvBalanceAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip"
+                        android:background="@drawable/xml_tab_bottom_line_bg"
+                        android:gravity="center"
+                        android:minHeight="40dip"
+                        android:text="余额"
+                        android:textColor="@color/xml_usdt_tab_text"
+                        android:textSize="@dimen/font_size_14"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                style="@style/dividerLine_horizontal"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"/>
+
+            <!--</LinearLayout>-->
+
+
+        </android.support.design.widget.AppBarLayout>
+        <!--android:layout_marginTop="10dip"-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

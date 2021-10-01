@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llHide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:gravity="center_vertical|right">
+
+                <CheckBox
+                    android:id="@+id/cbSign"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="   隐藏小额币种"
+                    android:textColor="@color/c222222"
+                    android:textSize="@dimen/font_size_12" />
+
+                <ImageView
+                    android:id="@+id/ivQuestionMark"
+                    android:layout_width="30dip"
+                    android:layout_height="50dip"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_question_mark" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.RecyclerView
+                android:id="@+id/rvPositionList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </LinearLayout>
+        <!--android:nestedScrollingEnabled="false"-->
+        <TextView
+            android:id="@+id/tvNoDataPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="200dip"
+            android:text="暂无持仓"
+            android:textColor="@color/c666175ae"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

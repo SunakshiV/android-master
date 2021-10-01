@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_compents_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/llWay">
+
+    <LinearLayout
+        android:paddingRight="20dip"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|top"
+        >
+
+
+
+        <CheckBox
+            android:id="@+id/cbCheck"
+            style="@style/MyCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginLeft="25dip"
+            />
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_14"
+            android:lineSpacingExtra="@dimen/text_linespacingextra"
+            android:textColor="@color/c3d3a50"
+            android:layout_marginLeft="10dip"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--style="@style/dividerLine_horizontal"-->
+        <!--android:layout_marginLeft="70dip"/>-->
+
+
+</LinearLayout>

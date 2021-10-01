@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_with_text_menu" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip">
+
+                <LinearLayout
+                    android:id="@+id/llSelectCoin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginTop="15dip"
+                    android:background="#cff6f7f8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip">
+
+                    <TextView
+                        android:id="@+id/tvSymbol"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="选择币种"
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_18"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llKeyType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dip"
+                        android:text="键类型"
+                        android:textColor="@color/c1d3155"
+                        android:textSize="@dimen/font_size_14" />
+                    <androidx.appcompat.widget.RecyclerView
+                        android:id="@+id/rvKeyType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_marginTop="5dip">
+
+                    </androidx.appcompat.widget.RecyclerView>
+
+                    <!--<TextView-->
+                        <!--android:layout_width="77dip"-->
+                        <!--android:layout_height="34dip"-->
+                        <!--android:layout_marginTop="10dip"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="OMNI"-->
+                        <!--android:background="@drawable/shape_key_type_bg"-->
+                        <!--android:textColor="@color/cff8f01"-->
+                        <!--android:textSize="@dimen/font_size_14" />-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:text="提币地址"
+                    android:textColor="@color/c1d3155"
+                    android:textSize="@dimen/font_size_14" />
+
+                <EditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/xml_et_bg"
+                    android:hint="输入或长按粘贴地址"
+                    android:textColor="@color/c1d3155"
+                    android:textColorHint="#c8c8c8"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:text="数量"
+                    android:textColor="@color/c1d3155"
+                    android:textSize="@dimen/font_size_14" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip">
+
+                    <EditText
+                        android:id="@+id/etAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/xml_et_bg"
+                        android:gravity="center_vertical"
+                        android:hint="输入提币数量"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:maxLength="18"
+                        android:maxLines="1"
+                        android:paddingRight="80dip"
+                        android:textColor="@color/c1d3155"
+                        android:textColorHint="#c8c8c8"
+                        android:textSize="@dimen/font_size_18"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSymbol2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="50dip"
+                        android:text="--"
+                        android:textColor="@color/c666175ae"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <TextView
+                        android:id="@+id/tvAll"
+                        android:layout_width="35dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:gravity="center"
+                        android:text="全部"
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_12" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvEnableAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dip"
+                    android:text="可提币数量：0.00 "
+                    android:textColor="@color/c666175ae"
+                    android:textSize="@dimen/font_size_12" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:text="手续费"
+                    android:textColor="@color/c1d3155"
+                    android:textSize="@dimen/font_size_14" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip">
+
+                    <TextView
+                        android:id="@+id/etFee"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/xml_et_bg"
+                        android:gravity="center_vertical"
+                        android:hint=""
+                        android:maxLength="18"
+                        android:maxLines="1"
+                        android:paddingRight="80dip"
+                        android:textColor="@color/c1d3155"
+                        android:textColorHint="#c8c8c8"
+                        android:textSize="@dimen/font_size_18"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSymbol3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:text="--"
+                        android:textColor="@color/cbebebe"
+                        android:textSize="@dimen/font_size_14" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvScope"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dip"
+                    android:text="范围 0.00050000-0.00050000 BTC"
+                    android:textColor="@color/cd6d6d6"
+                    android:textSize="@dimen/font_size_12"
+                    android:visibility="gone"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/shape_take_coin_min_amout"
+                    android:orientation="vertical"
+                    android:padding="20dip">
+
+                    <TextView
+                        android:id="@+id/tvMinWithdrawAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最小提币数量为：0.00。"
+                        android:textColor="@color/c8a6175ae"
+                        android:lineSpacingExtra="@dimen/text_linespacingextra"
+                        android:textSize="@dimen/font_size_12" />
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="15dip"-->
+                        <!--android:lineSpacingExtra="@dimen/text_linespacingextra"-->
+                        <!--android:text="1. 持仓随时提币，跟单持有的币种不能提币；\n2. 若你被跟单，则可提币数量=持仓数量-跟单账户单个最高持有数量。\n3. 为保障资金安全，当您账户安全策略变更、密码修改、我们会对提币进行人工审核，请耐心等待工作人员电话或邮件联系。请务必确认电脑及浏览器安全，防止信息被篡改或泄露。"-->
+                        <!--android:textColor="@color/cbebebe"-->
+                        <!--android:textSize="@dimen/font_size_12" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到账数量："
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/tvLastAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0.00000000"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_24"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTakeCoin"
+            style="@style/btn_style_1"
+            android:layout_marginBottom="15dip"
+            android:text="提币" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

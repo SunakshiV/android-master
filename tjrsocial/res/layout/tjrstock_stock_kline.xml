@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black" >
+
+    <TextView
+        android:id="@+id/tvStockName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/novalue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_content_h1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStockName"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3" >
+
+                <RelativeLayout
+                    android:id="@+id/rltopfirstleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dip"
+                    android:minWidth="80dip" >
+
+                    <!-- 当前价 -->
+
+                    <TextView
+                        android:id="@+id/tvRealprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/novalue"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/shangzheng_currentprice" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/rltopfirstright"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginRight="4dip"
+                    android:orientation="horizontal" >
+
+                    <!-- K线数据显示...第一行 -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="0.5"
+                        android:minWidth="90dip"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/stock_someone_kline_heightest1"
+                                style="@style/socialQuotationTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="最高"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_content_h3" />
+
+                            <TextView
+                                android:id="@+id/tvMax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="@string/novalue"
+                                android:textColor="@color/cde3603"
+                                android:textSize="@dimen/text_size_content_h3"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/stock_someone_kline_open1"
+                                style="@style/socialQuotationTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="开盘"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_content_h3" />
+
+                            <TextView
+                                android:id="@+id/tvOpen"
+                                style="@style/socialQuotationTextStyle"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:gravity="right"
+                                android:text="@string/novalue"
+                                android:textColor="@color/cde3603"
+                                android:textSize="@dimen/text_size_content_h3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <!-- 涨幅 -->
+
+                            <TextView
+                                android:id="@+id/stock_someone_kline_heightest1"
+                                style="@style/socialQuotationTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="涨幅"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_content_h3"
+                                tools:ignore="DuplicateIds" />
+
+                            <TextView
+                                android:id="@+id/tvRate"
+                                style="@style/socialQuotationTextStyle"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="@string/novalue"
+                                android:textColor="@color/cde3603"
+                                android:textSize="@dimen/text_size_content_h3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- K线数据显示...第二行 -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:minWidth="90dip"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/stock_someone_kline_lowest1"
+                                style="@style/socialQuotationTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="最低"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_content_h3" />
+
+                            <TextView
+                                android:id="@+id/tvMin"
+                                style="@style/socialQuotationTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="3dip"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="@string/novalue"
+                                android:textColor="@color/cde3603"
+                                android:textSize="@dimen/text_size_content_h3" />
+                        </LinearLayout>
+                        <!-- 日期 -->
+
+                        <TextView
+                            android:id="@+id/tvDate"
+                            style="@style/socialQuotationTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="@string/novalue"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_content_h3" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <!-- 涨跌值 -->
+
+                            <TextView
+                                android:id="@+id/stock_someone_kline_heightest1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="涨跌"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_content_h3"
+                                tools:ignore="DuplicateIds" />
+
+                            <TextView
+                                android:id="@+id/tvAmt"
+                                style="@style/socialQuotationTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="3dip"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:paddingLeft="2dip"
+                                android:text="@string/novalue"
+                                android:textColor="@color/cde3603"
+                                android:textSize="@dimen/text_size_content_h3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M 5:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_content_h3" />
+
+                <TextView
+                    android:id="@+id/tvM5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:text="@string/novalue"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_content_h3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="M10:"
+                    android:textColor="@color/cfff799"
+                    android:textSize="@dimen/text_size_content_h3" />
+
+                <TextView
+                    android:id="@+id/tvM10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:text="@string/novalue"
+                    android:textColor="@color/cfff799"
+                    android:textSize="@dimen/text_size_content_h3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M20:"
+                    android:textColor="@color/c8982bc"
+                    android:textSize="@dimen/text_size_content_h3" />
+
+                <TextView
+                    android:id="@+id/tvM20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:text="@string/novalue"
+                    android:textColor="@color/c8982bc"
+                    android:textSize="@dimen/text_size_content_h3" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- K线图 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/llTop"
+        android:layout_marginBottom="1dip"
+        android:layout_marginTop="3dip" >
+
+        <RelativeLayout
+            android:id="@+id/llKLine"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:id="@+id/llFuQuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnFuQuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/xml_social_fuquan_quan_btn_bg"
+                android:text="复权"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_content_h3" />
+
+            <Button
+                android:id="@+id/btnCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/xml_social_fuquan_btn_bg"
+                android:text="日线"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_content_h3" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="出售USDT"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_transfer_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="5dip">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="15dip"
+                android:layout_height="15dip"
+                android:layout_marginRight="5dip"
+                app:srcCompat="@drawable/ic_svg_transfer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="划转"
+                android:textColor="@color/c3d3a50"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip">
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/xml_et_bg_5"
+            android:gravity="center_vertical"
+            android:hint="请输入出售数量"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:paddingLeft="10dip"
+            android:paddingRight="80dip"
+            android:textColor="@color/c9a9a9a"
+            android:textColorHint="#c8c8c8"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right|center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USDT"
+                android:textColor="@color/c9a9a9a"
+                android:textSize="@dimen/font_size_12" />
+
+            <View
+                style="@style/dividerLine_vertical"
+                android:layout_height="20dip"
+                android:layout_marginLeft="15dip" />
+
+            <TextView
+                android:id="@+id/tvAll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="全部出售"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip">
+
+        <TextView
+            android:id="@+id/tvLimit"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="6dip"
+            android:layout_weight="1"
+            android:text="限额  "
+            android:textColor="@color/c9a9a9a"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="6dip"
+            android:text="余额  -- USDT"
+            android:textColor="@color/c9a9a9a"
+            android:textSize="@dimen/font_size_12" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="单价"
+            android:textColor="@color/c9a9a9a"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <View
+        style="@style/dividerLine_horizontal"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="数量"
+            android:textColor="@color/c9a9a9a"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <View
+        style="@style/dividerLine_horizontal"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:id="@+id/tvPayWay"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="实收款"
+            android:textColor="@color/c9a9a9a"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_20"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="30dip">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            style="@style/btn_style_5"
+            android:layout_width="0dip"
+            android:layout_height="48dip"
+            android:layout_weight="1"
+            android:text="30s后自动取消"
+            android:textColor="@color/c3d3a50" />
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            style="@style/btn_style_4"
+            android:layout_width="0dip"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:text="下单" />
+    </LinearLayout>
+
+
+</LinearLayout>

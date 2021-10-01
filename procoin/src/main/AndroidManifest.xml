@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.procoin"
+    android:versionCode="8"
+    android:versionName="1.1.6">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="26"
+        tools:overrideLibrary="cn.jzvd"/>
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <!-- 横竖屏切换权限 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <!-- 屏幕保护 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 微博登录需要增加的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <!--下面是危险权限需要动态申请-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/><!-- 获取实际识别码 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>    <!--安装apk-->
+
+    <!--特殊权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!--
+
+    重新签名命令：
+    jarsigner -verbose -keystore [您的私钥存放路径] -signedjar [签名后文件存放路径] [未签名的文件路径] [您的证书名(别名)]
+
+    获取签名md5和sha1的值
+    keytool -list -v -keystore [您的私钥存放路径]
+    -->
+
+    <!--如果更改app图标没有效果:把工程目录下的build 还有app目录下的build 都删除掉,然后clear project 再次rebuid project ,特别注意:点开手机设置,选择应用程序,清除掉这个应用的缓存和数据后,再卸载掉原来安装的程序(这一步骤不能少).运行后,结果成功解决该问题!-->
+    <application
+        android:name="com.procoin.MainApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppThemeToolBar.Translucent"
+        tools:overrideLibrary="cn.jzvd"
+        tools:replace="android:theme">
+        <!--android:theme="@style/Theme.Taojinroad.ActionBar.Light"-->
+        <!--android:theme="@style/AppThemeToolBar.Translucent"-->
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="AA3VL25NP6KM"/>
+        <meta-data
+            android:name="InstallChannel"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+        <!--  mid-sdk-3.5以上版本增加 < -->
+        <provider
+            android:name="com.tencent.mid.api.MidProvider"
+            android:authorities="com.procoin.TENCENT.MID.V3"
+            android:exported="true"/>
+
+        <!--经常有时候按了home键之后再点击app，然后发现app重启了，设置这个属性可以解决这个问题，但是不能有android:launchMode="singleTask"和“singleInstance”-->
+        <activity
+            android:name="com.procoin.module.welcome.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppWelcome.style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <!-- MTA可视化启动连接接口 -->
+            <intent-filter>
+                <data android:scheme="mtaautotrack.eba8e4d7fcff323e2f74ab752c4cbedc"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.procoin.module.welcome.GuideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.welcome.LoadResActivity"
+            android:alwaysRetainTaskState="false"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:process=":miniimredz"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:label=""
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyArticlePageIndicator_home">
+            <!---->
+
+        </activity>
+        <!--android:launchMode="singleTask"-->
+        <activity
+            android:name="com.procoin.module.publish.RecordVideo2Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.procoin.module.myhome.SettingAccountActivity"/>
+        <activity android:name="com.procoin.module.myhome.MyhomeSelectVideoActivity"/>
+
+
+        <activity
+            android:name="com.procoin.module.myhome.MyHomeInfoActivity"
+            android:label="@string/modifyUserInfo"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.myhome.MyPasswordActivity"
+            android:label="@string/fix_passwd"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.myhome.MyhomeInfoTextActivity"
+            android:label="@string/selfDescription"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.myhome.MyHomeCropActivity"
+            android:label="@string/modifyUserInfo"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.myhome.SettingActivity"
+            android:label="@string/settings"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.myhome.StockSettingActivity"
+            android:label="@string/settings"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="com.procoin.module.myhome.AboutActivity"
+            android:label="@string/aboutTaojinlu"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.myhome.MyMessageActivity"
+            android:label="@string/myMsg"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1107229202"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.procoin.common.photo.ViewPagerPhotoViewActivity"
+            android:screenOrientation="portrait"/>
+        <!--android:theme="@style/Theme.Taojinroad.ActionBar.Overlay"-->
+
+        <activity
+            android:name="com.procoin.common.web.CommonWebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:label="@string/novalue"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="CommonWebViewActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.procoin.module.circle.CircleChatViewPagerPhotoViewActivity"
+            android:screenOrientation="portrait"/>
+        <!--android:theme="@style/Theme.Taojinroad.ActionBar.Overlay"-->
+        <activity
+            android:name="com.procoin.module.chat.ChatRoomActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"/>
+
+        <!--   -->
+        <activity
+            android:name="com.procoin.module.chat.ChatTestActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.procoin.module.myhome.PushSettingsActivity"
+            android:label="@string/pushSettings"
+            android:screenOrientation="portrait"/>
+
+
+        <receiver
+
+            android:name="com.procoin.subpush.notify.OnBootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.procoin.subpush.notify.OnAlarmReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_RESTARTED"/>
+                <action android:name="com.procoin.subpush.action.SUBPUSH_RESTART"/>
+            </intent-filter>
+        </receiver>
+        <!--  -->
+        <service
+            android:name="com.procoin.subpush.SubPushService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="SubPushService"
+            android:process=":subimtokapush">
+
+
+        </service>
+        <receiver
+            android:name="com.procoin.module.logout.OnLogoutReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.imredz.intent.action.LOGGED_OUT"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.procoin.module.logout.ReLoginRemindActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Taojinroad.ActionBar.logout"/>
+
+      <!--  <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Dialog"/>-->
+
+
+        <activity
+            android:name="com.procoin.module.myhome.MyPayPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.myhome.SettingPayPasswordActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--android:launchMode="singleTask"-->
+        <activity
+            android:name="com.procoin.module.myhome.IdentityAuthenActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.myhome.MyhomeMultiSelectImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.myhome.SelectPicPreviewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.chat.ChatHomeActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="com.procoin.module.circle.CircleChatRoomActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"/>
+
+        <activity
+            android:name="com.procoin.module.circle.CircleInfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.circle.SearchCircleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.circle.ApplyJoinCircleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.circle.CircleAllMembersActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.circle.CircleApplyListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.circle.SetJoinCircleWayActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.circle.CircleBlackListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.circle.CreateOrEidtCircleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.circle.MentionMemberActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="com.procoin.module.myhome.PersonalHomepageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.LanguageTestActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.LanguageSettingActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="com.procoin.module.home.MarketActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.procoin.module.login.SignUpActivity"/>
+        <activity
+            android:name="com.procoin.module.login.VerifyActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.procoin.module.login.ReceiveActivity"/>
+        <activity
+            android:name="com.procoin.module.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.RechargeUsdtActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.WithdrawUsdtActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.SelectPayWayActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.myhome.PaymentTermActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.myhome.AddReceiptTermActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.myhome.AddAliPayAndWechatPayActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.myhome.AddBankPayActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.home.trade.OrderCashInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.WithDrawInfoActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!--<activity-->
+            <!--android:name="com.procoin.module.home.MyCropymeActivity"-->
+            <!--android:screenOrientation="portrait" />-->
+
+        <activity
+            android:name="com.procoin.module.home.ApplyCropymeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.home.trade.EntrusTransactiontActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.home.trade.EntrusTransactiontSimpleActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.home.OrderEntrustnfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.home.trade.USDTTradeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.TradeLeverActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.home.trade.history.CoinTradeEntrustActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.history.CoinTradeEntrustLeverActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.history.CoinFollowHistoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.home.trade.history.CashTradeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.CoinTradeDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.SearchCoinActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.home.trade.WithDrawUsdtSuccessActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.myhome.UserHomeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.copy.CropyOrderActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.copy.CropyOrderInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.TradeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.home.trade.TakeCoinActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.history.TakeCoinHistoryDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+
+
+        <activity
+            android:name="com.procoin.module.home.trade.TransferCoinActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.TransferSelectAccountActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.history.TransferCoinHistoryActivity"
+            android:screenOrientation="portrait"/>
+
+
+
+        <activity
+            android:name="com.procoin.module.home.trade.RechargeCoinActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.trade.LegalTenderBuyCoinActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="com.procoin.module.home.trade.history.TakeCoinHistoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.OpenCropymeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.home.RadarDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.copy.CropyOrderHistoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.home.MarkLandActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.procoin.module.copy.CropyOrderDetailListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.copy.CropyUserDataActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.kbt.KBTHomeActivity"
+            android:screenOrientation="portrait"/>
+        <!--<activity-->
+            <!--android:name="com.procoin.module.kbt.KbtBuyBackActivity"-->
+            <!--android:screenOrientation="portrait" />-->
+
+        <activity
+            android:name="com.procoin.module.kbt.app.lightningprediction.LPHomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.kbt.app.lightningprediction.LpHistoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.login.AllCountryCodeListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.HomeCoinSubBuyActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.home.OptionalDragSortActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.wallet.CoinWalletActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.wallet.IntoWalletActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.wallet.RollOutWalletActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.wallet.LeverInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.home.NoticeListActivity"
+            android:label="@string/myMsg"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.legal.LegalMoneyActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+
+        <activity
+            android:name="com.procoin.module.legal.AuthenticationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.legal.MyAdListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.legal.AddAdActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.procoin.module.legal.LegalOrderInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.procoin.module.legal.LegalPayActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.legal.OtcOrderHistoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.procoin.module.legal.OtcAppealActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="@string/fileprovider_authority"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+        <!--币吧结束-->
+    </application>
+
+
+</manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_whole"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_compents_card_bg"
+    android:orientation="horizontal"
+    android:padding="10dip">
+
+    <include
+        layout="@layout/head_official"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginRight="10dip" />
+
+    <!--<CircleImageViewView&ndash;&gt;-->
+    <!--android:id="@+id/ivHead"-->
+    <!--android:layout_width="35dip"-->
+    <!--android:layout_height="35dip"-->
+    <!--android:layout_marginRight="10dip"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/ic_default_head" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_14" />
+
+
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/font_size_11" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="----"
+            android:textColor="@color/c232323"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:lineSpacingExtra="@dimen/text_linespacingextra"
+            android:text="---"
+            android:textColor="@color/c808080"
+            android:textSize="@dimen/font_size_14" />
+
+
+        <TextView
+            android:id="@+id/tvExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:background="@color/cf0f0f0"
+            android:paddingBottom="8dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="8dip"
+            android:text=""
+            android:textColor="@color/c666666"
+            android:textSize="@dimen/font_size_12" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

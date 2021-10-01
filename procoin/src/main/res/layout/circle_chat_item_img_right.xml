@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bubble="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView style="@style/circleChatTimeTextView" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:paddingBottom="10dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="10dip">
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleLargeInverse"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" />
+    <ImageView
+        android:id="@+id/ivReSend"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginRight="15dip"
+        android:layout_gravity="center_vertical"
+        bubble:srcCompat="@drawable/ic_chat_resend"/>
+    <!--<BubbleImageViewView&ndash;&gt;-->
+        <!--android:id="@+id/bubbleImage"-->
+        <!--style="@style/circleChatImageStyle"-->
+        <!--bubble:arrowLocation="right"-->
+        <!--android:layout_marginRight="3dip" />-->
+    <com.procoin.http.widget.view.RoundAngleImageView
+        android:id="@+id/bubbleImage"
+        android:layout_marginRight="10dip"
+        android:layout_width="150dip"
+        android:layout_height="200dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_common_mic"
+        />
+    <!--android:src="@drawable/xml_bubbleview_default_src"-->
+    <com.procoin.widgets.CircleImageView style="@style/circleChatHeadView" />
+
+</LinearLayout>
+    </LinearLayout>

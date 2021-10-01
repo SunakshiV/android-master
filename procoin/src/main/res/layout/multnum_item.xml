@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+    <TextView
+    android:id="@+id/tvNum"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="35dip"
+    android:text="5X"
+    android:background="@drawable/xml_lever_multiple_bg"
+    android:textColor="@color/c6175ae"
+    android:textSize="@dimen/font_size_14" />
+
+    <!--shape_key_type_bg-->
+</LinearLayout>

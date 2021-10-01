@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:gravity="center_vertical"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip">
+
+
+                <com.procoin.widgets.CircleImageView
+                    android:id="@+id/ivhead"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:src="@drawable/ic_default_head" />
+
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_16"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvUserBrief"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dip"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="--"
+                        android:hint="暂无简介"
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvGrade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="--"
+                        android:textColor="@color/c626073"
+                        android:textSize="@dimen/font_size_18"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center"
+                        android:text="综合评分"
+                        android:textColor="@color/cbebebe"
+                        android:textSize="@dimen/font_size_12" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@color/cf4f5f6"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                >
+
+                <TextView
+                    android:id="@+id/tvProfit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="0.00"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_22"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvProfit"
+                    android:layout_toEndOf="@+id/tvProfit"
+                    android:layout_toRightOf="@+id/tvProfit"
+                    android:gravity="center"
+                    android:text="/跟单净分成"
+                    android:textColor="@color/c969696"
+                    android:textSize="@dimen/font_size_12" />
+
+                <LinearLayout
+                    android:id="@+id/llProfitMark"
+                    android:layout_width="55dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:gravity="center">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_question_mark_2" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="15dip">
+
+                <com.procoin.widgets.RadarView
+                    android:id="@+id/rdv"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dip"
+                    android:background="#FFF5F5F5" />
+
+                <LinearLayout
+                    android:id="@+id/llRadar"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="right|bottom"
+                    android:background="@color/cf08c42"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow_radar" />
+                </LinearLayout>
+                <!--<ImageView-->
+                <!--android:id="@+id/ivRadar"-->
+                <!--android:layout_width="20dip"-->
+                <!--android:layout_height="20dip"-->
+                <!--android:layout_marginRight="10dip"-->
+                <!--android:layout_marginBottom="10dip"-->
+                <!--android:src="@drawable/ic_question_mark_2"-->
+                <!--android:layout_gravity="right|bottom"/>-->
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="20dip"
+                android:text="我的持仓"
+                android:textColor="@color/c222222"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNoHold"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="暂无持仓"
+                android:textColor="@color/cbebebe"
+                android:textSize="@dimen/font_size_12" />
+
+
+            <LinearLayout
+                android:id="@+id/llHold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="12dip"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:paddingLeft="15dip"
+                    android:text="持有"
+                    android:textColor="@color/cbebebe"
+                    android:textSize="@dimen/font_size_12" />
+
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="市值/成本价"
+                    android:textColor="@color/cbebebe"
+                    android:textSize="@dimen/font_size_12" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingRight="15dip"
+                    android:text="盈亏"
+                    android:textColor="@color/cbebebe"
+                    android:textSize="@dimen/font_size_12" />
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.RecyclerView
+                android:id="@+id/rvPositionList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="8dip"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:background="@color/pageBackground" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvTab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center"
+                    android:text="累计盈亏"
+                    android:textColor="@color/xml_usdt_tab_text"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTab2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center"
+                    android:text="业绩走势"
+                    android:textColor="@color/xml_usdt_tab_text"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTab3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center"
+                    android:text="跟单人气"
+                    android:textColor="@color/xml_usdt_tab_text"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTab4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center"
+                    android:text="交易次数"
+                    android:textColor="@color/xml_usdt_tab_text"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_content"
+                android:layout_width="match_parent"
+                android:layout_height="250dip"
+                android:background="@color/white" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:background="@color/pageBackground" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:paddingLeft="20dip"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:text="币种交易次数汇总"
+                android:textColor="@color/xml_usdt_tab_text"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dip"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

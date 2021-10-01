@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llHome"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_compents_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dip">
+
+    <com.procoin.widgets.CircleImageView
+        android:id="@+id/ivHeader"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@drawable/ic_default_head"
+        android:layout_marginRight="12dip"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:text="--"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_16" />
+
+    <TextView
+        android:id="@+id/tvToWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:text="移除黑名单"
+        android:background="@drawable/shape_rect_corner1_stroke1_divider"
+        android:textColor="@color/c232323"
+        android:textSize="@dimen/font_size_13" />
+
+
+
+
+
+</LinearLayout>

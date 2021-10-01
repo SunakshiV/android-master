@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llInfomation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/abc_item_background_holo_light"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <ImageView
+            android:id="@+id/ivInfomation"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            app:srcCompat="@drawable/ic_circle_menu_info_black" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

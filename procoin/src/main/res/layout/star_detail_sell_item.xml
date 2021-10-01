@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:progressDrawable="@drawable/xml_pb_sell_bg"
+
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip">
+
+        <TextView
+            android:id="@+id/tvSellPrice"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="----"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/quotation_die_color"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:id="@+id/tvSellAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="----"
+            android:layout_marginRight="10dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_12" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvSellPos"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="right"-->
+        <!--android:minWidth="40dip"-->
+        <!--android:text="1"-->
+        <!--android:textColor="@color/cadadad"-->
+        <!--android:textSize="@dimen/font_size_12" />-->
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/llCopyOrder"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="visible">-->
+
+        <androidx.appcompat.widget.RecyclerView
+            android:id="@+id/rvFollowList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_marginTop="10dip"/>
+
+        <TextView
+            android:id="@+id/tvNoDataCopyOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="200dip"
+            android:text="暂无跟单"
+            android:textColor="@color/c666175ae"
+            android:visibility="gone" />
+
+        <!--</LinearLayout>-->
+
+
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

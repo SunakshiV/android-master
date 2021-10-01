@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="35dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingTop="20dip">
+    <!--@dimen/olstar_home_dialog_fragment_buy_height-->
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="增加开仓保证金(USDT)"
+        android:textColor="@color/c1d3155"
+        android:textSize="@dimen/font_size_16" />
+
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dip"-->
+        <!--android:gravity="center"-->
+        <!--android:text="选择保证金"-->
+        <!--android:textColor="@color/c6175ae"-->
+        <!--android:textSize="@dimen/font_size_18" />-->
+
+
+    <androidx.appcompat.widget.RecyclerView
+        android:id="@+id/rvKeyType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dip"
+        android:layout_marginTop="15dip"
+        android:nestedScrollingEnabled="false">
+
+    </androidx.appcompat.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tvEnableBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="可用100USDT"
+        android:textColor="@color/c661d3155"
+        android:textSize="@dimen/font_size_12"
+        android:layout_marginTop="5dip"/>
+
+    <TextView
+        android:id="@+id/tvProtocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:lineSpacingExtra="@dimen/text_linespacingextra"
+        android:text=""
+        android:textColor="@color/c666175ae"
+        android:textSize="@dimen/font_size_12" />
+
+    <TextView
+        style="@style/btn_style_4"
+        android:layout_marginTop="20dip"
+        />
+
+
+</LinearLayout>
+

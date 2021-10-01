@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c333333"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/toolbar">
+
+        <TextView
+            android:id="@+id/group_item_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="最近相册"
+            android:textColor="@color/actionbar_light_title_color"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tvOk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/abc_item_background_holo_dark"
+            android:gravity="center"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="确定"
+            android:textColor="@color/actionbar_light_title_color"
+            android:textSize="@dimen/font_size_15" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.RecyclerView
+        android:id="@+id/gvView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:gravity="fill"
+        android:paddingLeft="1dip"
+        android:paddingRight="2dip" />
+
+    <TextView
+        android:id="@+id/tvPreview"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:text="预览"
+        android:gravity="center"
+        android:background="@drawable/xml_compents_bg"
+        android:textColor="@color/btn_preview"
+        android:textSize="@dimen/font_size_15" />
+
+
+    <!--<GridView-->
+    <!--android:id="@+id/gvView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@+id/llBottom"-->
+    <!--android:layout_below="@id/toolbar"-->
+    <!--android:cacheColorHint="#00000000"-->
+    <!--android:gravity="fill"-->
+    <!--android:horizontalSpacing="2dip"-->
+    <!--android:listSelector="@android:color/transparent"-->
+    <!--android:numColumns="3"-->
+    <!--android:padding="2dip"-->
+    <!--android:paddingLeft="5dip"-->
+    <!--android:paddingRight="5dip"-->
+    <!--android:paddingTop="10dip"-->
+    <!--android:scrollbarStyle="outsideOverlay"-->
+    <!--android:stretchMode="columnWidth"-->
+    <!--android:verticalSpacing="2dp" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/llBottom"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="#000000"-->
+    <!--android:padding="8dip">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/group_item_count_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="@drawable/abc_spinner_mtrl_am_alpha"-->
+    <!--android:text="最近相册"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="@dimen/font_size_14" />-->
+    <!--&lt;!&ndash; android:textSize="@dimen/abc_action_bar_title_text_size" &ndash;&gt;-->
+    <!--&lt;!&ndash; android:background="@drawable/abc_spinner_ab_holo_dark" &ndash;&gt;-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

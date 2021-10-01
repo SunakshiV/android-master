@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/drag_bg"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.procoin.widgets.swipecaptcha.SwipeCaptchaView
+            android:id="@+id/swipeCaptchaView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_common_mic"
+            app:captchaHeight="30dp"
+            app:captchaWidth="30dp" />
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="5dip"
+            app:srcCompat="@drawable/ic_refresh" />
+
+        <ImageView
+            android:id="@+id/ivDrag"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@color/c808080"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="1dp">
+
+
+        <SeekBar
+            android:id="@+id/dragBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxHeight="30dp"
+            android:minHeight="30dp"
+            android:thumbOffset="0dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:layout_below="@id/swipeCaptchaView"
+            android:layout_centerHorizontal="true"
+            android:progressDrawable="@drawable/drag_progess_bg"
+            android:background="@drawable/dragbg"
+            android:thumb="@drawable/ic_thumb_normal_bg" />
+        <com.procoin.widgets.swipecaptcha.HightLightTextView
+            android:id="@+id/tvHightLight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="向右滑动滑块填充拼图"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_14" />
+    </FrameLayout>
+
+
+
+</LinearLayout>

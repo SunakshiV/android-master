@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tvPop"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_gravity="center"
+            android:background="@drawable/xml_index_text_bg"
+            android:gravity="center"
+            android:text="#"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_35"/>
+    </FrameLayout>
+
+    <com.procoin.widgets.index.IndexUIView
+        android:id="@+id/lvIndex"
+        android:layout_width="22dip"
+        android:layout_height="fill_parent"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" />
+
+</LinearLayout>

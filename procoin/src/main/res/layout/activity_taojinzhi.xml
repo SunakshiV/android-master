@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_with_text_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize"
+        app:layout_collapseMode="pin" />
+
+    <android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            app:elevation="0dip">
+
+            <!--<android.support.design.widget.CollapsingToolbarLayout-->
+            <!--android:id="@+id/toolbar_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:contentScrim="@color/transparent"-->
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="15dip"
+                    android:text="学分(XF)明细"
+                    android:textColor="@color/c262626"
+                    android:textSize="@dimen/font_size_15" />
+
+                <TextView
+                    android:id="@+id/tvTaojinzhiValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="15dip"
+                    android:text="0.0"
+                    android:textColor="@color/c333333"
+                    android:textSize="@dimen/font_size_35"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvQuickPurchase"
+                    style="@style/tvbg_big_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/v_corner4dp_bgffc90c_noalpha"
+                    android:text="快捷购买"
+                    android:textColor="#222222" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="15dip">
+
+                    <TextView
+                        android:id="@+id/tvRechargeCoin"
+                        style="@style/tvbg_big_default"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/v_corner4dp_bgffffff_333333"
+                        android:text="充币"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvWithdrawalCoin"
+                        style="@style/tvbg_big_default"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="15dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/v_corner4dp_bgffffff_a6a6a6"
+                        android:text="提现"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_height="5dip"
+                    android:layout_marginTop="25dip"
+                    android:background="@color/ceeeeee"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dip"
+                android:text="历史"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold" />
+
+
+            <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.procoin.widgets.LoadMoreRecycleView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

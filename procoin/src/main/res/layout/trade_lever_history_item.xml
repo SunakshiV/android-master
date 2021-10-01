@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_compents_bg"
+    android:orientation="vertical"
+    android:padding="15dip">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/tvSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvBuySell"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/c663d3a50"
+            android:textSize="@dimen/font_size_12"/>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:gravity="left"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/c661d3155"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c663d3a50"
+            android:textSize="@dimen/font_size_14"
+            android:text="已撤销"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="8dip"
+            />
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_arrow"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dip">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手数"
+                android:textColor="@color/c663d3a50"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/tvHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_marginTop="4dip"
+                android:textColor="@color/c3d3a50"
+                android:textSize="@dimen/font_size_14" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvOpenPriceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="委托价"
+                android:textColor="@color/c663d3a50"
+                android:textSize="@dimen/font_size_12" />
+
+
+            <TextView
+                android:id="@+id/tvOpenPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/c3d3a50"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvOpenBailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开仓保证金"
+                android:textColor="@color/c663d3a50"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/tvOpenBail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_marginTop="4dip"
+                android:textColor="@color/c3d3a50"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

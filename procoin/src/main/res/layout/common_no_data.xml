@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llNoData"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:visibility="gone"
+    android:orientation="vertical">
+    <!--android:background="@drawable/ic_common_nodata_cloud_bg"-->
+    <!--这里如果需要填其他文字,需要-->
+    <TextView
+        android:id="@+id/tvNoData"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+
+        android:gravity="center"
+        android:text="暂无数据" />
+
+    <!--<ImageView-->
+        <!--android:layout_width="135dp"-->
+        <!--android:layout_height="161dp"-->
+        <!--android:src="@drawable/ic_common_nodata_perval_bg" />-->
+
+
+</LinearLayout>

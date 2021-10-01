@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_bar"-->
+    <!--android:background="@color/actionbar_background"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/actionBarSize"-->
+    <!--android:gravity="center_vertical">-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_top"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:textColor="@color/actionbar_dark_title_color"-->
+    <!--android:text="活动"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:textSize="@dimen/actionBarTitleSize"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/swiperefreshlayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<LoadMoreRecycleViewView&ndash;&gt;-->
+    <!--android:id="@+id/rv_list"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/llHicvp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:background="@color/c6175ae"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.procoin.widgets.CycleGalleryViewPager
+                android:id="@+id/hicvp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.procoin.widgets.indicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dip"
+                android:padding="1dip"
+                android_custom:fillColor="@color/white"
+                android_custom:pageColor="@color/c959595"
+                android_custom:snap="false"
+                android_custom:strokeWidth="0dip"
+                />
+
+            <!--<com.tjr.perval.widgets.indicator.CircleIndicator-->
+            <!--android:id="@+id/indicator"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:padding="1dip"-->
+            <!--android_custom:fillColor="@color/c959595"-->
+            <!--android_custom:pageColor="@color/white"-->
+            <!--android_custom:snap="false"-->
+            <!--android_custom:strokeColor="@color/c959595" />-->
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="15dip">
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android_custom:srcCompat="@drawable/ic_rank" />
+
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="高手排行榜"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_20"
+            android:textStyle="bold" />
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvSearch"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/xml_home_search_olstar_card_btn"-->
+            <!--android:drawableLeft="@drawable/ic_home_search"-->
+            <!--android:drawablePadding="3dip"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingLeft="15dip"-->
+            <!--android:paddingRight="15dip"-->
+            <!--android:text="搜索"-->
+            <!--android:textColor="@color/cbebebe"-->
+            <!--android:textSize="@dimen/font_size_12" />-->
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:amplitude="http://schemas.android.com/apk/res-auto"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llVoice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cf7f7f9"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.procoin.module.circle.ui.BmplitudeText
+            android:id="@+id/tvBmplitude_left_max"
+            android:layout_width="10dip"
+            android:layout_height="100dip"
+            android:background="@drawable/ic_amplitude_white"
+            amplitude:minAmplitude="60" />
+
+        <com.procoin.module.circle.ui.BmplitudeText
+            android:id="@+id/tvBmplitude_left_mid"
+            android:layout_width="10dip"
+            android:layout_height="80dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/ic_amplitude_white"
+            amplitude:minAmplitude="30" />
+
+        <com.procoin.module.circle.ui.BmplitudeText
+            android:id="@+id/tvBmplitude_left_min"
+            android:layout_width="10dip"
+            android:layout_height="60dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/ic_amplitude_white"
+            amplitude:minAmplitude="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip">
+
+        <TextView
+            android:id="@+id/tvTimeWarn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="还剩下10秒"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rlRecord"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_record_bg_up">
+
+            <!-- android:background="@drawable/xml_record_bg" -->
+
+            <com.procoin.module.circle.ui.RecordButton
+                android:id="@+id/ibRecord"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:scaleType="center"
+                android:src="@drawable/xml_record_src" />
+
+            <com.procoin.module.circle.ui.RoundProgressBar
+                android:id="@+id/roundProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dip"
+                android:clickable="false"
+                android_custom:roundColor="@android:color/transparent"
+                android_custom:roundProgressColor="@color/cffc90c"
+                android_custom:roundWidth="7dip"
+                android_custom:textIsDisplayable="false" />
+
+            <TextView
+                android:id="@+id/tvRecordTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dip"
+                android:text="8&apos;"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvRecordState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="点击录音"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.procoin.module.circle.ui.BmplitudeText
+                android:id="@+id/tvBmplitude_right_min"
+                android:layout_width="10dip"
+                android:layout_height="60dip"
+                android:background="@drawable/ic_amplitude_white"
+                amplitude:minAmplitude="1" />
+
+            <com.procoin.module.circle.ui.BmplitudeText
+                android:id="@+id/tvBmplitude_right_mid"
+                android:layout_width="10dip"
+                android:layout_height="80dip"
+                android:layout_marginLeft="15dip"
+                android:background="@drawable/ic_amplitude_white"
+                amplitude:minAmplitude="30" />
+
+            <com.procoin.module.circle.ui.BmplitudeText
+                android:id="@+id/tvBmplitude_right_max"
+                android:layout_width="10dip"
+                android:layout_height="100dip"
+                android:layout_marginLeft="15dip"
+                android:background="@drawable/ic_amplitude_white"
+                amplitude:minAmplitude="60" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRecordAgain"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dip"
+            android:background="@drawable/ic_record_bg_up"
+            android:gravity="center"
+            android:text="重录"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

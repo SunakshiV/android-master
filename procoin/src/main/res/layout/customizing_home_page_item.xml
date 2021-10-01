@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这里直接用linearLayout 用weight 分配无效，可能是 DragSortItemView 做了处理-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/homeListViewItemMaxHeight"
+    android:background="@drawable/xml_compents_bg"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
+
+    <ImageView
+        android:padding="15dip"
+        android:id="@+id/click_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_stock_click_remove" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/drag_handle"
+        android:layout_toRightOf="@id/click_remove" >
+
+        <TextView
+            android:id="@+id/tvFullcode"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/novalue"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvStockName"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/novalue"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:padding="15dip"
+        android:id="@+id/drag_handle"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_stock_drag_handle" />
+
+</RelativeLayout>

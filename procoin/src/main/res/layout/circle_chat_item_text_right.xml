@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bubble="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView style="@style/circleChatTimeTextView" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:paddingBottom="10dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="10dip">
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleLargeInverse"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" />
+
+    <ImageView
+        android:id="@+id/ivReSend"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginRight="15dip"
+        android:layout_gravity="center_vertical"
+        bubble:srcCompat="@drawable/ic_chat_resend"/>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_marginTop="3dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center_vertical|left"
+        android:minWidth="60dip"
+        android:maxWidth="@dimen/circle_chat_max_width"
+        android:minHeight="40dip"
+        android:textColor="@color/cfefefe"
+        android:textSize="@dimen/font_size_15"
+        android:background="@drawable/xml_circle_chat_bg_right"
+        android:lineSpacingExtra="@dimen/chat_text_linespacingextra"
+        />
+
+    <!--<com.cropyme.ui.bubbleview.BubbleTextVew-->
+        <!--style="@style/circleChatBubbleTextStyle"-->
+        <!--android:layout_marginRight="3dip"-->
+        <!--android:text="阿斯顿发放大厦"-->
+        <!--bubble:arrowLocation="right"-->
+        <!--bubble:bubbleColor="@color/c96c7f2" />-->
+
+    <com.procoin.widgets.CircleImageView style="@style/circleChatHeadView" />
+
+</LinearLayout>
+    </LinearLayout>

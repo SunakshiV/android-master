@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_compents_bg"
+    android:padding="15dip"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:id="@+id/llItem">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.procoin.widgets.CircleImageView
+            android:id="@+id/ivHead"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:src="@drawable/ic_default_head" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="--"
+            android:layout_gravity="center"
+            android:textColor="@color/c1d3155"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_marginTop="5dip"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跟单盈亏(USDT)"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_12"
+             />
+
+            <TextView
+                android:id="@+id/tvProfit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textColor="@color/c00ad88"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="5dip"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

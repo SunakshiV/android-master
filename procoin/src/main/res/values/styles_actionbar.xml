@@ -1,0 +1,253 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <!-- actionBar -->
+    <style name="TjrToolbar" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="contentInsetEnd">0dp</item>
+        <item name="contentInsetStart">0dp</item>
+
+
+    </style>
+
+    <!-- 淘金路主题样式1 -->
+    <style name="Theme.Taojinroad.ActionBar.Light.NoTranslucent" parent="Theme.Taojinroad.ActionBar.Light">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="popupMenuStyle">@style/myPopopStyle</item>
+        <!-- Widget.AppCompat.Light.ActionBar.Solid -->
+        <!-- <item user_name="android:titleTextStyle">@style/ActionBar.Title.Taojinroad</item> -->
+    </style>
+    <!-- 淘金路主题样式1 -->
+    <style name="Theme.Taojinroad.ActionBar.Light.NoTranslucent.OverLay" parent="Theme.Taojinroad.ActionBar.Light.NoTranslucent">
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <!-- 淘金路主题样式1 -->
+    <style name="Theme.Taojinroad.ActionBar.Light" parent="Theme.AppCompat.Light">
+
+        <!-- <item user_name="colorPrimary">@drawable/xml_actionbar_bg_bottom_line</item> -->
+        <!-- <item user_name="colorPrimary">@drawable/xml_actionbar_bg_bottom_line</item> -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="actionBarSize">@dimen/actionBarSize</item>
+        <item name="actionBarStyle">@style/Theme.Taojinroad.ActionBar.Light.ActionBarStyle</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item><!-- 去掉actionbar下面的阴影效果 -->
+        <item name="actionMenuTextAppearance">@style/myActionMenuTextAppearance</item>
+        <item name="homeAsUpIndicator">@drawable/ic_common_back_gray</item>
+        <item name="popupMenuStyle">@style/myPopopStyle</item>
+        <item name="toolbarStyle">@style/TjrToolbar</item>
+
+        <!-- <item user_name="homeAsUpIndicator">@drawable/ic_common_back_gray</item> -->
+        <!-- Widget.AppCompat.Light.ActionBar.Solid -->
+        <!-- <item user_name="android:titleTextStyle">@style/ActionBar.Title.Taojinroad</item> -->
+    </style>
+    <!-- 金豆商城页面用到-->
+    <style name="Theme.Taojinroad.ActionBar.Drak.NoTranslucent" parent="Theme.Taojinroad.ActionBar.DarkActionBar">
+        <item name="popupMenuStyle">@style/myPopopStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- Widget.AppCompat.Light.ActionBar.Solid -->
+        <!-- <item user_name="android:titleTextStyle">@style/ActionBar.Title.Taojinroad</item> -->
+    </style>
+
+    <style name="myActionMenuTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- <item user_name="android:windowContentOverlay">@null</item> -->
+    <!-- 淘金路主题样式2 -->
+    <style name="Theme.Taojinroad.ActionBar.DarkActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="popupMenuStyle">@style/myPopopStyle</item>
+        <item name="colorPrimary">@color/actionbar_background_old</item>
+        <item name="actionBarSize">@dimen/actionBarSize</item>
+        <item name="actionBarStyle">@style/Theme.Taojinroad.ActionBar.Dark.ActionBarStyle</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>  <!-- 去掉actionbar下面的阴影效果 -->
+        <item name="homeAsUpIndicator">@drawable/ic_common_back_white</item>
+    </style>
+
+    <!-- 淘金路主题样式3 -->
+    <style name="Theme.Taojinroad.ActionBar.OverLay.Base" parent="Theme.Taojinroad.ActionBar.DarkActionBar">
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@color/actionbar_background_old</item>
+    </style>
+
+    <style name="Theme.Taojinroad.ActionBar.OverLay.Base.Light" parent="Theme.Taojinroad.ActionBar.Light">
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+
+    <!-- 淘金路主题样式4  logout样式 -->
+    <style name="Theme.Taojinroad.ActionBar.logout" parent="Theme.AppCompat.Light">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Taojinroad.ActionBar.Light.ActionBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="titleTextStyle">@style/ActionBar.Light.Title.Taojinroad</item>
+        <item name="background">@drawable/xml_actionbar_bg_bottom_line</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+    <style name="Theme.Taojinroad.ActionBar.Dark.ActionBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="titleTextStyle">@style/ActionBar.Dark.Title.Taojinroad</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+    <!-- <item user_name="android:clickable">true</item> -->
+    <!-- <item user_name="android:background">@drawable/abc_spinner_mtrl_am_alpha</item> -->
+    <!-- <item user_name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item> -->
+    <!-- <item user_name="android:popupBackground">@drawable/abc_popup_background_mtrl_mult</item> -->
+    <!-- <item user_name="android:dropDownVerticalOffset">0dip</item> -->
+    <!-- <item user_name="android:dropDownHorizontalOffset">0dip</item> -->
+    <!-- <item user_name="overlapAnchor">true</item> -->
+    <!-- <item user_name="android:dropDownWidth">wrap_content</item> -->
+    <!-- <item user_name="popupPromptView">@layout/abc_simple_dropdown_hint</item> -->
+    <!-- <item user_name="android:gravity">left|start|center_vertical</item> -->
+    <!-- <item user_name="disableChildrenWhenDisabled">true</item> -->
+
+
+    <!-- actionBar ligth title 样式 -->
+    <style name="ActionBar.Light.Title.Taojinroad" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/actionBarTitleSize</item>
+        <item name="android:textColor">@color/actionbar_light_title_color</item>
+    </style>
+
+    <!-- actionBar dark title 样式 -->
+    <style name="ActionBar.Dark.Title.Taojinroad" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/actionBarTitleSize</item>
+        <item name="android:textColor">@color/actionbar_dark_title_color</item>
+    </style>
+
+    <!-- <style user_name="Theme.Taojinroad.ActionBar" parent="Theme.Taojinroad.ActionBar.Base"> -->
+    <!-- <item user_name="popupMenuStyle">@style/MyPopupMenuStyle</item> -->
+    <!-- <item user_name="spinnerDropDownItemStyle"> @style/MySpinnerDropDownItemStyle</item> -->
+    <!-- <item user_name="dropDownListViewStyle">@style/MyDropDownListViewStyle</item> -->
+    <!-- <item user_name="listPopupWindowStyle">@style/Widget.AppCompat.Light.ListPopupWindow</item> -->
+
+
+    <!-- 淘金路主题样式 overlay模式 目前主要是图片用到 -->
+    <style name="Theme.Taojinroad.ActionBar.Overlay" parent="Theme.Taojinroad.ActionBar.OverLay.Base"></style>
+
+
+    <!-- actionBar 没有阴影 -->
+    <style name="Theme.Taojinroad.ActionBar.Home" parent="Theme.Taojinroad.ActionBar.Light">
+
+        <!-- <style user_name="Theme.Taojinroad.ActionBar.Home" parent="Theme.Taojinroad.ActionBar.Home.Base"> -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- <style user_name="MyActionDropDownStyle" parent="MyActionDropDownStyle.base"> -->
+    <!-- <item user_name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_light</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style user_name="MyListPopupWindowStyle" parent="Widget.AppCompat.ListPopupWindow"> -->
+    <!-- <item user_name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_light</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style user_name="MyDropDownListViewStyle" parent="MyDropDownListViewStyle.base"> -->
+    <!-- <item user_name="android:listSelector">@drawable/abc_list_selector_holo_light</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style user_name="MySpinnerDropDownItemStyle" parent="MySpinnerDropDownItemStyle.base"> -->
+    <!-- <item user_name="android:textAppearance">@style/MySpinnerDropDownItem</item> -->
+    <!-- <item user_name="android:gravity">center_vertical|left</item> -->
+    <!-- </style> -->
+    <!-- 淘金路actionbar样式 -->
+    <!-- <style user_name="ActionBar.Light.Taojinroad" parent="ActionBar.Light.Taojinroad.base"></style> -->
+
+
+    <!-- actionBar title 样式 -->
+    <!-- <style user_name="ActionBar.Title.Taojinroad" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"> -->
+    <!-- <item user_name="android:textSize">@dimen/abc_action_bar_title_text_size</item> -->
+    <!-- <item user_name="android:textColor">@color/actionbar_title_color</item> -->
+    <!-- </style> -->
+    <!-- actionBar 进度条样式 android:Widget.ProgressBar -->
+    <!-- <style user_name="ActionBar.ProgressStyle.Taojinroad" parent="android:Widget.ProgressBar"> -->
+    <!-- <item user_name="android:indeterminateDrawable">@drawable/xml_actionbar_progressbar</item> -->
+    <!-- <item user_name="android:minWidth">24dip</item> -->
+    <!-- <item user_name="android:maxWidth">24dip</item> -->
+    <!-- <item user_name="android:minHeight">24dip</item> -->
+    <!-- <item user_name="android:maxHeight">24dip</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style user_name="MySpinnerDropDownItem" parent="TextAppearance.AppCompat.Widget.DropDownItem"> -->
+    <!-- <item user_name="android:textColor">@color/black</item> -->
+    <!-- <item user_name="android:textSize">@dimen/abc_action_bar_title_text_size</item> -->
+    <!-- </style> -->
+    <!-- <item user_name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item> -->
+    <!-- <item user_name="android:popupBackground">@drawable/abc_popup_background_mtrl_mult</item> -->
+    <!-- <item user_name="android:dropDownVerticalOffset">0dip</item> -->
+    <!-- <item user_name="android:dropDownHorizontalOffset">0dip</item> -->
+    <!-- <item user_name="android:dropDownWidth">wrap_content</item> -->
+    <style name="myPopopStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/ic_popup_background</item>
+        <!-- <item user_name="popupBackground">@color/black</item> -->
+        <!-- <item user_name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item> -->
+        <!-- <item user_name="android:dropDownSelector">@drawable/ic_list_divider</item> -->
+        <!-- <item user_name="android:dropDownHorizontalOffset">15dip</item> -->
+    </style>
+
+
+    <!-- Base application theme. -->
+
+    <style name="AppThemeToolBar.Light.NoTranslucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="popupMenuStyle">@style/myPopopStyle</item>
+    </style>
+
+    <style name="HomePageIndicatorDefaults" parent="AppThemeToolBar.Light.NoTranslucent">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+
+
+    <style name="MyArticlePageIndicator" parent="AppThemeToolBar.Translucent">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/MyArticleTabPageIndicator</item>
+    </style>
+
+    <style name="MyArticlePageIndicator_home" parent="AppThemeToolBar.Translucent">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/MyArticleTabPageIndicator_home</item>
+        <!--首页不能透明 否则5.0的机子会有问题-->
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="AppThemeToolBar.Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/actionbar_light_title_color</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item user_name="actionBarSize">@dimen/actionBarSize</item>-->
+    </style>
+
+
+    <!--这个是透明的-->
+    <style name="AppThemeToolBar.Translucent.TRANSPARENT" parent="AppThemeToolBar.Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="AppThemeToolBar.Translucent.ALPHABLACK" parent="AppThemeToolBar.Translucent">
+        <item name="android:windowBackground">@color/alphaBlack</item>
+    </style>
+
+
+    <style name="AppThemeToolBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+<!--避免开机黑屏一下 @android:style/Theme.NoTitleBar.Fullscreen-->
+    <style name="AppWelcome.style" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

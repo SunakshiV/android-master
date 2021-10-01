@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bubble="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView style="@style/circleChatTimeTextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip">
+
+        <com.procoin.widgets.CircleImageView style="@style/circleChatHeadView" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--<include layout="@layout/circle_name_role"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tvName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dip"-->
+                <!--android:text="-&#45;&#45;"-->
+                <!--android:textSize="@dimen/font_size_10" />-->
+
+            <LinearLayout
+                android:id="@+id/llClick"
+                android:layout_width="@dimen/circle_chat_max_width"
+                android:layout_height="100dip"
+                android:layout_marginLeft="3dip"
+                android:orientation="vertical"
+                android:background="@drawable/xml_circle_chat_trade_bg_left_zhang"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dip">
+
+                    <TextView
+                        android:id="@+id/tvTradeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="在商品中买了涨"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_12"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/tvBf"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/c7fffffff"
+                        android:text="跟进"
+                        android:gravity="right"
+                        android:textSize="@dimen/font_size_12" />
+                    <ImageView
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        bubble:srcCompat="@drawable/ic_account_arrow"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dip">
+                <TextView
+                    android:id="@+id/tvBuyPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="建仓价:3525(8元*5手)"
+                    android:gravity="left"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/font_size_13" />
+
+                <TextView
+                    android:id="@+id/tvBuyTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="2012/12/16 "
+                    android:gravity="right"
+                    android:textSize="@dimen/font_size_13" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvContent"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="3dip"-->
+            <!--android:layout_marginTop="3dip"-->
+            <!--android:background="@drawable/xml_circle_chat_bg_left"-->
+            <!--android:gravity="center_vertical|left"-->
+            <!--android:minWidth="60dip"-->
+            <!--android:maxWidth="260dip"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/font_size_16" />-->
+
+            <!--<com.cropyme.ui.bubbleview.BubbleTextVew-->
+            <!--style="@style/circleChatBubbleTextStyle"-->
+            <!--android:layout_marginLeft="3dip"-->
+            <!--android:layout_marginTop="3dip"-->
+            <!--bubble:arrowLocation="left"-->
+            <!--bubble:bubbleColor="@color/white" />-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

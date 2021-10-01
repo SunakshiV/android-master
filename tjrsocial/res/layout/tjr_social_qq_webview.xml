@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlTop"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="#1f1d1e"
+    android:orientation="horizontal" >
+
+    <com.procoin.social.widget.SAutoBgButton
+        android:id="@+id/btnBack"
+        style="@style/StyleWhiteButton_cbfbfbf"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_iv_back_white" />
+
+    <LinearLayout
+        android:id="@+id/qqtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/btnBack"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/appmarket_allapps_TextView_title"
+            style="@style/mainTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="QQ登录" />
+    </LinearLayout>
+
+</RelativeLayout>

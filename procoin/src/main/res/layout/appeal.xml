@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    >
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:layout_marginTop="25dip"
+                android:text="申诉理由"
+                android:textColor="@color/c3d3a50"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.RecyclerView
+                android:id="@+id/rvReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="15dip"
+                android:nestedScrollingEnabled="false"
+                android:visibility="visible" />
+
+            <View
+                style="@style/dividerLine_horizontal"
+                android:layout_marginTop="25dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:layout_marginTop="25dip"
+                android:text="申诉截图(可选)"
+                android:textColor="@color/c3d3a50"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:layout_marginTop="15dip">
+
+                <FrameLayout
+                    android:id="@+id/flAddPic1"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="75dip"
+                        android:layout_height="75dip"
+                        android:background="@color/cf7f7f7"
+                        android:gravity="center"
+                        android:text="＋"
+                        android:textColor="@color/c3d3a50"
+                        android:textSize="@dimen/font_size_25"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivPic1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flAddPic2"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="75dip"
+                        android:layout_height="75dip"
+                        android:background="@color/cf7f7f7"
+                        android:gravity="center"
+                        android:text="＋"
+                        android:textColor="@color/c3d3a50"
+                        android:textSize="@dimen/font_size_25"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivPic2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:layout_marginTop="25dip"
+                android:text="申诉留言(可选)"
+                android:textColor="@color/c3d3a50"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/xml_et_bg_3"
+                android:gravity="left|top"
+                android:hint="您可以写下您申诉的详细情况～～（限300字）"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:padding="10dip"
+                android:textColor="@color/c3d3a50"
+                android:textSize="@dimen/font_size_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="25dip"
+                android:layout_marginBottom="50dip"
+                android:background="@drawable/shape_dash_tips2"
+                android:orientation="vertical"
+                android:padding="20dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_svg_alert" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dip"
+                        android:text="申诉提醒"
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_12"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:lineSpacingExtra="@dimen/text_linespacingextra"
+                    android:text="@string/appealMessage"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_12"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <TextView
+        android:id="@+id/tvSubmitAppeal"
+        style="@style/btn_style_4"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:text="提交申诉"
+        android:textSize="@dimen/font_size_14"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</LinearLayout>

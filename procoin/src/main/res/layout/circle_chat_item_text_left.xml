@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bubble="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView style="@style/circleChatTimeTextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip">
+
+        <com.procoin.widgets.CircleImageView
+            style="@style/circleChatHeadView"
+            android:layout_marginRight="10dip"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvName"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dip"-->
+                    <!--android:text="吕林青"-->
+                    <!--android:textSize="@dimen/font_size_14" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvRoleName"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dip"-->
+                    <!--android:paddingLeft="5dip"-->
+                    <!--android:paddingRight="5dip"-->
+                    <!--android:paddingTop="3dip"-->
+                    <!--android:paddingBottom="3dip"-->
+                    <!--android:text="管理员"-->
+                    <!--android:textSize="@dimen/font_size_8"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:background="@drawable/xml_circle_role_name_bg"-->
+                    <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--</LinearLayout>-->
+            <include layout="@layout/circle_name_role"/>
+            <!--<TextView-->
+                <!--android:id="@+id/tvName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dip"-->
+                <!--android:text="&#45;&#45;&#45;&#45;"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="@dimen/font_size_12"-->
+                <!--android:textColor="@color/c747474"-->
+                <!--android:layout_marginBottom="3dip"/>-->
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:background="@drawable/xml_circle_chat_bg_left"
+                android:gravity="center_vertical|left"
+                android:maxWidth="@dimen/circle_chat_max_width"
+                android:minHeight="40dip"
+                android:minWidth="60dip"
+                android:textColor="@color/c262626"
+                android:textSize="@dimen/font_size_15"
+                android:layout_marginTop="6dip"
+                android:lineSpacingExtra="@dimen/chat_text_linespacingextra"/>
+
+            <!--<com.cropyme.ui.bubbleview.BubbleTextVew-->
+            <!--style="@style/circleChatBubbleTextStyle"-->
+            <!--android:layout_marginLeft="3dip"-->
+            <!--android:layout_marginTop="3dip"-->
+            <!--bubble:arrowLocation="left"-->
+            <!--bubble:bubbleColor="@color/white" />-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

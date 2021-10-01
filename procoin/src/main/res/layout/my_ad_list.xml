@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.RecyclerView
+            android:id="@+id/rvAdList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llNodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                app:srcCompat="@drawable/ic_my_ad_no_data" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:gravity="center"
+                android:text="您暂未发布广告～"
+                android:textColor="#bec0ce"
+                android:textSize="@dimen/font_size_16" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvAdd"
+        style="@style/btn_style_6"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="30dip"
+        android:text="添加广告" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvAdd"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="42dp"-->
+    <!--android:layout_marginLeft="20dip"-->
+    <!--android:layout_marginRight="20dip"-->
+    <!--android:layout_marginTop="30dip"-->
+    <!--android:layout_marginBottom="30dip"-->
+    <!--android:background="@drawable/selector_rect_solid_corner0_3d3a50"-->
+    <!--android:drawablePadding="5dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="添加账户"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/font_size_16" />-->
+
+</LinearLayout>

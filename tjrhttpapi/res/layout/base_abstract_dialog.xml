@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip">
+
+    <!--
+     总布局 
+     android:layout_below="@+id/title"
+    -->
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/xml_tjrapi_dialog_out_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="15dip"
+        android:paddingLeft="18dip"
+        android:paddingRight="18dip"
+        android:paddingTop="15dip">
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_tjrapi_dialog_out_bg"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:scrollbars="vertical"
+            android:text="--"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <!-- 内容 -->
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:lineSpacingExtra="4dp"
+            android:maxHeight="250dip"
+            android:minHeight="40dip"
+            android:scrollbars="vertical"
+            android:text="----"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <!-- OK按钮 -->
+
+        <LinearLayout
+            android:id="@+id/llBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xml_tjrapi_dialog_btn"
+                android:gravity="center"
+                android:minHeight="35dip"
+                android:paddingLeft="18dip"
+                android:paddingRight="18dip"
+                android:text="@string/dialog_cancel"
+                android:textColor="@color/c005a87"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/btnOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xml_tjrapi_dialog_btn"
+                android:gravity="center"
+                android:minHeight="35dip"
+                android:paddingLeft="18dip"
+                android:paddingRight="18dip"
+                android:text="@string/dialog_ok"
+                android:textColor="@color/c005a87"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Close 按钮 -->
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这个是单独的Toolbar-->
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/toolbar"
+    >
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/actionBarSize"-->
+    <!--android:background="@drawable/xml_actionbar_bg_bottom_line"-->
+    <!--android:minHeight="@dimen/actionBarSize"-->
+    <!--app:elevation="0dip"-->
+    <!--app:navigationIcon="@drawable/ic_common_back_gray"-->
+    <!--app:popupTheme="@style/AppThemeToolBar.PopupOverlay"-->
+    <!--style="@style/dividerLine_horizontal"-->
+
+</androidx.appcompat.widget.Toolbar>
+

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+  >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:text="确认出售"
+        android:textColor="@color/c3d3a50"
+        android:textSize="@dimen/font_size_16"
+        android:textStyle="bold"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:layout_marginTop="10dip">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="收款方式"
+            android:textColor="@color/c9a9a9a"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvWay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <View style="@style/dividerLine_horizontal"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="单价"
+            android:textColor="@color/c9a9a9a"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <View style="@style/dividerLine_horizontal"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="数量"
+            android:textColor="@color/c9a9a9a"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 USDT"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <View style="@style/dividerLine_horizontal"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="实收款"
+            android:textColor="@color/c9a9a9a"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_20"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvSubmit"
+        style="@style/btn_style_4"
+        android:layout_marginBottom="30dip"
+        android:layout_marginTop="30dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:text="确认出售" />
+
+
+</LinearLayout>

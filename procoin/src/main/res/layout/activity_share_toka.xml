@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_create_toka_black_bg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_create_toka_yellow_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_create_toka_mark" />
+
+                    <TextView
+                        android:id="@+id/tvSuccess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:text="恭喜xxx成功发行TOKA"
+                        android:textColor="@color/c3b2c15"
+                        android:textSize="@dimen/font_size_15" />
+
+                    <FrameLayout
+                        android:layout_width="90dip"
+                        android:layout_height="90dip"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dip">
+
+                        <com.procoin.widgets.CircleImageView
+                            android:id="@+id/ivTokaLogo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@color/white" />
+
+                        <ImageView
+                            android:layout_width="28dip"
+                            android:layout_height="28dip"
+                            app:srcCompat="@drawable/ic_create_toka_t" />
+
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tvSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dip"
+                        android:text="xxx"
+                        android:textColor="@color/c3b2c15"
+                        android:textSize="@dimen/font_size_17" />
+
+                    <TextView
+                        android:id="@+id/tvAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dip"
+                        android:text="发行量: ----"
+                        android:textColor="@color/c3b2c15"
+                        android:textSize="@dimen/font_size_13" />
+
+
+                    <TextView
+                        android:id="@+id/tvUserBrief"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dip"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/text_linespacingextra"
+                        android:maxLines="4"
+                        android:text="TOKA用途: ----"
+                        android:textColor="@color/c3b2c15"
+                        android:textSize="@dimen/font_size_13" />
+
+                    <TextView
+                        android:id="@+id/tvShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="20dip"
+                        android:background="@drawable/shape_share_toka_bg"
+                        android:paddingBottom="8dip"
+                        android:paddingLeft="25dip"
+                        android:paddingRight="25dip"
+                        android:paddingTop="8dip"
+                        android:text="分享我的TOKA"
+                        android:textColor="@color/c3b2c15"
+                        android:textSize="@dimen/font_size_13" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/ic_create_toka_white_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_create_toka_warning" />
+
+                    <TextView
+                        android:id="@+id/tvCreateTokaWarning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:lineSpacingExtra="@dimen/text_linespacingextra"
+                        android:text="@string/create_toka_warning"
+                        android:textColor="@color/c232323"
+                        android:textSize="@dimen/font_size_13" />
+
+                    <TextView
+                        android:id="@+id/tvCreateTokaWarning2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dip"
+                        android:lineSpacingExtra="@dimen/text_linespacingextra"
+                        android:text="@string/create_toka_warning2"
+                        android:textColor="@color/c666666"
+                        android:textSize="@dimen/font_size_13" />
+
+                    <ImageView
+                        android:id="@+id/ivCreateTokaWarning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dip"
+                        android:scaleType="fitStart" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/theTheme" >
+
+    <RelativeLayout
+        android:id="@+id/talk_allmessage_RelativeLayout_top"
+        style="@style/mainTop"
+        android:orientation="horizontal" >
+
+        <com.procoin.social.widget.SAutoBgButton
+            android:id="@+id/btnBack"
+            style="@style/StyleWhiteButton_cbfbfbf"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_iv_back_white" />
+
+        <TextView
+            android:id="@+id/tvMid"
+            style="@style/mainTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="大 盘" >
+        </TextView>
+
+        <com.procoin.social.widget.SAutoBgButton
+            android:id="@+id/btnReady"
+            style="@style/StyleWhiteButton_cbfbfbf"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_ok_white_68x68" >
+        </com.procoin.social.widget.SAutoBgButton>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etImportfullcode"
+        style="@style/mEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/talk_allmessage_RelativeLayout_top"
+        android:layout_margin="5dip"
+        android:editable="false"
+        android:hint="点击输入股票"
+        android:minHeight="45dp" />
+
+    <LinearLayout
+        android:id="@+id/llImage"
+        style="@style/noOnTouch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/etImportfullcode"
+        android:layout_marginLeft="1px"
+        android:layout_marginRight="1px"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvStockName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="fullcode"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

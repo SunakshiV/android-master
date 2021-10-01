@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackground"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/toolbar">
+
+        <LinearLayout
+            android:id="@+id/llMore"
+            android:layout_width="@dimen/actionBarSize"
+            android:layout_height="@dimen/actionBarSize"
+            android:layout_gravity="right"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                app:srcCompat="@drawable/ic_svg_more_black" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--android:drawableRight="@drawable/ic_arrow_abount_usdt"-->
+            <TextView
+                android:id="@+id/tvCopy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ivWarn"
+                android:background="#1af08c42"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/text_linespacingextra"
+                android:paddingBottom="5dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="5dip"
+                android:text=""
+                android:textColor="@color/cffa200"
+                android:textSize="@dimen/font_size_12"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dip">
+
+                        <TextView
+                            android:id="@+id/tvBuy"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_switch_buy"
+                            android:gravity="center"
+                            android:text="看涨"
+                            android:textColor="@color/xml_switch_buy_sell_textcolor"
+                            android:textSize="@dimen/font_size_14" />
+
+                        <TextView
+                            android:id="@+id/tvSell"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_switch_sell"
+                            android:gravity="center"
+                            android:text="看跌"
+                            android:textColor="@color/xml_switch_buy_sell_textcolor"
+                            android:textSize="@dimen/font_size_14" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fragment_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"></FrameLayout>
+                </LinearLayout>
+
+
+                <com.procoin.widgets.quotitian.StarDetailPriceView_N2
+                    android:id="@+id/sdpDetailPriceList"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_weight="4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="left|center_vertical"
+                    android:text="当前开仓"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold" />
+                <TextView
+                android:id="@+id/tvEntrust"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:gravity="left|center_vertical"
+                android:text="当前委托"
+                android:textColor="@color/c666175ae"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAllHis"
+                    android:layout_width="70dip"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="全部"
+                    android:textColor="@color/c969696"
+                    android:textSize="@dimen/font_size_12"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/llHoldPostion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.RecyclerView
+                    android:id="@+id/rvPositionList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvNoDataPosition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="150dip"
+                    android:text="暂无持仓"
+                    android:textColor="@color/c666175ae"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llEntrust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.procoin.widgets.LoadMoreRecycleView
+                    android:id="@+id/rvEntrustlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:nestedScrollingEnabled="false"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tvNoDataEntrust"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="150dip"
+                    android:text="暂无委托"
+                    android:textColor="@color/c666175ae"
+                    android:visibility="gone" />
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="10dip"-->
+                <!--android:background="@color/pageBackground" />-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llWay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_compents_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="15dip"
+    android:paddingLeft="25dip"
+    android:paddingRight="25dip"
+    android:paddingTop="15dip">
+
+    <!--<com.cropyme.http.widget.view.RoundAngleImageView-->
+    <ImageView
+        android:id="@+id/ivReceiptLogo"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:id="@+id/tvWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:text=""
+        android:textColor="@color/c3d3a50"
+        android:textSize="@dimen/font_size_14" />
+
+
+    <TextView
+        android:id="@+id/tvReceiptDesc"
+        android:layout_width="50dip"
+        android:layout_height="20dip"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/shape_receipt_desc_bg"
+        android:gravity="center"
+        android:text="推荐"
+        android:textColor="@color/cff8f01"
+        android:textSize="@dimen/font_size_10"
+        android:visibility="gone" />
+
+
+</LinearLayout>

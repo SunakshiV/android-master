@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cf8f9fb"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+
+            <ListView
+                android:id="@+id/showList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cf8f9fb"
+                android:divider="@null"
+                android:listSelector="@color/transparent"></ListView>
+
+            <ListView
+                android:id="@+id/lvStock"
+                style="@style/lvStockLenovoStyle"
+                android:layout_gravity="bottom" />
+
+            <!--<include layout="@layout/circle_chat_zone"></include>-->
+
+            <LinearLayout
+                android:id="@+id/llUnreadMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="100dip"
+                android:background="@drawable/ic_circle_chat_msg_tip_bg"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    app:srcCompat="@drawable/ic_chat_not_read_msg_tip" />
+
+                <TextView
+                    android:id="@+id/tvUnReadMessageNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:text="20条新消息"
+                    android:textColor="@color/c00a1f2"
+                    android:textSize="@dimen/font_size_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNewMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="30dip"
+                android:layout_marginTop="100dip"
+                android:background="@drawable/ic_circle_chat_msg_tip_bg"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    app:srcCompat="@drawable/ic_chat_receive_new_msg_tip" />
+
+                <TextView
+                    android:id="@+id/tvNewMessageNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:text="@string/circle_new_message"
+                    android:textColor="@color/c00a1f2"
+                    android:textSize="@dimen/font_size_12" />
+
+            </LinearLayout>
+
+            <com.taojin.circle.util.ui.LinearLayoutCircleChatRoomZoom
+                android:id="@+id/llZone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/llLive"
+                android:background="@drawable/xml_circle_live_bg"
+                android:layout_width="wrap_content"
+                android:paddingTop="6dip"
+                android:paddingBottom="6dip"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="20dip"
+                android:visibility="gone">
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="8dip"-->
+                    <!--android:layout_height="8dip"-->
+                    <!--android:src="@drawable/xml_ring_bg_red_point" />-->
+
+
+                <com.taojin.circle.util.ui.MyAnimViewOfInTheGame
+                    android:id="@+id/viewAnim"
+                    android:layout_width="14dip"
+                    android:layout_height="14dip"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直播中"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_14"/>
+
+
+            </LinearLayout>
+
+
+            <!--<com.taojin.circle.util.ui.DragView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<WebView-->
+            <!--android:id="@+id/wv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <!--<View-->
+            <!--android:layout_width="50dip"-->
+            <!--android:layout_height="50dip"-->
+            <!--android:background="@color/red"-->
+            <!--android:id="@+id/viewDrag"></View>-->
+
+
+            <!--<TextView-->
+            <!--android:layout_width="50dip"-->
+            <!--android:layout_height="50dip"-->
+            <!--android:id="@+id/tvText"-->
+            <!--android:text="点击我"/>-->
+            <!--</com.taojin.circle.util.ui.DragView>-->
+
+
+            <!--<View-->
+            <!--android:layout_width="50dip"-->
+            <!--android:layout_height="50dip"-->
+            <!--android:background="@color/red"-->
+            <!--android:id="@+id/viewDrag"></View>-->
+        </FrameLayout>
+
+
+        <View style="@style/dividerLine_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cf7f7f9"
+            android:gravity="center_vertical|bottom"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip">
+
+            <ImageView
+                android:id="@+id/ivVoice"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:background="@null"
+                app:srcCompat="@drawable/btn_voice_selector" />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="0px"-->
+            <!--android:focusable="true"-->
+            <!--android:focusableInTouchMode="true"></LinearLayout>-->
+
+            <FrameLayout
+                android:id="@+id/flEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/msg_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/btn_input_selector"
+                    android:lineSpacingExtra="3dip"
+                    android:maxLines="4"
+                    android:paddingBottom="3dip"
+                    android:paddingLeft="6dip"
+                    android:paddingRight="40dip"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/ivFace"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="7dip"
+                    android:layout_marginRight="12dip"
+                    app:srcCompat="@drawable/btn_face_selector" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="45dip"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMore"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_gravity="right"
+                    android:background="@null"
+                    app:srcCompat="@drawable/btn_more_selector" />
+
+                <Button
+                    android:id="@+id/tvSend"
+                    android:layout_width="45dip"
+                    android:layout_height="35dip"
+                    android:layout_gravity="right"
+                    android:background="@drawable/xml_start_chat"
+                    android:gravity="center"
+                    android:text="@string/send"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_14"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View style="@style/dividerLine_horizontal" />
+
+        <FrameLayout
+            android:id="@+id/containerBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <include layout="@layout/circle_chat_voice" />
+
+            <include layout="@layout/circle_chat_face" />
+
+            <include layout="@layout/circle_chat_more_2" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/flWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_top_or_bottom_background" >
+
+        <com.procoin.social.widget.SAutoBgButton
+            android:id="@+id/btnBack"
+            style="@style/StyleWhiteButton_cbfbfbf"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_iv_back_white" />
+
+        <TextView
+            android:id="@+id/talk_dragpic_image_TextView_title"
+            style="@style/mainTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="查看大图" />
+
+        <com.procoin.social.widget.SAutoBgButton
+            android:id="@+id/btnAdd"
+            style="@style/StyleWhiteButton_cbfbfbf"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_del_img_white_68x68" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rlTitleBar" />
+
+</RelativeLayout>

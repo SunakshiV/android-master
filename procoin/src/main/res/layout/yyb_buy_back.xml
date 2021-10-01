@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--style="@style/toolbar"></android.support.v7.widget.Toolbar>-->
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="20dip"
+                android:paddingLeft="20dip">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dip">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="当前回购价(USDT)"
+                        android:textColor="@color/c993d3a50"
+                        android:textSize="@dimen/font_size_12" />
+
+                    <TextView
+                        android:id="@+id/tvKbtRules"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="10dip"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip"
+                        android:paddingTop="10dip"
+                        android:text="YYB说明"
+                        android:textColor="@color/c663d3a50"
+                        android:textSize="@dimen/font_size_12"
+                        android:visibility="visible" />
+                    <!--<TextView-->
+                    <!--android:id="@+id/tvTime"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="20dip"-->
+                    <!--android:paddingLeft="10dip"-->
+                    <!--android:paddingRight="10dip"-->
+                    <!--android:paddingTop="5dip"-->
+                    <!--android:paddingBottom="5dip"-->
+                    <!--android:text="回购期："-->
+                    <!--android:background="@drawable/shape_kbt_get_way_bg"-->
+                    <!--android:textColor="@color/cff8f01"-->
+                    <!--android:textSize="@dimen/font_size_12"-->
+                    <!--android:visibility="gone"/>-->
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:gravity="center"
+                    android:text="0.00000000"
+                    android:textColor="@color/cff8f01"
+                    android:textSize="@dimen/font_size_26"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPriceCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="≈¥0"
+                    android:textColor="@color/c3d3a50"
+                    android:textSize="@dimen/font_size_12" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已产出YYB总量"
+                        android:textColor="@color/c993d3a50"
+                        android:textSize="@dimen/font_size_12" />
+
+                    <TextView
+                        android:id="@+id/tvProduceAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:text="--"
+                        android:textColor="@color/c3d3a50"
+                        android:textSize="@dimen/font_size_16"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已销毁YYB总量"
+                        android:textColor="@color/c993d3a50"
+                        android:textSize="@dimen/font_size_12" />
+
+                    <TextView
+                        android:id="@+id/tvDestroyAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:text="--"
+                        android:textColor="@color/c3d3a50"
+                        android:textSize="@dimen/font_size_16"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/dividerLine_horizontal"
+                android:layout_height="10dip"
+                android:background="@color/pageBackground" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:paddingLeft="20dip">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="回购价走势图"
+                    android:textColor="@color/c3d3a50"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:text="回购记录"
+                    android:textColor="@color/c663d3a50"
+                    android:textSize="@dimen/font_size_16"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <com.procoin.widgets.piechart.CardHolderChartView2
+                android:id="@+id/cardHolderChartView"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvBuyBack"
+                    style="@style/btn_style_6"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:text="回购" />
+
+                <TextView
+                    android:id="@+id/tvAssignment"
+                    style="@style/btn_style_6"
+                    android:layout_width="0dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:text="交易" />
+            </LinearLayout>
+
+            <View
+                style="@style/dividerLine_horizontal"
+                android:layout_height="10dip"
+                android:background="@color/pageBackground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center_vertical"
+                android:text="公告"
+                android:textColor="@color/c3d3a50"
+                android:textSize="@dimen/font_size_16"
+                android:textStyle="bold" />
+
+            <com.procoin.widgets.LoadMoreRecycleView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

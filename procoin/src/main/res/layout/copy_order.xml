@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4dip"
+                android:layout_height="16dip"
+                android:background="@color/c6175ae" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="跟单投入"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_17"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBalanceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="可用USDT："
+                android:textColor="@color/cbebebe"
+                android:textSize="@dimen/font_size_12" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="15dip"
+            android:background="@color/cf4f5f6">
+
+            <EditText
+                android:id="@+id/etMoney"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dip"
+                android:paddingRight="60dip"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:hint="输入USDT数量"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:textColor="#232323"
+                android:textColorHint="#e6e6e6"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center"
+                android:text="USDT"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_16" />
+
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvTolCny"
+            android:layout_marginTop="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:text="≈¥0.00"
+            android:textColor="@color/cf08c42"
+            android:textSize="@dimen/font_size_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="1.5px"
+                android:layout_weight="1"
+                android:background="@color/dividerColor"
+
+                />
+
+            <TextView
+                android:id="@+id/tvExpends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dip"
+                android:gravity="center"
+                android:text="跟单设置 ▲"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="15dip"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="每次跟单上限"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_14" />
+
+            <EditText
+                android:background="@color/cf4f5f6"
+                android:id="@+id/etMaxMoney"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:paddingLeft="10dip"
+                android:gravity="left|center_vertical"
+                android:hint="请输入最大USDT"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:textColor="#232323"
+                android:textColorHint="#e6e6e6"
+                android:textSize="@dimen/font_size_18"
+                android:layout_marginTop="15dip"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvMaxCny"
+                android:layout_marginTop="5dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="≈¥0.00"
+                android:textColor="@color/cf08c42"
+                android:textSize="@dimen/font_size_12" />
+
+            <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dip"-->
+            <!--android:layout_marginTop="15dip"-->
+            <!--android:background="@color/cf4f5f6">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="40dip"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:gravity="center"-->
+            <!--android:text="¥"-->
+            <!--android:textColor="@color/c3d3a50"-->
+            <!--android:textSize="@dimen/font_size_24"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<EditText-->
+            <!--android:background="@color/cf4f5f6"-->
+            <!--android:id="@+id/etMaxMoney"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="40dip"-->
+            <!--android:gravity="left|center_vertical"-->
+            <!--android:hint="请输入最大USDT"-->
+            <!--android:imeOptions="actionNext"-->
+            <!--android:inputType="numberDecimal"-->
+            <!--android:maxLength="15"-->
+            <!--android:maxLines="1"-->
+            <!--android:textColor="#232323"-->
+            <!--android:textColorHint="#e6e6e6"-->
+            <!--android:textSize="@dimen/font_size_18"-->
+            <!--android:textStyle="bold" />-->
+
+
+            <!--</FrameLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dip">
+
+                <TextView
+                    android:id="@+id/tvStopWin"
+                    android:layout_width="wrap_content"
+                    android:minWidth="100dip"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="止盈: 无设置"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_14" />
+
+                <SeekBar
+                    android:id="@+id/sbStopWin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:maxHeight="40dip"
+                    android:minHeight="40dip"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="0dp"
+                    android:progressDrawable="@drawable/seekbar_progess_bg"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/seekbar_thumb"
+                    android:thumbOffset="0dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip">
+
+                <TextView
+                    android:minWidth="100dip"
+                    android:id="@+id/tvStopLoss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="止损: 无设置"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_14" />
+
+                <SeekBar
+                    android:id="@+id/sbStopLoss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:maxHeight="40dip"
+                    android:minHeight="40dip"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="0dp"
+                    android:progressDrawable="@drawable/seekbar_progess_bg"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/seekbar_thumb"
+                    android:thumbOffset="0dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="15dip"
+                android:gravity="top">
+                <!--<CheckBox-->
+                    <!--android:id="@+id/cbSign"-->
+                    <!--style="@style/MyCheckBox"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="  我同意并接受"-->
+                    <!--android:textColor="@color/c666175ae"-->
+                    <!--android:textSize="@dimen/font_size_12"/>-->
+
+                <TextView
+                    android:id="@+id/tvProtocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:lineSpacingExtra="@dimen/text_linespacingextra"
+                    android:text=""
+                    android:textColor="@color/c666175ae"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/btn_style_1"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="10dip"
+            />
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+</LinearLayout>

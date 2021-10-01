@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_white_press_ce5e5e5"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dip">
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:clickable="false"
+        android:scaleType="centerCrop"/>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivPhoto"-->
+    <!--style="@style/stylephoto"-->
+    <!--android:layout_marginTop="10dip"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:clickable="false" />-->
+
+    <RelativeLayout
+        android:id="@+id/appmarket_allapps_item_RelativeLayout_namedate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:text="@string/novalue"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16"></TextView>
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_marginTop="5dip"
+            android:text="@string/novalue"
+            android:textColor="@color/c808080"
+            android:textSize="@dimen/font_size_12"></TextView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:drawable="@drawable/ic_circle_chat_bg_right_down" android:state_pressed="true"/>-->
+    <!--<item android:drawable="@drawable/ic_circle_chat_bg_right"/>-->
+
+    <item  android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#222222"/>
+            <corners android:radius="4dip"/>
+        </shape>
+
+    </item>
+    <item >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/c444444"/>
+            <corners android:radius="4dip"/>
+        </shape>
+
+    </item>
+
+</selector>

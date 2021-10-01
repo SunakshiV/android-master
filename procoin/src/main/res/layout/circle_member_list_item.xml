@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llHome"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_compents_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dip">
+
+    <com.procoin.widgets.CircleImageView
+        android:id="@+id/ivHeader"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@drawable/ic_default_head" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:text="--"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tvCircleRoleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:background="@drawable/shape_circle_role_root"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="2dip"
+            android:paddingBottom="2dip"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_12" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_notice_item_point3" />
+
+
+</LinearLayout>

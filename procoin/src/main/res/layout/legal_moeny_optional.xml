@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:background="@color/c6175ae"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="20dip"
+            android:text="我要买"
+            android:textColor="@color/xml_legal_money_tab_text"
+            android:textSize="@dimen/font_size_26"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSell"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="20dip"
+            android:text="我要卖"
+            android:textColor="@color/xml_legal_money_tab_text"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivHistory"
+                android:layout_width="40dip"
+                android:scaleType="center"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/tvTolCost"
+                app:srcCompat="@drawable/ic_svg_legal_history"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMore"
+                android:layout_width="40dip"
+                android:scaleType="center"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tvTolCost"
+                app:srcCompat="@drawable/ic_svg_legal_more"
+                android:layout_marginRight="20dip"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llPayWay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="100dip"
+                android:background="@drawable/xml_compents_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvPayWay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付方式"
+                    android:textColor="@color/c3d3a50"
+                    android:textSize="@dimen/font_size_12" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivArrow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/tvTolCost"
+                    app:srcCompat="@drawable/ic_svg_legal_arrow_bottom" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPayAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="100dip"
+
+                android:background="@drawable/xml_compents_bg"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip">
+
+                <TextView
+                    android:id="@+id/tvFilterCny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="交易金额"
+                    android:textColor="@color/c3d3a50"
+                    android:textSize="@dimen/font_size_12" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivArrow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/tvTolCost"
+                    app:srcCompat="@drawable/ic_svg_legal_arrow_bottom" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llPayNum"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@drawable/xml_compents_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="20dip"-->
+                <!--android:paddingRight="20dip">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="交易数量"-->
+                    <!--android:textColor="@color/c3d3a50"-->
+                    <!--android:textSize="@dimen/font_size_12" />-->
+
+                <!--<android.support.v7.widget.AppCompatImageView-->
+                    <!--android:id="@+id/ivArrow3"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="5dip"-->
+                    <!--android:layout_toRightOf="@id/tvTolCost"-->
+                    <!--app:srcCompat="@drawable/ic_svg_legal_arrow_bottom" />-->
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_height="1px" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="80dp"
+                    android:id="@+id/iv_hiden"
+                    app:srcCompat="@drawable/ic_tjrv_nocontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    />
+                <com.procoin.widgets.LoadMoreRecycleView
+                    android:id="@+id/rvOptionalList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <!--<com.procoin.widgets.LoadMoreRecycleView-->
+            <!--android:id="@+id/rvOptionalList"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:nestedScrollingEnabled="false" />-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/llOptionalNodata"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:minHeight="400dip"-->
+            <!--android:orientation="vertical"-->
+            <!--android:visibility="gone">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="182dip"-->
+                <!--android:layout_height="134dip"-->
+                <!--android:src="@drawable/ic_attention_no_data" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="30dip"-->
+                <!--android:gravity="center"-->
+                <!--android:text="暂无自选～"-->
+                <!--android:textColor="#bec0ce"-->
+                <!--android:textSize="@dimen/font_size_16" />-->
+
+
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+
+</LinearLayout>

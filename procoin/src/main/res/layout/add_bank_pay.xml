@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:text="开户姓名"
+                    android:textColor="@color/c3d3a50"
+                    android:textSize="@dimen/font_size_16" />
+                <EditText
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xml_et_bg"
+                    android:hint="请输入姓名"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text=""
+                    android:textColor="@color/c6175ae"
+                    android:textColorHint="#c8c8c8"
+                    android:textSize="@dimen/font_size_24" />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:text="开户银行"
+                    android:textColor="@color/c3d3a50"
+                    android:textSize="@dimen/font_size_16" />
+
+                <EditText
+                    android:id="@+id/tvBankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xml_et_bg"
+                    android:hint="请输入开户银行"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text=""
+                    android:textColor="@color/c444444"
+                    android:textColorHint="#c8c8c8"
+                    android:textSize="@dimen/font_size_24" />
+
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dip"-->
+                    <!--android:text="开户地址(选填)"-->
+                    <!--android:textColor="@color/c3d3a50"-->
+                    <!--android:textSize="@dimen/font_size_16" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/tvBankAddress"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/xml_et_bg"-->
+                    <!--android:hint="请输入开户支行(选填)"-->
+                    <!--android:imeOptions="actionNext"-->
+                    <!--android:inputType="text"-->
+                    <!--android:maxLength="18"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:paddingBottom="8dip"-->
+                    <!--android:paddingTop="8dip"-->
+                    <!--android:text=""-->
+                    <!--android:textColor="@color/c444444"-->
+                    <!--android:textColorHint="#c8c8c8"-->
+                    <!--android:textSize="@dimen/font_size_24"  />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:text="银行卡号"
+                    android:textColor="@color/c3d3a50"
+                    android:textSize="@dimen/font_size_16" />
+
+                <EditText
+                    android:id="@+id/tvBankNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xml_et_bg"
+                    android:hint="请输入银行卡号"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text=""
+                    android:textColor="@color/c444444"
+                    android:textColorHint="#c8c8c8"
+                    android:textSize="@dimen/font_size_24"  />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/shape_dash_tips"
+            android:drawableLeft="@drawable/ic_warning"
+            android:drawablePadding="8dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dip"
+            android:text="请务必使用与您注册手机号码一致的实名账号"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_12"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tvSave"
+            style="@style/btn_style_4"
+            android:layout_marginBottom="30dip"
+            android:layout_marginTop="20dip"
+            android:text="保存" />
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="35dip"-->
+        <!--android:background="#FFFEDEA9"-->
+        <!--android:drawableLeft="@drawable/ic_warning"-->
+        <!--android:drawablePadding="5dip"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="15dip"-->
+        <!--android:text="请务必使用与您注册手机号码一致的实名账号"-->
+        <!--android:textColor="@color/cffa200"-->
+        <!--android:textSize="@dimen/font_size_14" />-->
+        <!--<TextView-->
+        <!--android:id="@+id/tvSave"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="42dp"-->
+        <!--android:background="@drawable/selector_rect_solid_corner0_3d3a50"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="40dip"-->
+        <!--android:text="添加"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/font_size_16" />-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

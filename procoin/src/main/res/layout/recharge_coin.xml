@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_with_text_menu" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip">
+
+                <LinearLayout
+                    android:id="@+id/llSelectCoin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginTop="15dip"
+                    android:background="#cff6f7f8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip">
+
+                    <TextView
+                        android:id="@+id/tvSymbol"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="选择币种"
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_18"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llKeyType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dip"
+                        android:text="键类型"
+                        android:textColor="@color/c1d3155"
+                        android:textSize="@dimen/font_size_14" />
+                    <androidx.appcompat.widget.RecyclerView
+                        android:id="@+id/rvKeyType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_marginTop="5dip">
+
+                    </androidx.appcompat.widget.RecyclerView>
+
+                    <!--<TextView-->
+                    <!--android:layout_width="77dip"-->
+                    <!--android:layout_height="34dip"-->
+                    <!--android:layout_marginTop="10dip"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="OMNI"-->
+                    <!--android:background="@drawable/shape_key_type_bg"-->
+                    <!--android:textColor="@color/cff8f01"-->
+                    <!--android:textSize="@dimen/font_size_14" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@color/cf7f8f9"
+                    android:orientation="vertical"
+                    android:padding="20dip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivQr"
+                            android:layout_width="120dip"
+                            android:layout_height="120dip"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/tvSaveQr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dip"
+                            android:background="@drawable/shape_save_qr_bg"
+                            android:paddingBottom="5dip"
+                            android:paddingLeft="15dip"
+                            android:paddingRight="15dip"
+                            android:paddingTop="5dip"
+                            android:text="保存二维码"
+                            android:textColor="@color/c6175ae"
+                            android:textSize="@dimen/font_size_14" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dip"
+                        android:text="充币地址"
+                        android:textColor="@color/c666175ae"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:text=""
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_13" />
+
+                    <TextView
+                        android:id="@+id/tvCopyAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/shape_save_qr_bg"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip"
+                        android:paddingTop="5dip"
+                        android:text="复制"
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_14" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:layout_marginBottom="20dip"
+                    android:background="@drawable/shape_take_coin_min_amout"
+                    android:orientation="vertical"
+                    android:padding="20dip">
+
+                    <TextView
+                        android:id="@+id/tvTips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/c8a6175ae"
+                        android:lineSpacingExtra="@dimen/text_linespacingextra"
+                        android:textSize="@dimen/font_size_12" />
+
+
+                </LinearLayout>
+
+.
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

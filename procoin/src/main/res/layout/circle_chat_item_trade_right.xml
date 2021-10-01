@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView style="@style/circleChatTimeTextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip">
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/pb"-->
+            <!--style="?android:attr/progressBarStyleLargeInverse"-->
+            <!--android:layout_width="20dip"-->
+            <!--android:layout_height="20dip"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="10dip"-->
+            <!--android:layout_marginRight="10dip" />-->
+
+        <LinearLayout
+            android:id="@+id/llClick"
+            android:layout_width="@dimen/circle_chat_max_width"
+            android:layout_height="100dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip"
+            android:orientation="vertical"
+            android:background="@drawable/xml_circle_chat_trade_bg_right_zhang"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dip">
+
+                <TextView
+                    android:id="@+id/tvTradeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="在商品中买了涨"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/tvBf"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c7fffffff"
+                    android:text="跟进"
+                    android:gravity="right"
+                    android:textSize="@dimen/font_size_12" />
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    app:srcCompat="@drawable/ic_account_arrow"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dip">
+                <TextView
+                    android:id="@+id/tvBuyPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="建仓价:3525(8元*5手)"
+                    android:gravity="left"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/font_size_13" />
+
+                <TextView
+                    android:id="@+id/tvBuyTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="2012/12/16 "
+                    android:gravity="right"
+                    android:textSize="@dimen/font_size_13" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.procoin.widgets.CircleImageView style="@style/circleChatHeadView" />
+
+    </LinearLayout>
+</LinearLayout>

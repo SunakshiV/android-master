@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pageBackground">
+
+    <include layout="@layout/toolbar"/>
+
+    <ListView
+        android:id="@+id/lvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:dividerHeight="0.5dip"
+        android:divider="@color/divider"
+        >
+    </ListView>
+
+    <include layout="@layout/common_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tvAddAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_rect_solid_corner0_e2214e"
+        android:text="@string/add_delivery_address"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_17"
+        android:minHeight="48dip"/>
+
+
+</LinearLayout>
+

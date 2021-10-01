@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c6175ae"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            style="@style/toolbar" >
+
+            <LinearLayout
+                android:id="@+id/llChat"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:layout_gravity="right"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    app:srcCompat="@drawable/ic_svg_contact_other" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="向卖家付款"
+                android:textColor="@color/c1a1717"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="15dip"/>
+
+
+            <LinearLayout
+                android:id="@+id/llCopyTolCny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dip">
+
+                <TextView
+                    android:id="@+id/tvTolCny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="¥300.00"
+                    android:textColor="@color/c3d3a50"
+                    android:textSize="@dimen/font_size_40"
+                    android:textStyle="bold"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_svg_copy"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginLeft="10dip"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dip">
+
+                <TextView
+                    android:id="@+id/tvTips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="付款时间剩余"
+                    android:textColor="@color/c3d3a50"
+                    android:textSize="@dimen/font_size_12" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_12" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="25dip"
+                android:layout_gravity="center"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:gravity="center"
+                android:text="您正在向WWCT认证卖家购买2100.64168 USDT"
+                android:textColor="@color/c3d3a50"
+                android:textSize="@dimen/font_size_12"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/shape_otc_pay_desc_bg"/>
+
+            <View
+                style="@style/dividerLine_horizontal"
+                android:layout_marginTop="25dip"
+                android:layout_marginBottom="25dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"/>
+
+        <LinearLayout
+            android:id="@+id/llSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dip"
+            android:paddingRight="25dip"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <com.procoin.widgets.CircleImageView
+                    android:id="@+id/ivHead"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="15dip"
+                    android:text="----"
+                    android:textColor="@color/c1a1717"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_arrow" />
+
+            </LinearLayout>
+            <androidx.appcompat.widget.RecyclerView
+                android:id="@+id/rvShowUserTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="15dip"
+                android:visibility="visible"/>
+            <!--<TextView-->
+                <!--android:id="@+id/tvShowUserTip"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="15dip"-->
+                <!--android:gravity="right"-->
+                <!--android:text="已经缴纳保证金，WWCT认证商家，担保交易"-->
+                <!--android:textColor="@color/c9a9a9a"-->
+                <!--android:textSize="@dimen/font_size_12"/>-->
+        </LinearLayout>
+
+            <View
+                style="@style/dividerLine_horizontal"
+                android:layout_marginTop="25dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"/>
+
+
+            <LinearLayout
+                android:id="@+id/llCopyName"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="卖家姓名"
+                    android:textColor="@color/c3d3a50"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tvSellerName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="林海哈"
+                    android:textColor="@color/c1a1717"
+                    android:textSize="@dimen/font_size_14" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_svg_copy" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAccount"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip">
+
+                <TextView
+                    android:id="@+id/tvAccountType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="微信账号"
+                    android:textColor="@color/c3d3a50"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tvAccount"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="15899715314"
+                    android:textColor="@color/c1a1717"
+                    android:textSize="@dimen/font_size_14" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivCopyAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_svg_copy" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llQrOrBank"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip">
+
+                <TextView
+                    android:id="@+id/tvOrOrBank"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="收款码"
+                    android:textColor="@color/c3d3a50"
+                    android:textSize="@dimen/font_size_14" />
+
+
+                <ImageView
+                    android:id="@+id/ivQr"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:gravity="right"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/llBankName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvBankName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="15899715314"
+                    android:textColor="@color/c1a1717"
+                    android:textSize="@dimen/font_size_14" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_svg_copy" />
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:layout_marginBottom="50dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="50dip"
+            android:background="@drawable/shape_dash_tips">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="15dip"
+                android:layout_height="15dip"
+                app:srcCompat="@drawable/ic_svg_otc_mark"/>
+
+            <TextView
+                android:id="@+id/tvAlertTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/text_linespacingextra"
+                android:paddingLeft="10dip"
+                android:text="请务必使用本人（赵天龙）的支付方式向以下银行卡自行转账"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_12" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <TextView
+        android:id="@+id/tvReceivedConfirm"
+        style="@style/btn_style_4"
+        android:text="我已付款成功"
+        android:textSize="@dimen/font_size_14"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="15dip"/>
+
+
+
+</LinearLayout>

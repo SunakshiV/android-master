@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="top"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="263dip"
+        android:layout_height="460dip"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_guide_2" />
+    <!--<LinearLayout-->
+        <!--android:gravity="center|bottom"-->
+        <!--android:layout_weight="1.25"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp">-->
+        <!--<RelativeLayout-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:id="@+id/rlImage"-->
+            <!--android:layout_width="@dimen/guide_img_size"-->
+            <!--android:layout_height="@dimen/guide_img_size"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@drawable/ic_common_mic" />-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp">-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/lltext"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/rlImage"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingLeft="15dip"-->
+            <!--android:paddingRight="8dip">-->
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dip"-->
+                <!--android:text="实时资讯"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/beebarBlue"-->
+                <!--android:textSize="@dimen/guide_text_size" />-->
+            <!--<TextView-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="最新行业动态洞察先机"-->
+                <!--android:textColor="@color/beebarBlue"-->
+                <!--android:textSize="@dimen/font_size_18" />-->
+
+
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+
+
+
+</FrameLayout>

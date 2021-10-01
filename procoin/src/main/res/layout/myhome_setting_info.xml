@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!-- 滚动条 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pageBackground">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnLogout"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="25dip">
+
+
+            <LinearLayout
+                android:id="@+id/llPassAndAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/settingItemVerticalSpacing"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llindName"-->
+                    <!--style="@style/inSideSettingItem">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/settingTextStyle"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="@string/bindName"-->
+                        <!--android:layout_marginLeft="0dip"/>-->
+
+                    <!--<ImageView style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+                <!--<View-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginLeft="15dip"-->
+                    <!--android:layout_marginRight="15dip" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llPaymentTerm"-->
+                    <!--style="@style/inSideSettingItem">-->
+                    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                    <!--&lt;!&ndash;style="@style/perval_home_ic_style"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:src="@drawable/ic_homesetting_fixpasswd_bg" />&ndash;&gt;-->
+
+                    <!--<TextView-->
+                        <!--style="@style/settingTextStyle"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="@string/payment_term"-->
+                        <!--android:layout_marginLeft="0dip"/>-->
+
+                    <!--<ImageView style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+                <!--<View-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginLeft="15dip"-->
+                    <!--android:layout_marginRight="15dip" />-->
+
+                <LinearLayout
+                    android:id="@+id/llIdentityAuthen"
+                    style="@style/inSideSettingItem">
+                    <!--<ImageView-->
+                    <!--style="@style/perval_home_ic_style"-->
+                    <!--android:src="@drawable/ic_homesetting_fixpasswd_bg" />-->
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_weight="1"
+                        android:text="@string/identityAuthen"
+                        android:layout_marginLeft="0dip"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+                </LinearLayout>
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip" />
+                <LinearLayout
+                    android:id="@+id/llEditPassWord"
+                    style="@style/inSideSettingItem">
+                    <!--<ImageView-->
+                    <!--style="@style/perval_home_ic_style"-->
+                    <!--android:src="@drawable/ic_homesetting_fixpasswd_bg" />-->
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_weight="1"
+                        android:text="@string/fix_passwd"
+                        android:layout_marginLeft="0dip"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+                </LinearLayout>
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip" />
+                <LinearLayout
+                    android:id="@+id/llAccountBindViewing"
+                    style="@style/inSideSettingItem">
+
+                    <!--<ImageView-->
+                    <!--style="@style/perval_home_ic_style"-->
+                    <!--android:src="@drawable/ic_homesetting_fixpasswd_bg" />-->
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_weight="1"
+                        android:text="更换手机号码"
+                        android:layout_marginLeft="0dip"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+                </LinearLayout>
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip" />
+                <LinearLayout
+                    android:id="@+id/llPayPassword"
+                    style="@style/inSideSettingItem"
+                    >
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_weight="1"
+                        android:text="设置交易密码"
+                        android:layout_marginLeft="0dip"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+                </LinearLayout>
+                <!--<View-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginLeft="15dip"-->
+                    <!--android:layout_marginRight="15dip" />-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llOTCPaymentWay"-->
+                    <!--style="@style/inSideSettingItem">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/settingTextStyle"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="OTC收款方式"-->
+                        <!--android:layout_marginLeft="0dip"/>-->
+
+                    <!--<ImageView style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+                <!--<View-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginLeft="15dip"-->
+                    <!--android:layout_marginRight="15dip" />-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llAddressManager"-->
+                    <!--style="@style/inSideSettingItem">-->
+                    <!--<TextView-->
+                        <!--style="@style/settingTextStyle"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="收货地址管理"-->
+                        <!--android:layout_marginLeft="0dip"/>-->
+
+                    <!--<ImageView style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+                <!--<View-->
+                    <!--android:layout_marginLeft="12dp"-->
+                    <!--android:layout_marginRight="12dp"-->
+                    <!--style="@style/beebarDivider"/>-->
+                <!--<View-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginLeft="20dip" />-->
+
+
+                <!--<View-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginLeft="20dip" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llManageDeliveryAddress"-->
+                    <!--style="@style/inSideSettingItem">-->
+
+                    <!--<ImageView-->
+                        <!--style="@style/perval_home_ic_style"-->
+                        <!--android:src="@drawable/ic_adress" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/settingTextStyle"-->
+                        <!--android:layout_marginLeft="12dip"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="@string/manage_delivery_address" />-->
+
+                    <!--<ImageView style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/settingItemVerticalSpacing"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <LinearLayout
+                    android:id="@+id/llStockSettings"
+                    style="@style/inSideSettingItem">
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/imageView6"-->
+                    <!--style="@style/perval_home_ic_style"-->
+                    <!--android:src="@drawable/ic_homesetting_push_bg" />-->
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_weight="1"
+                        android:text="刷新频率设置"
+                        android:layout_marginLeft="0dip"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+                </LinearLayout>
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip" />
+
+                <LinearLayout
+                    android:id="@+id/llPushSettings"
+                    style="@style/inSideSettingItem">
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/imageView6"-->
+                    <!--style="@style/perval_home_ic_style"-->
+                    <!--android:src="@drawable/ic_homesetting_push_bg" />-->
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_weight="1"
+                        android:text="消息推送"
+                        android:layout_marginLeft="0dip"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+                </LinearLayout>
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip" />
+                <LinearLayout
+                    android:id="@+id/rlclearCache"
+                    style="@style/inSideSettingItem">
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/imageView7"-->
+                        <!--style="@style/perval_home_ic_style"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:src="@drawable/ic_homesetting_clearcache_bg" />-->
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="清除缓存"
+                        android:layout_marginLeft="0dip"/>
+
+                    <ProgressBar
+                        android:id="@+id/cachePb"
+                        style="?android:attr/progressBarStyleLargeInverse"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_marginRight="20dip" />
+
+                    <TextView
+                        android:id="@+id/tvSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:gravity="right"
+                        android:text="0.0M"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_16" />
+                </LinearLayout>
+
+                <!--<View-->
+                    <!--android:id="@+id/vLinePush"-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginLeft="20dip" />-->
+
+
+
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llStockSettings"-->
+                    <!--style="@style/inSideSettingItem">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/imageView"-->
+                        <!--style="@style/perval_home_ic_style"-->
+                        <!--android:src="@drawable/ic_homesetting_stock_bg" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/settingTextStyle"-->
+                        <!--android:layout_marginLeft="12dip"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="@string/stockSettings" />-->
+
+                    <!--<ImageView style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/settingItemVerticalSpacing"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llFeedback"-->
+                    <!--style="@style/inSideSettingItem">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/settingTextStyle"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="客服"-->
+                        <!--android:layout_marginLeft="0dip"/>-->
+
+                    <!--<ImageView style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+                <!--<View-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginLeft="15dip"-->
+                    <!--android:layout_marginRight="15dip" />-->
+                <LinearLayout
+                    android:id="@+id/llabout"
+                    style="@style/inSideSettingItem">
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_weight="1"
+                        android:text="关于我们"
+                        android:layout_marginLeft="0dip"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+                </LinearLayout>
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip" />
+
+                <LinearLayout
+                    android:id="@+id/llShareApp"
+                    style="@style/inSideSettingItem"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_weight="1"
+                        android:text="分享APP"
+                        android:layout_marginLeft="0dip"/>
+
+                    <ImageView style="@style/commonAarrow" />
+                </LinearLayout>
+
+                <!--<View-->
+                    <!--android:id="@+id/vLinePublishRedOlstarCard"-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginLeft="20dip" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llPublishRedOlstarCard"-->
+                    <!--style="@style/inSideSettingItem">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/imageView8"-->
+                        <!--style="@style/perval_home_ic_style"-->
+                        <!--android:src="@drawable/ic_publish_card" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/settingTextStyle"-->
+                        <!--android:layout_marginLeft="12dip"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="@string/publish_redolstarcard" />-->
+
+                    <!--<ImageView style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginLeft="20dip" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llRedCardARScanning"-->
+                    <!--style="@style/inSideSettingItem">-->
+
+                    <!--<ImageView-->
+                        <!--style="@style/perval_home_ic_style"-->
+                        <!--android:src="@drawable/ic_account_about_redcard_arscan_bg" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/settingTextStyle"-->
+                        <!--android:layout_marginLeft="12dip"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="@string/redCardARScanning" />-->
+
+                    <!--<ImageView style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llLogout"
+                style="@style/inSideSettingItem"
+                android:layout_marginTop="@dimen/settingItemVerticalSpacing"
+                android:paddingLeft="0dip"
+                android:paddingRight="0dip">
+
+                <!--<ImageView-->
+                    <!--style="@style/perval_home_ic_style"-->
+                    <!--android:src="@drawable/ic_account_setup_icon_logout" />-->
+
+                <TextView
+                    style="@style/settingTextStyle"
+                    android:layout_weight="1"
+                    android:text="退出登录"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dip"
+                    android:textColor="@color/cfe5400"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- 这个是股龄 -->
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llSwipe"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/flBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/ivOutImg"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_gravity="right"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:text="加载中..."
+            />
+
+        <ImageView
+            android:id="@+id/ivDrag"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:id="@+id/llCheckSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c0a8bcc"
+            android:layout_gravity="bottom"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="验证成功"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:padding="4dip"
+                android:textSize="@dimen/font_size_12"/>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dip">
+        <!--android:background="@drawable/dragbg"-->
+        <SeekBar
+            android:id="@+id/dragBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:minHeight="40dip"
+            android:maxHeight="40dip"
+            android:thumbOffset="0dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:splitTrack="false"
+            android:progressDrawable="@drawable/drag_progess_bg"
+            android:thumb="@drawable/drag_thumb_selector"
+            />
+        <com.procoin.widgets.swipecaptcha.HightLightTextView
+            android:id="@+id/tvHightLight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="向右滑动滑块填充拼图"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_14" />
+    </FrameLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvCheckSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证成功"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:paddingLeft="15dip"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvSwich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="换一张"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:paddingRight="15dip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_12"
+        android:gravity="right"/>
+</LinearLayout>
+
+
+
+
+</LinearLayout>

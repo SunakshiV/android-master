@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/actionbar_background">-->
+
+        <!--<BackgroundImageViewView&ndash;&gt;-->
+        <!--android:id="@+id/bgiv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="#222222"-->
+        <!--app:arcHeight="40"-->
+        <!--app:blockHeight="0.1" />-->
+
+        <LinearLayout
+            android:id="@+id/ll_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ivSetting"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_marginTop="25dip"-->
+            <!--android:padding="15dip"-->
+            <!--android:visibility="gone">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="22dip"-->
+            <!--android:layout_height="22dip"-->
+            <!--android:src="@drawable/ic_account_setting" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/llHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="25dip">
+
+                <com.procoin.widgets.CircleImageView
+                    android:id="@+id/ivHead"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_default_head" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="20dip"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom">
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text=""
+                                android:textColor="@color/c1d3155"
+                                android:textSize="@dimen/font_size_22"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="20dip"
+                                android:layout_height="20dip"
+                                android:layout_marginLeft="8dip"
+                                app:srcCompat="@drawable/ic_svg_edit" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivGoHome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_svg_go_home" />
+
+
+                        <!--<FrameLayout-->
+                        <!--android:id="@+id/flHead"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/tvEdit"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="26dip"-->
+                        <!--android:background="@drawable/shape_edit_my_userinfo_bg"-->
+                        <!--android:gravity="center"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:paddingLeft="15dip"-->
+                        <!--android:paddingRight="15dip"-->
+                        <!--android:text="编辑资料"-->
+                        <!--android:textColor="@color/c663d3a50"-->
+                        <!--android:textSize="@dimen/font_size_12" />-->
+
+                        <!--<View-->
+                        <!--android:id="@+id/vPointOfEdit"-->
+                        <!--android:layout_width="8dip"-->
+                        <!--android:layout_height="8dip"-->
+                        <!--android:layout_gravity="right"-->
+                        <!--android:background="@drawable/shape_point_bg_ff8f01" />-->
+
+
+                        <!--</FrameLayout>-->
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:ellipsize="end"
+                        android:hint="还未编辑资料…"
+                        android:singleLine="true"
+                        android:textColor="@color/c808080"
+                        android:textSize="@dimen/font_size_14"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/c996175ae"
+                        android:textSize="@dimen/font_size_14"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip">
+
+                <LinearLayout
+                    android:id="@+id/llRechargeCoin"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/ic_svg_recharge_coin"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:text="充币"
+                            android:textColor="@color/c6175ae"
+                            android:textSize="@dimen/font_size_12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llWithDrawCoin"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ic_svg_take_coin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:text="提币"
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_12" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llTransfer"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/ic_svg_transfer_coin" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:text="划转"
+                            android:textColor="@color/c6175ae"
+                            android:textSize="@dimen/font_size_12" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llLegal"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivLegal"
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/ic_svg_legal_coin" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:text="法币买卖"
+                            android:textColor="@color/c6175ae"
+                            android:textSize="@dimen/font_size_12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--</FrameLayout>-->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <View
+                style="@style/dividerLine_horizontal"
+                android:layout_height="10dip"
+                android:layout_marginTop="15dip"
+                android:background="@color/pageBackground" />
+
+            <LinearLayout
+                android:id="@+id/llDigitalHis"
+                style="@style/inSideSettingItem">
+
+                <ImageView
+                    style="@style/perval_home_ic_style"
+                    app:srcCompat="@drawable/ic_home_mine_digital" />
+
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:text="数字货币交易记录"
+                        android:textColor="@color/c1d3155"
+                        android:textSize="@dimen/font_size_16" />
+
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llFuturesHis"
+                style="@style/inSideSettingItem">
+
+                <ImageView
+                    style="@style/perval_home_ic_style"
+                    app:srcCompat="@drawable/ic_home_mine_stock"/>
+
+                <TextView
+                    style="@style/settingTextStyle"
+                    android:text="股指期货交易记录" />
+
+                <TextView
+                    android:id="@+id/tvUsdtBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:text=""
+                    android:textColor="@color/c1d3155"
+                    android:textSize="@dimen/font_size_14" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/llFollowHis"
+                style="@style/inSideSettingItem"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/perval_home_ic_style"
+                    app:srcCompat="@drawable/ic_home_mine_follow" />
+
+                <TextView
+                    style="@style/settingTextStyle"
+                    android:text="跟单交易记录" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+            </LinearLayout>
+
+
+            <View
+                style="@style/dividerLine_horizontal"
+                android:layout_height="10dip"
+                android:background="@color/pageBackground" />
+
+
+            <LinearLayout
+                android:id="@+id/llNews"
+                style="@style/inSideSettingItem">
+
+                <ImageView
+                    style="@style/perval_home_ic_style"
+                    app:srcCompat="@drawable/ic_home_mine_notice" />
+
+                <TextView
+                    style="@style/settingTextStyle"
+                    android:text="系统通知" />
+
+                <FrameLayout
+                    android:id="@+id/flLatestMsgTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvLatestMsgTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text=""
+                        android:textColor="@color/c1d3155"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <View
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_gravity="right"
+                        android:background="@drawable/shape_point_bg_ff8f01" />
+
+                </FrameLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHelp"
+                style="@style/inSideSettingItem"
+                android:visibility="visible">
+
+                <ImageView
+                    style="@style/perval_home_ic_style"
+                    app:srcCompat="@drawable/ic_home_mine_help" />
+
+                <TextView
+                    style="@style/settingTextStyle"
+                    android:text="帮助中心" />
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="10dip"-->
+                <!--android:text="新手用户指南"-->
+                <!--android:textColor="@color/c663d3a50"-->
+                <!--android:textSize="@dimen/font_size_14" />-->
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llShareApp"
+                style="@style/inSideSettingItem"
+                android:visibility="visible">
+
+                <ImageView
+                    style="@style/perval_home_ic_style"
+                    app:srcCompat="@drawable/ic_home_mine_share_app" />
+
+                <TextView
+                    style="@style/settingTextStyle"
+                    android:text="分享应用" />
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="10dip"-->
+                <!--android:text="新手用户指南"-->
+                <!--android:textColor="@color/c663d3a50"-->
+                <!--android:textSize="@dimen/font_size_14" />-->
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+            </LinearLayout>
+
+
+            <View
+                style="@style/dividerLine_horizontal"
+                android:layout_height="10dip"
+                android:background="@color/pageBackground"
+                android:visibility="gone" />
+
+
+            <View
+                style="@style/dividerLine_horizontal"
+                android:layout_height="10dip"
+                android:background="@color/pageBackground" />
+
+
+            <LinearLayout
+                android:id="@+id/llFeedback"
+                style="@style/inSideSettingItem">
+
+                <ImageView
+                    style="@style/perval_home_ic_style"
+                    app:srcCompat="@drawable/ic_home_mine_kefu" />
+
+
+                <TextView
+                    style="@style/settingTextStyle"
+                    android:text="客服" />
+
+                <!--消息数量-->
+                <TextView
+                    android:id="@+id/tvFeedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dip"
+                    android:text="" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/llIdentityAuthen"-->
+            <!--style="@style/inSideSettingItem"-->
+            <!--android:visibility="visible">-->
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--style="@style/perval_home_ic_style"-->
+            <!--app:srcCompat="@drawable/ic_svg_help_center" />-->
+
+            <!--<TextView-->
+            <!--style="@style/settingTextStyle"-->
+            <!--android:text="@string/identityAuthen" />-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="10dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="新手用户指南"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/c663d3a50"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="@dimen/font_size_14" />&ndash;&gt;-->
+
+            <!--<android.support.v7.widget.AppCompatImageView style="@style/commonAarrowSvg" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/ivSetting"
+                style="@style/inSideSettingItem">
+
+                <ImageView
+                    style="@style/perval_home_ic_style"
+                    app:srcCompat="@drawable/ic_home_mine_setting" />
+
+                <TextView
+                    style="@style/settingTextStyle"
+                    android:text="设置" />
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/commonAarrowSvg" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

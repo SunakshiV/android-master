@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="80dip"
+            android:layout_margin="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rollout_wallet_bg">
+
+            <LinearLayout
+                android:id="@+id/llSymbol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tvAmountSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BTC数量"
+                    android:textColor="@color/c1d3155"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="12.123213"
+                    android:textColor="@color/c1d3155"
+                    android:textSize="@dimen/font_size_14" />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/ivSeclected1"
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                app:srcCompat="@drawable/ic_selected"
+                android:layout_gravity="right|top"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="80dip"
+            android:layout_margin="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rollout_wallet_bg">
+
+            <LinearLayout
+                android:id="@+id/llProfit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProfitSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USDT收益"
+                    android:textColor="@color/c1d3155"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tvProfit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="12.123213"
+                    android:textColor="@color/c1d3155"
+                    android:textSize="@dimen/font_size_14" />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/ivSeclected2"
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                app:srcCompat="@drawable/ic_selected"
+                android:layout_gravity="right|top"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTargetSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:text="转出BTC到持仓"
+        android:textColor="@color/c1d3155"
+        android:textSize="@dimen/font_size_14" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip">
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/xml_et_bg"
+            android:gravity="center_vertical"
+            android:hint="请输入转出数量"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:paddingRight="80dip"
+            android:textColor="@color/c1d3155"
+            android:textColorHint="#c8c8c8"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCurrSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="50dip"
+            android:text="--"
+            android:textColor="@color/c666175ae"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvAll"
+            android:layout_width="35dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_12" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvEnableAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"
+        android:text="可转出数量：0.00 "
+        android:textColor="@color/c666175ae"
+        android:textSize="@dimen/font_size_12" />
+
+    <TextView
+        android:id="@+id/tvFrozenAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:text="冻结数量：0.00 "
+        android:textColor="@color/c666175ae"
+        android:textSize="@dimen/font_size_12" />
+    <TextView
+        android:id="@+id/tvRollOutWallet"
+        style="@style/btn_style_1"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="20dip"
+        android:text="确认转出" />
+
+</LinearLayout>

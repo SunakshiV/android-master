@@ -1,0 +1,167 @@
+<resources>
+
+    <string name="app_name">taojinweibo</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- 提示 -->
+<!--     <string name="delete_date_message">Loading...</string> -->
+<!--     <string name="sending_date_message">Loading...</string> -->
+<!--     <string name="loading_date_message">Loading...</string> -->
+<!--     <string name="submission_date_message">Loading...</string> -->
+<!--     <string name="comment_date_message">Loading...</string> -->
+<!--     <string name="login_loading_login_toast">Loading...</string> -->
+
+    <string name="delete_date_message">加载中...</string>
+    <string name="sending_date_message">加载中...</string>
+    <string name="loading_date_message">加载中...</string>
+    <string name="submission_date_message">加载中...</string>
+    <string name="comment_date_message">加载中...</string>
+    <string name="login_loading_login_toast">加载中...</string>
+
+    <string name="login_failed_login_toast">登录失败</string>
+    <string name="chat_failed_toast">%1$s 不能为空</string>
+    <string name="loading_wait">加载中...</string>
+<!--     <string name="loading_wait">Loading</string> -->
+    <string name="textwaring">剩余字数:&lt;font color="Red">%1$s&lt;/font>/%2$s</string>
+    <!-- 剩余字数(没超过140) -->
+    <string name="surplusNum">%1$s/140</string>
+    <!-- 剩余字数(没超过115) -->
+    <string name="surplusNum120">%1$s/115</string>
+    <!-- 剩余字数(超过140) -->
+    <string name="surplusNumPass140">&lt;font color="Red">%1$s&lt;/font>/140</string>
+    <!-- 剩余字数(超过115) -->
+    <string name="surplusNumPass120">&lt;font color="Red">%1$s&lt;/font>/115</string>
+
+    <!-- weibo表情 -->
+    <string-array name="weibo_face_values">
+        <item>[兔子]</item>
+        <item>[熊猫]</item>
+        <item>[给力]</item>
+        <item>[神马]</item>
+        <item>[浮云]</item>
+        <item>[织]</item>
+        <item>[围观]</item>
+        <item>[威武]</item>
+        <item>[嘻嘻]</item>
+        <item>[哈哈]</item>
+        <item>[爱你]</item>
+        <item>[晕]</item>
+        <item>[泪]</item>
+        <item>[馋嘴]</item>
+        <item>[抓狂]</item>
+        <item>[哼]</item>
+        <item>[可爱]</item>
+        <item>[怒]</item>
+        <item>[汗]</item>
+        <item>[呵呵]</item>
+        <item>[睡觉]</item>
+        <item>[钱]</item>
+        <item>[偷笑]</item>
+        <item>[酷]</item>
+        <item>[衰]</item>
+        <item>[吃惊]</item>
+        <item>[闭嘴]</item>
+        <item>[鄙视]</item>
+        <item>[挖鼻屎]</item>
+        <item>[花心]</item>
+        <item>[鼓掌]</item>
+        <item>[失望]</item>
+        <item>[帅]</item>
+        <item>[照相机]</item>
+        <item>[落叶]</item>
+        <item>[汽车]</item>
+        <item>[飞机]</item>
+        <item>[爱心传递]</item>
+        <item>[奥特曼]</item>
+        <item>[实习]</item>
+        <item>[思考]</item>
+        <item>[生病]</item>
+        <item>[亲亲]</item>
+        <item>[怒骂]</item>
+        <item>[太开心]</item>
+        <item>[懒得理你]</item>
+        <item>[右哼哼]</item>
+        <item>[左哼哼]</item>
+        <item>[嘘]</item>
+        <item>[委屈]</item>
+        <item>[吐]</item>
+        <item>[可怜]</item>
+        <item>[打哈气]</item>
+        <item>[顶]</item>
+        <item>[疑问]</item>
+        <item>[做鬼脸]</item>
+        <item>[害羞]</item>
+        <item>[书呆子]</item>
+        <item>[困]</item>
+        <item>[悲伤]</item>
+        <item>[感冒]</item>
+        <item>[拜拜]</item>
+        <item>[黑线]</item>
+        <item>[不要]</item>
+        <item>[good]</item>
+        <item>[弱]</item>
+        <item>[ok]</item>
+        <item>[赞]</item>
+        <item>[来]</item>
+        <item>[耶]</item>
+        <item>[haha]</item>
+        <item>[拳头]</item>
+        <item>[最差]</item>
+        <item>[握手]</item>
+        <item>[心]</item>
+        <item>[伤心]</item>
+        <item>[猪头]</item>
+        <item>[咖啡]</item>
+        <item>[话筒]</item>
+        <item>[月亮]</item>
+        <item>[太阳]</item>
+        <item>[干杯]</item>
+        <item>[萌]</item>
+        <item>[礼物]</item>
+        <item>[互粉]</item>
+        <item>[蜡烛]</item>
+        <item>[绿丝带]</item>
+        <item>[沙尘暴]</item>
+        <item>[钟]</item>
+        <item>[自行车]</item>
+        <item>[蛋糕]</item>
+        <item>[围脖]</item>
+        <item>[手套]</item>
+        <item>[雪]</item>
+        <item>[雪人]</item>
+        <item>[温暖帽子]</item>
+        <item>[微风]</item>
+        <item>[足球]</item>
+        <item>[电影]</item>
+        <item>[风扇]</item>
+        <item>[鲜花]</item>
+        <item>[喜]</item>
+        <item>[手机]</item>
+        <item>[音乐]</item>
+    </string-array>
+
+    <!-- 文章show页面展示的 -->
+    <string name="readArticleNum">看过该文章的好友(%1$s人)</string>
+    <string name="addchatStock">我想和你聊聊这个</string>
+
+    <!-- 分享的文字 -->
+    <string name="send_img_file_not_exist">文件不存在</string>
+    <string name="shareToFriends">分享给好友</string>
+    <string name="shareToWeibo">分享到新浪微博</string>
+    <string name="shareToTalkie">分享到股友吧</string>
+    <string name="shareToFrTalkie">分享到好友圈</string>
+    <string name="shareToChat">分享到私聊</string>
+    <string name="shareToWeChat">转发给微信好友</string>
+    <string name="shareToWeChatQuan">转发到微信朋友圈</string>
+<!--     <string name="shareImageToFriends">截图给好友</string> -->
+<!--     <string name="shareImageToWeibo">截图到新浪微博</string> -->
+    <string name="shareImageToFriends">分享给淘金路好友</string>
+    <string name="shareImageToWeibo">转发到新浪微博</string>
+    <string name="shareImageWeChat">转发给微信好友</string>
+    <string name="shareImageWeChatQuan">转发到微信朋友圈</string>
+    <string name="novalue">---</string>
+    <string name="doddletext">双击修改文字</string>
+
+
+
+</resources>

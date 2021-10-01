@@ -1,0 +1,85 @@
+<resources>
+
+    <style name="PageIndicatorDefaults" parent="Theme.Taojinroad.ActionBar.Light">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+
+    <!--微盘用到-->
+    <style name="WpPageIndicatorDefaults" parent="Theme.Taojinroad.ActionBar.Light">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Wp.Widget.TabPageIndicator</item>
+    </style>
+
+    <style name="Widget">
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <!--<item name="android:layout_marginLeft">10dip</item>-->
+        <!--<item name="android:layout_marginRight">10dip</item>-->
+        <!--<item name="android:layout_marginTop">10dip</item>-->
+        <!--<item name="android:layout_marginBottom">10dip</item>-->
+
+
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="background">@drawable/xml_tab_bg</item>
+        <!--<item user_name="android:background">@drawable/vpi__tab_indicator_tjr</item>-->
+        <!--<item user_name="android:background">@drawable/vpi__tab_indicator</item>-->
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textColor">@color/xml_home_sub_tab_text</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+    <style name="MyArticleTabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="background">@drawable/xml_tab_bg</item>
+        <!--<item user_name="android:background">@drawable/vpi__tab_indicator_tjr</item>-->
+        <!--<item user_name="android:background">@drawable/vpi__tab_indicator</item>-->
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textColor">@color/xml_home_tab_text</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="MyArticleTabPageIndicator_home" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="background">@drawable/xml_tab_bg</item>
+        <!--<item user_name="android:background">@drawable/vpi__tab_indicator_tjr</item>-->
+        <!--<item user_name="android:background">@drawable/vpi__tab_indicator</item>-->
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textColor">@color/xml_home_tab_text</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+
+    </style>
+
+    <style name="Wp.Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="background">@drawable/vpi__tab_indicator_tjr</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <!--<item user_name="android:background">@drawable/vpi__tab_indicator</item>-->
+
+        <item name="android:textAppearance">@style/Wp.TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/vpi__light_theme</item>
+    </style>
+
+    <style name="Wp.TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textColor">@color/xml_wp_indicator_text_color</item>
+    </style>
+
+    <style name="Widget.IconPageIndicator" parent="Widget">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+</resources>

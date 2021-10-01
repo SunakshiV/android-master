@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llItem"
+    android:layout_width="match_parent"
+    android:layout_height="70dip"
+    android:background="@drawable/xml_compents_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="20dip"
+    android:paddingRight="5dip">
+
+    <CheckBox
+        android:id="@+id/cbSign"
+        style="@style/MyCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=""
+        android:textColor="@color/c222222"
+        android:textSize="@dimen/font_size_12" />
+
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+       >
+        <TextView
+            android:id="@+id/tvSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTC"
+            android:textColor="@color/c1d3155"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvSymbol"
+            android:layout_alignBottom="@+id/tvSymbol"
+            android:layout_toEndOf="@+id/tvSymbol"
+            android:layout_toRightOf="@+id/tvSymbol"
+            android:layout_marginLeft="3dip"
+            android:text=""
+            android:textColor="@color/c666175ae"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/tvSymbol"
+            android:textColor="@color/c666175ae"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:id="@+id/tvTips"
+            android:layout_width="32dip"
+            android:layout_height="15dip"
+            android:layout_alignBottom="@+id/tvSubSymbol"
+            android:layout_toEndOf="@+id/tvSubSymbol"
+            android:layout_toRightOf="@+id/tvSubSymbol"
+            android:background="@drawable/shape_mark_tips_bg"
+            android:gravity="center"
+            android:layout_marginLeft="5dip"
+            android:text="火币"
+            android:textColor="@color/c666175ae"
+            android:textSize="@dimen/font_size_9"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv24H"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSymbol"
+            android:layout_marginTop="5dip"
+            android:text="--"
+            android:visibility="gone"
+            android:textColor="@color/c666175ae"
+            android:textSize="@dimen/font_size_11" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_sort_drag"
+        android:padding="15dip"
+        />
+
+
+
+
+</LinearLayout>

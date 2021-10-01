@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="ddd" />
+        <option name="name" value="ddd" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="MyCallBack" />
+        <option name="name" value="MyCallBack" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="takeBigPicture" />
+        <option name="name" value="takeBigPicture" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="120" />
+        <option name="name" value="120" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="onActivityResult" />
+        <option name="name" value="onActivityResult" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="initDynamicPermission" />
+        <option name="name" value="initDynamicPermission" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="startOtcAddMyAd" />
+        <option name="name" value="startOtcAddMyAd" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="setUserVisibleHint" />
+        <option name="name" value="setUserVisibleHint" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="startCountDownTime" />
+        <option name="name" value="startCountDownTime" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="afterTextChanged" />
+        <option name="name" value="afterTextChanged" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="onCreateView" />
+        <option name="name" value="onCreateView" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="setData" />
+        <option name="name" value="setData" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="resultData" />
+        <option name="name" value="resultData" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="marketData" />
+        <option name="name" value="marketData" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="setChatNewsCount" />
+        <option name="name" value="setChatNewsCount" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="onresumeTest" />
+        <option name="name" value="onresumeTest" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="minute5DayTimeline" />
+        <option name="name" value="minute5DayTimeline" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="kline" />
+        <option name="name" value="kline" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="Day5Time" />
+        <option name="name" value="Day5Time" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="updateUI" />
+        <option name="name" value="updateUI" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="pareserProCodeJsons" />
+        <option name="name" value="pareserProCodeJsons" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="aaaa" />
+        <option name="name" value="aaaa" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="HomeMarkAndKbtFragment" />
+        <option name="name" value="HomeMarkAndKbtFragment" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="Protocol" />
+        <option name="name" value="Protocol" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+    </filters>
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14edc6db-44ba-49ca-9afd-1650f8dd6c1c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/4.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/procoin/wwct/release/1.1.4.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/procoin/wwct/release/1.1.5.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/procoin/wwct/release/1.1.6.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/procoin/wwct/release/output-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/proguard.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/proguard.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/common/base/adapter/BaseLoadMoreImageLoaderRecycleAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/common/base/adapter/BaseLoadMoreImageLoaderRecycleAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/ApplyJoinCircleActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/ApplyJoinCircleActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/CircleAllMembersActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/CircleAllMembersActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/CircleApplyListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/CircleApplyListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/CircleBlackListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/CircleBlackListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/CircleInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/CircleInfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/CreateOrEidtCircleActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/CreateOrEidtCircleActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/SearchCircleActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/SearchCircleActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/SetJoinCircleWayActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/SetJoinCircleWayActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/adapter/CircleApplyListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/adapter/CircleApplyListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/adapter/CircleBlackListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/adapter/CircleBlackListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/adapter/CircleMemberAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/circle/adapter/CircleMemberAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/CropyOrderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/CropyOrderActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/CropyOrderDetailListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/CropyOrderDetailListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/CropyOrderHistoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/CropyOrderHistoryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/CropyOrderInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/CropyOrderInfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/CropyOrderInfoActivityBak.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/CropyOrderInfoActivityBak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/CropyUserDataActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/CropyUserDataActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/CopyBalanceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/CopyBalanceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/CopyHoldMarketValueAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/CopyHoldMarketValueAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/CopyOrderDetailsListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/CopyOrderDetailsListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/CopyOrderHistoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/CopyOrderHistoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/CopyPieChartAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/CopyPieChartAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/CopyPositionAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/CopyPositionAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/HoldCoinSymbolAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/HoldCoinSymbolAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/HoldCostAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/adapter/HoldCostAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/dialog/CopyOrderDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/dialog/CopyOrderDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/dialog/CopyOrderSettingDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/dialog/CopyOrderSettingDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/dialog/ModifyCopySetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/dialog/ModifyCopySetDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/fragment/CopyBalanceFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/fragment/CopyBalanceFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/fragment/HoldCostFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/fragment/HoldCostFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/fragment/HoldMarketValueFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/copy/fragment/HoldMarketValueFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/dialog/ManageCircleFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/dialog/ManageCircleFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/ApplyCropymeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/ApplyCropymeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/HomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/HomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/HomeCoinSubBuyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/HomeCoinSubBuyActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/LanguageSettingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/LanguageSettingActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/MarketActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/MarketActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/MarketActivity2.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/MarketActivity2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/MyCropymeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/MyCropymeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/OpenCropymeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/OpenCropymeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/OptionalDragSortActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/OptionalDragSortActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/OrderEntrustnfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/OrderEntrustnfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/RadarDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/RadarDetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/SearchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/SearchActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/SearchCoinActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/SearchCoinActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomeAttentionAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomeAttentionAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomeCoinWalletAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomeCoinWalletAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomeFollowAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomeFollowAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomeLeverAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomeLeverAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomeMarketAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomeMarketAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomeMarketLoadMoreAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomeMarketLoadMoreAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomePositionAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/HomePositionAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/LiteAppAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/LiteAppAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/MasterRankAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/MasterRankAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/NoticeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/NoticeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/OptioalDragSortAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/OptioalDragSortAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/PlayCoinPlanAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/PlayCoinPlanAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/SearchCoinAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/SearchCoinAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/SearchUserAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/SearchUserAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/SelectPayWayAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/SelectPayWayAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/SelectPayWayAdapter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/SelectPayWayAdapter2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/UsdtTradeHisAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/UsdtTradeHisAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/VRankAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/adapter/VRankAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeAccountCoinWalletFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeAccountCoinWalletFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeAccountFollowOrderFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeAccountFollowOrderFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeAccountFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeAccountFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeAccountLeverFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeAccountLeverFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeAccountPositionFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeAccountPositionFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeAttentionFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeAttentionFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeBalanceAccountFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeBalanceAccountFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeCoinSubBuyFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeCoinSubBuyFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeCropyMeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeCropyMeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeCropyMeFragmentBak.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeCropyMeFragmentBak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeDigitalAccountFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeDigitalAccountFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeFollowAccountFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeFollowAccountFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeFragmentBak.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeFragmentBak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeMarkAndKbtFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeMarkAndKbtFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeMarkFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeMarkFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeMarkOptionalFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeMarkOptionalFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeMineFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeMineFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeStockDigitalMarkFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeStockDigitalMarkFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeStockMarkFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeStockMarkFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeYYBFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/HomeYYBFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/ShareDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/ShareDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/WechatQRCodeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/WechatQRCodeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/YYBBuyBackDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/fragment/YYBBuyBackDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/CoinTradeDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/CoinTradeDetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/EntrusTransactiontActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/EntrusTransactiontActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/EntrusTransactiontSimpleActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/EntrusTransactiontSimpleActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/LegalTenderBuyCoinActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/LegalTenderBuyCoinActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/OrderCashInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/OrderCashInfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/OrderCashInfoActivityBak.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/OrderCashInfoActivityBak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/RechargeCoinActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/RechargeCoinActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/RechargeUsdtActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/RechargeUsdtActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/RechargeUsdtActivityBak.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/RechargeUsdtActivityBak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/SelectPayWayActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/SelectPayWayActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/TakeCoinActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/TakeCoinActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/TradeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/TradeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/TradeLeverActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/TradeLeverActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/TransferCoinActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/TransferCoinActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/USDTTradeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/USDTTradeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/WithDrawInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/WithDrawInfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/WithDrawUsdtSuccessActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/WithDrawUsdtSuccessActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/WithdrawUsdtActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/WithdrawUsdtActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/AccountTypeFilterAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/AccountTypeFilterAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/CoinTradeDetailsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/CoinTradeDetailsAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/DealListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/DealListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/KeyTypeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/KeyTypeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/LegalTenderBuyCoinAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/LegalTenderBuyCoinAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/LeverTypeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/LeverTypeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/MultiNumAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/MultiNumAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TakeCoinHistoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TakeCoinHistoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TradeCurrPositionAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TradeCurrPositionAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TradeHistoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TradeHistoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TradeLeverHistoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TradeLeverHistoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TradeUndoneAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TradeUndoneAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TradeUndoneLeverAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TradeUndoneLeverAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TransferAccountSelectAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TransferAccountSelectAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TransferCoinHistoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/adapter/TransferCoinHistoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/dialog/RechargeUsdtDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/dialog/RechargeUsdtDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/dialog/SelectPayWayDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/dialog/SelectPayWayDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/dialog/SetFollowMultipleFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/dialog/SetFollowMultipleFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/dialog/TakeCoinSelectFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/dialog/TakeCoinSelectFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/dialog/WithDrawDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/dialog/WithDrawDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/fragment/TradeBuyFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/fragment/TradeBuyFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/fragment/TradeLeverFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/fragment/TradeLeverFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/fragment/TradeSellFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/fragment/TradeSellFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/CashTradeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/CashTradeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/CoinFollowHistoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/CoinFollowHistoryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/CoinTradeEntrustActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/CoinTradeEntrustActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/CoinTradeEntrustLeverActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/CoinTradeEntrustLeverActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/TakeCoinHistoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/TakeCoinHistoryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/TakeCoinHistoryDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/TakeCoinHistoryDetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/TransferCoinHistoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/trade/history/TransferCoinHistoryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/KBTHomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/KBTHomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/KbtBuyBackActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/KbtBuyBackActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/adapter/KbtGetHistoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/adapter/KbtGetHistoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/adapter/KbtNoticeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/adapter/KbtNoticeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/adapter/RepoAmountAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/adapter/RepoAmountAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/LPHomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/LPHomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/LpHistoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/LpHistoryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/adapter/CommentAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/adapter/CommentAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/adapter/HorizontalAbilityNumAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/adapter/HorizontalAbilityNumAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/adapter/HorizontalHistoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/adapter/HorizontalHistoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/adapter/KbtTicketAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/adapter/KbtTicketAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/adapter/LpHistoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/adapter/LpHistoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/dialog/PredictionDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/dialog/PredictionDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/dialog/SendCommentDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/app/lightningprediction/dialog/SendCommentDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/dialog/KbtBuyBackDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/kbt/dialog/KbtBuyBackDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/AddAdActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/AddAdActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/AuthenticationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/AuthenticationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/LegalMoneyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/LegalMoneyActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/LegalOrderInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/LegalOrderInfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/LegalPayActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/LegalPayActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/MyAdListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/MyAdListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/OtcAppealActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/OtcAppealActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/OtcOrderHistoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/OtcOrderHistoryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/AppealListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/AppealListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/MultiSelectQuickPayWayAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/MultiSelectQuickPayWayAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/OptionalFilterAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/OptionalFilterAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/OptionalListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/OptionalListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/OtcOrderHistoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/OtcOrderHistoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/PayWayAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/PayWayAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/ResetReceiptTermAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/ResetReceiptTermAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/SelectQuickPayWayAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/SelectQuickPayWayAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/SelectReceiptTermAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/SelectReceiptTermAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/ShowUserTipAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/ShowUserTipAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/ConfirmSellDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/ConfirmSellDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/LegalQuickBuyDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/LegalQuickBuyDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/OptionalBuySellDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/OptionalBuySellDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/ResetReceiptTermDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/ResetReceiptTermDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/SelectReceiptTermDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/SelectReceiptTermDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/fragment/LegalMoneyOptionalFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/fragment/LegalMoneyOptionalFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/fragment/LegalMoneyQuickFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/fragment/LegalMoneyQuickFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/login/AllCountryCodeListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/login/AllCountryCodeListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/login/adapter/CountryCodeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/login/adapter/CountryCodeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/AboutActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/AboutActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/AddAliPayAndWechatPayActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/AddAliPayAndWechatPayActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/AddBankPayActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/AddBankPayActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/AddReceiptTermActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/AddReceiptTermActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/IdentityAuthenActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/IdentityAuthenActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/MyHomeInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/MyHomeInfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/MyPayPasswordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/MyPayPasswordActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/PaymentTermActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/PaymentTermActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/PersonalHomepageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/PersonalHomepageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/SelectPicPreviewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/SelectPicPreviewActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/SettingAccountActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/SettingAccountActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/SettingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/SettingActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/SettingPayPasswordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/SettingPayPasswordActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/UserHomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/UserHomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/adapter/AddReceiptAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/adapter/AddReceiptAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/adapter/CoinTradeCategoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/adapter/CoinTradeCategoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/adapter/MyMessageAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/adapter/MyMessageAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/adapter/MyVideoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/adapter/MyVideoAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/adapter/PaymentTernAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/adapter/PaymentTernAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/adapter/UserCircleAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/adapter/UserCircleAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/dialog/AttentionDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/dialog/AttentionDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/fragment/TrendFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/myhome/fragment/TrendFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/CoinWalletActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/CoinWalletActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/IntoWalletActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/IntoWalletActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/LeverInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/LeverInfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/RollOutWalletActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/RollOutWalletActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/adapter/CloseListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/adapter/CloseListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/adapter/WalletHistoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/adapter/WalletHistoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/dialog/AddMarginFragmentDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/dialog/AddMarginFragmentDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/dialog/CloseOrderFragmentDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/dialog/CloseOrderFragmentDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/dialog/SetLossFragmentDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/dialog/SetLossFragmentDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/dialog/SetWinFragmentDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/dialog/SetWinFragmentDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/dialog/SetWinLossFragmentDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/wallet/dialog/SetWinLossFragmentDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/welcome/WelcomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/welcome/WelcomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/subpush/SubPushService.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/subpush/SubPushService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/widgets/indicator/PageIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/widgets/indicator/PageIndicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/widgets/quotitian/adapter/StarDetailBuyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/widgets/quotitian/adapter/StarDetailBuyAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/widgets/quotitian/adapter/StarDetailBuySellAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/widgets/quotitian/adapter/StarDetailBuySellAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/widgets/quotitian/adapter/StarDetailSellAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/java/com/procoin/widgets/quotitian/adapter/StarDetailSellAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/res/layout/fragment_home_follow_account.xml" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/res/layout/fragment_home_follow_account.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/procoin/src/main/res/layout/myhome_setting_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/procoin/src/main/res/layout/myhome_setting_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipback/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/swipback/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tjrhttpapi/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tjrhttpapi/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tjrsocial/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tjrsocial/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[9JB7N18A30003974]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/procoin">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="ProCoin" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="ProCoin" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":procoin" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="ProCoin" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="ProCoin" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="ProCoin" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="ProCoin" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="ProCoin" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="ProCoin" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="build" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="E:\workSpace\procoin\procoin\wwct" />
+    <option name="KEY_ALIAS" value="wwct" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1vVsRyBO8DAW15ySW32sAJWEtsy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="ProCoin.procoin" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="9JB7N18A30003974" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-07-20T08:51:22.745Z" />
+    <property name="ExportApk.ApkPath" value="E:\workSpace\procoin\procoin\ProCoin\procoin" />
+    <property name="ExportApk.BuildVariants" value="wwctRelease" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="VectorAssetImportPath" value="$USER_HOME$/Downloads/DownLoad/ChromeDownLoad" />
+    <property name="android.profiler.active" value="true" />
+    <property name="android.project.structure.last.selected" value="procoin" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="device.picker.selection" value="272042d8" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/procoin/src/main/res/drawable-xhdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wwct" />
+    <property name="project.structure.last.edited" value="Build Variants" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.30932897" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.2.0" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Signing Configs" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="debug" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.procoin.module.home.adapter" />
+      <recent name="com.procoin.module.home.fragment" />
+      <recent name="com.procoin.module.legal.adapter" />
+      <recent name="com.procoin.module.legal" />
+      <recent name="com.procoin.module.legal.dialog" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/procoin/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/procoin/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/procoin/src/main/res/color" />
+      <recent name="$PROJECT_DIR$/procoin/src/main/res/drawable-xhdpi" />
+      <recent name="$PROJECT_DIR$/tjrsocial/res/drawable" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.procoin">
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1626600779490" />
+      </method>
+    </configuration>
+    <configuration name="procoin" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="ProCoin.procoin" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+      <option name="TESTING_TYPE" value="0" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1626600779490" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProCoin [assembleRelease]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assembleRelease" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="tjrhttpapi" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Android App.procoin" />
+      <item itemvalue="Gradle.ProCoin [assembleRelease]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ProCoin [assembleRelease]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14edc6db-44ba-49ca-9afd-1650f8dd6c1c" name="Default" comment="" />
+      <created>1617691959981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617691959981</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="477" y="286" key="#PSD" timestamp="1626740357894">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="477" y="286" key="#PSD/0.0.1920.1080@0.0.1920.1080" timestamp="1626740357894" />
+    <state x="765" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1626680689765">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="765" y="245" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1626680689765" />
+    <state x="656" y="202" key="#procoin" timestamp="1626659926405">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="656" y="202" key="#procoin/0.0.1920.1080@0.0.1920.1080" timestamp="1626659926405" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1626767963848">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1626767963848" />
+    <state width="1860" height="574" key="GridCell.Tab.0.bottom" timestamp="1626766245771">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1860" height="574" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1626766245771" />
+    <state width="1860" height="574" key="GridCell.Tab.0.center" timestamp="1626766245771">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1860" height="574" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1626766245771" />
+    <state width="1860" height="574" key="GridCell.Tab.0.left" timestamp="1626766245771">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1860" height="574" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1626766245771" />
+    <state width="1860" height="574" key="GridCell.Tab.0.right" timestamp="1626766245771">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1860" height="574" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1626766245771" />
+    <state x="650" y="382" key="edit.logcat.filter.dialog.dimensions" timestamp="1626678769028">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="650" y="382" key="edit.logcat.filter.dialog.dimensions/0.0.1920.1080@0.0.1920.1080" timestamp="1626678769028" />
+    <state x="652" y="272" width="596" height="594" key="find.popup" timestamp="1626765054349">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="652" y="272" width="596" height="594" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1626765054349" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/fragment/dialog/LegalQuickBuyDialogFragment.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/SelectReceiptTermDialogFragment.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/ConfirmSellDialogFragment.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/fragment/LegalMoneyOptionalFragment.java</url>
+          <line>617</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/fragment/LegalMoneyOptionalFragment.java</url>
+          <line>620</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/MyAdListActivity.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/ResetReceiptTermAdapter.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/OtcOrderExitPayDialog.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/OtcOrderCancelDialog.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/dialog/OtcOrderExitPayDialog.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/OtcOrderHistoryActivity.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/adapter/OtcOrderHistoryAdapter.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/home/HomeActivity.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/fragment/LegalMoneyOptionalFragment.java</url>
+          <line>512</line>
+          <properties class="com.procoin.module.legal.fragment.LegalMoneyOptionalFragment" method="showPopAmountMenu">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/procoin/src/main/java/com/procoin/module/legal/LegalPayActivity.java</url>
+          <line>175</line>
+          <properties class="com.procoin.module.legal.LegalPayActivity" method="showReConnection">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

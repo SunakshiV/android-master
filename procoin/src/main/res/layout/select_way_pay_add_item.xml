@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flAddPayMent"
+    android:layout_width="match_parent"
+    android:layout_height="55dip">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cf9f9fc"
+        android:gravity="center"
+        android:text="＋"
+        android:textColor="@color/c3d3a50"
+        android:textSize="@dimen/font_size_25"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivQr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+</FrameLayout>

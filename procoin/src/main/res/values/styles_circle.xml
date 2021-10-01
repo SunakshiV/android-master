@@ -1,0 +1,57 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="squareTimeStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c999999</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    <style name="circleChatTimeTextView" parent="squareTimeStyle">
+        <item name="background">@drawable/xml_circle_join_tips</item>
+        <item name="android:textColor">@color/c262626</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:id">@id/tvTime</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10dip</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:paddingBottom">3dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- 股票连想的style -->
+    <style name="lvStockLenovoStyle">
+        <item name="android:fadingEdge">none</item>
+        <item name="divider">@drawable/ic_list_item_separator</item>
+        <item name="android:dividerHeight">0.5dp</item>
+        <item name="background">@color/ce5e5e5</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:id">@id/lvStock</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">103dip</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+
+    <style name="circleChatHeadView">
+        <item name="android:layout_width">40dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:id">@id/ivHead</item>
+        <item name="android:src">@drawable/ic_default_head</item>
+    </style>
+
+    <style name="circleChatImageStyle">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">200dip</item>
+        <item name="android:src">@drawable/xml_bubbleview_default_src</item>
+        <item name="com.procoin:angle">4dip</item>
+        <item name="com.procoin:arrowHeight">8dip</item>
+        <item name="com.procoin:arrowPosition">10dip</item>
+        <item name="com.procoin:arrowWidth">6dip</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+</resources>

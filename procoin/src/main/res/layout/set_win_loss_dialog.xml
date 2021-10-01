@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="left|center_vertical"
+        android:text="止盈止损设置"
+        android:textColor="@color/c1d3155"
+        android:textSize="@dimen/font_size_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="止盈价"
+            android:textColor="@color/c661d3155"
+            android:textSize="@dimen/font_size_14" />
+
+
+        <TextView
+            android:id="@+id/tvStopWinPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:minWidth="80dip"
+            android:text="无设置"
+            android:textColor="@color/c661d3155"
+            android:textSize="@dimen/font_size_14" />
+
+        <EditText
+            android:id="@+id/etStopWin"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/xml_et_bg"
+            android:gravity="left|center_vertical"
+            android:hint="请输入止盈比例"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:padding="8dip"
+            android:textColor="@color/c6175ae"
+            android:textColorHint="#c8c8c8"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="%"
+            android:textColor="@color/c661d3155"
+            android:textSize="@dimen/font_size_14" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="止损价"
+            android:textColor="@color/c661d3155"
+            android:textSize="@dimen/font_size_14" />
+
+
+        <TextView
+            android:id="@+id/tvStopLossPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:minWidth="80dip"
+            android:text="无设置"
+            android:textColor="@color/c661d3155"
+            android:textSize="@dimen/font_size_14" />
+
+        <EditText
+            android:id="@+id/etStopLoss"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/xml_et_bg"
+            android:gravity="left|center_vertical"
+            android:hint="请输入止损比例"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:padding="8dip"
+            android:textColor="@color/c6175ae"
+            android:textColorHint="#c8c8c8"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="%"
+            android:textColor="@color/c661d3155"
+            android:textSize="@dimen/font_size_14" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/btn_style_4"
+        android:layout_marginBottom="30dip"
+        android:layout_marginTop="30dip"
+        android:text="确认" />
+
+
+</LinearLayout>

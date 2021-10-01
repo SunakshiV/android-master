@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitleBar"
+        style="@style/mainTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.procoin.social.widget.SAutoBgButton
+            android:id="@+id/btnBack"
+            style="@style/StyleWhiteButton_cbfbfbf"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_iv_back_white" />
+
+        <TextView
+            android:id="@+id/talk_dragpic_image_TextView_title"
+            style="@style/mainTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="选择好友" />
+
+        <ProgressBar
+            android:id="@+id/progressBarWait"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/talk_dragpic_image_TextView_title"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lledit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTitleBar"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/ic_line_square"
+        android:minHeight="50dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/ic_btn_sreach_c58c0ed_51x51"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dip"
+            android:background="#bcbcbc" />
+
+        <EditText
+            android:id="@+id/edAtweibo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:minHeight="52dp"
+            android:minWidth="270dp"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/c535353"
+            android:textSize="@dimen/text_size_content_h2" >
+        </EditText>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvchoice"
+        style="@style/lvDividerStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lledit"
+        android:fadingEdge="none"
+        android:listSelector="@null" >
+    </ListView>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignTop="@+id/lvchoice"
+        android:background="#cccccc" />
+
+</RelativeLayout>

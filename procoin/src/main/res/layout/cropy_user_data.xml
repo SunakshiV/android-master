@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackground"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cdlUSDT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                app:layout_scrollFlags="scroll"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="跟单总额(USDT)"
+                    android:textColor="@color/c331d3155"
+                    android:textSize="@dimen/font_size_12"/>
+
+                <TextView
+                    android:id="@+id/tvCropyTolBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="@color/c1d3155"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_size_40"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dip"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="累计跟单净分成"
+                            android:textColor="@color/c331d3155"
+                            android:textSize="@dimen/font_size_12" />
+
+                        <TextView
+                            android:id="@+id/tvTolShareMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="0.00"
+                            android:textColor="@color/c1d3155"
+                            android:textSize="@dimen/font_size_20"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dip"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="预估跟单分成"
+                            android:textColor="@color/c331d3155"
+                            android:textSize="@dimen/font_size_12" />
+
+                        <TextView
+                            android:id="@+id/tvCurrShareMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:singleLine="true"
+                            android:text="0.00"
+                            android:textColor="@color/c1d3155"
+                            android:textSize="@dimen/font_size_20"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+                <!--android:background="@drawable/xml_tab_bottom_line_bg2"-->
+                <TextView
+                    android:id="@+id/tvCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/xml_tab_bottom_line_bg"
+                    android:gravity="center"
+                    android:text="持币成本"
+                    android:textColor="@color/xml_usdt_tab_text"
+                    android:textSize="@dimen/font_size_20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAssets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:minHeight="40dip"
+                    android:background="@drawable/xml_tab_bottom_line_bg"
+                    android:gravity="center"
+                    android:text="跟单资金"
+                    android:textColor="@color/xml_usdt_tab_text"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMarket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:minHeight="40dip"
+                    android:background="@drawable/xml_tab_bottom_line_bg"
+                    android:gravity="center"
+                    android:text="持币市值"
+                    android:textColor="@color/xml_usdt_tab_text"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="10dip"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

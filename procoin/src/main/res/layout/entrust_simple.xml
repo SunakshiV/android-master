@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/toolbar">
+        <!--layout_gravity编译器没有这个属性,不知道为何,估计是as的问题,但其实有效果-->
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tvSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/abc_item_background_holo_dark"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/ic_switch"
+            android:gravity="center"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="专业版"
+            android:textColor="@color/actionbar_light_title_color"
+            android:textSize="@dimen/font_size_14" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:background="@color/pageBackground"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvPrice"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dip"-->
+            <!--android:layout_marginTop="10dip"-->
+            <!--android:background="@color/white"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="15dip"-->
+            <!--android:paddingRight="15dip"-->
+            <!--android:text="当前价:¥0.00"-->
+            <!--android:textColor="@color/c969696"-->
+            <!--android:textSize="@dimen/font_size_14" />-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFEDEA9"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip">
+
+                <ImageView
+                    android:id="@+id/ivWarn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    app:srcCompat="@drawable/ic_warning" />
+
+                <TextView
+                    android:id="@+id/tvFollowAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/ivWarn"
+                    android:gravity="center_vertical"
+                    android:text="跟单者跟随预计买入--数量：0"
+                    android:textColor="@color/cffa200"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tvFollowMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFollowAmount"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/ivWarn"
+                    android:gravity="center_vertical"
+                    android:text="跟单者跟随买入总金额：¥ 0"
+                    android:textColor="@color/cffa200"
+                    android:textSize="@dimen/font_size_14" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvBalanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可用USDT：≈¥ 0"
+            android:textColor="@color/c969696"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:textSize="@dimen/font_size_12" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dip">
+
+
+
+                <TextView
+                    android:id="@+id/tvMoneyOrAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="买入金额(¥)"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_14" />
+
+
+
+
+            <EditText
+                android:id="@+id/etMoneyOrAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/xml_et_bg"
+                android:gravity="right|center_vertical"
+                android:hint="输入买入金额"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:textColor="#232323"
+                android:textColorHint="#c8c8c8"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dip">
+
+            <TextView
+                android:id="@+id/tvPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dip"
+                android:text="当前最优价(¥)"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_14" />
+
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/xml_et_bg"
+                android:enabled="false"
+                android:gravity="right|bottom"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:padding="10dip"
+                android:paddingLeft="10dp"
+                android:textColor="#232323"
+                android:textColorHint="#c8c8c8"
+                android:textSize="@dimen/font_size_14" />
+
+            <ImageView
+                android:id="@+id/ivQuestionMark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dip"
+                app:srcCompat="@drawable/ic_question_mark_2" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvMarkHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            android:padding="10dip"
+            android:visibility="gone"
+            android:background="@color/pageBackground"
+            android:text="这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价这是最优价"/>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="15dip"-->
+        <!--android:layout_marginRight="15dip"-->
+        <!--android:orientation="vertical">-->
+
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dip"-->
+        <!--android:text="当前最优价(¥)"-->
+        <!--android:textColor="@color/c3d3a50"-->
+        <!--android:textSize="@dimen/font_size_14" />-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="25dip"-->
+        <!--android:layout_height="25dip"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:src="@drawable/ic_account_setting" />-->
+
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/etPrice"-->
+        <!--android:enabled="false"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@drawable/xml_et_bg"-->
+        <!--android:gravity="right|bottom"-->
+        <!--android:imeOptions="actionNext"-->
+        <!--android:inputType="number"-->
+        <!--android:maxLength="18"-->
+        <!--android:maxLines="1"-->
+        <!--android:padding="10dip"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="#232323"-->
+        <!--android:textColorHint="#c8c8c8"-->
+        <!--android:textSize="@dimen/font_size_14" />-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="25dip"-->
+        <!--android:layout_height="25dip"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:src="@drawable/i_c" />-->
+        <!--</FrameLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <TextView
+            android:id="@+id/tvBuyAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:gravity="right"
+            android:text="预计数量：56.56429706"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvSellMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:gravity="right"
+            android:text="预计金额：56.56429706"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvSellMoneyUsdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:gravity="right"
+            android:text="≈USDT 56.23558222"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_14"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="8dip"-->
+    <!--android:paddingLeft="30dip"-->
+    <!--android:paddingRight="12dip"-->
+    <!--android:text="订单概要"-->
+    <!--android:textColor="@color/c3d3a50"-->
+    <!--android:textSize="@dimen/font_size_14" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvOrderOutline"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:lineSpacingExtra="@dimen/text_linespacingextra"-->
+    <!--android:paddingLeft="30dip"-->
+    <!--android:paddingRight="30dip"-->
+    <!--android:text="订单概要订单订单单概单概要订单概要订单概要订单概要订单概要订单概要订单概要概要订单概要"-->
+    <!--android:textColor="@color/c969696"-->
+    <!--android:textSize="@dimen/font_size_11" />-->
+
+
+    <TextView
+        android:id="@+id/tvSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/selector_rect_solid_corner0_e2214e"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="提交订单"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_17" />
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    <!-- 去除点击事件。焦点等 -->
+
+    <style name="FadeAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="PopAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+    <style name="ZoomEnterAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/zoom_enter</item>
+        <item name="android:windowExitAnimation">@anim/zoom_exit</item>
+    </style>
+
+    <style name="TextAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/text_in</item>
+        <item name="android:windowExitAnimation">@anim/text_exit</item>
+    </style>
+
+    <style name="MyRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/xml_radiobutton</item>
+    </style>
+
+    <style name="lvDividerStyle2">
+        <item name="divider">#eeeeee</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="background">@color/white</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+
+    <style name="noOnTouch">
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="listviewdivider">
+        <item name="divider">#BCBCBC</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+
+    <style name="stylemiddlemage">
+        <item name="android:layout_width">36dip</item>
+        <item name="android:layout_height">36dip</item>
+    </style>
+
+    <style name="lvDividerStyle">
+        <item name="divider">#eeeeee</item>
+        <item name="android:dividerHeight">3px</item>
+        <item name="background">@color/white</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+
+    <style name="mEditText" parent="@android:style/Widget.EditText">
+        <item name="background">@color/ic_line_square</item>
+    </style>
+
+    <style name="StyleGreenRound">
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="background">#292929</item>
+    </style>
+
+    <!-- 文字的阴影效果 -->
+    <style name="AudioFileInfoOverlayText">
+        <item name="android:paddingLeft">4px</item>
+        <item name="android:paddingBottom">4px</item>
+        <item name="android:textColor">#f1f1f1</item>
+        <item name="android:shadowColor">#4d4d4d</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/xml_checkbox</item>
+    </style>
+
+    <style name="ShareTheme_Default" parent="StyleLeftMenu">
+        <item name="btnBackbg">@drawable/ic_iv_back_white</item>
+        <item name="rlTopbg">@color/cbfbfbf</item>
+        <item name="btnAddbg">@drawable/ic_ok_white_68x68</item>
+    </style>
+
+    <style name="ShareTheme_Kline" parent="StyleLeftMenu">
+        <item name="btnBackbg">@drawable/ic_kline_share_back</item>
+        <item name="rlTopbg">@drawable/ic_kline_upanddown_bg</item>
+        <item name="btnAddbg">@drawable/ic_kline_share_ok</item>
+    </style>
+
+    <style name="StyleLeftMenu">
+
+        <!-- <item name="android:windowFrame">@null</item>  边框 -->
+        <!-- <item name="android:windowIsFloating">false</item> 是否浮现在上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <!-- <item name="android:backgroundDimEnabled">true</item>  模糊 -->
+    </style>
+    <!-- 主程序标题 -->
+    <style name="mainTitleStyle">
+        <item name="android:textSize">@dimen/font_size_20</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 主程序顶部 -->
+    <style name="mainTop">
+        <item name="background">@color/cbfbfbf</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="StyleWhiteButton_cbfbfbf">
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="socialQuotationTextStyle">
+        <item name="android:textStyle">bold</item>
+        <!-- 行情粗体 -->
+    </style>
+
+    <style name="socialDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:maxHeight">220.0dip</item>
+        <item name="android:width">280.0dip</item>
+    </style>
+
+    <style name="leftPopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/in_left_to_right</item>
+        <item name="android:windowExitAnimation">@anim/out_right_to_left</item>
+    </style>
+
+    <style name="chatDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="checkawardboxdialog" pardent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

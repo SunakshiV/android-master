@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_margin="15dip"
+            android:background="@drawable/xml_search">
+
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="65dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="搜索代码"
+                android:imeOptions="actionNone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:textColor="@color/c666175ae"
+                android:textColorHint="@color/c666666"
+                android:textSize="@dimen/text_size_content_h2" />
+
+            <LinearLayout
+                android:id="@+id/llCLear"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+
+
+                    app:srcCompat="@drawable/ic_live_close" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </FrameLayout>
+
+
+    <androidx.appcompat.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_history">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="历史记录"
+                android:textColor="#999999"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/tvDelHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="清空历史"
+                android:textColor="@color/beebarBlue"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp" />
+
+        <androidx.appcompat.widget.RecyclerView
+            android:id="@+id/rv_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.procoin.MainActivity">
+
+    <item
+        android:id="@+id/action_5_time"
+        android:title="@string/kline_cycle_minute_5_time" />
+    <item
+        android:id="@+id/action_15_time"
+        android:title="@string/kline_cycle_minute_15_time" />
+    <item
+        android:id="@+id/action_30_time"
+        android:title="@string/kline_cycle_minute_30_time" />
+    <item
+        android:id="@+id/action_60_time"
+        android:title="@string/kline_cycle_minute_60_time" />
+    <item
+        android:id="@+id/action_week_time"
+        android:title="@string/kline_cycle_week_time" />
+
+</menu>

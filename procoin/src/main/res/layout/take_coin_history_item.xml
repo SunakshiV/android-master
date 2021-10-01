@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_compents_bg"
+    android:orientation="vertical"
+    android:padding="15dip">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvInOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提币"
+            android:textStyle="bold"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="@color/c1d3155"
+            android:textSize="@dimen/font_size_14" />
+
+
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="--"
+            android:textColor="@color/c1d3155"
+            android:textSize="@dimen/font_size_12" />
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_arrow" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dip">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAmountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提币数量"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_marginTop="4dip"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_12" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_marginLeft="20dip"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dip">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAddressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提币地址"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_marginTop="4dip"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_10" />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFeeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手续费"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/tvFee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_marginTop="4dip"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tvCancel"
+        android:layout_width="96dip"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_usdt_withdraw"
+        android:gravity="center"
+        android:layout_marginTop="15dip"
+        android:text="撤销"
+        android:textColor="@color/c969696"
+        android:textSize="@dimen/font_size_16" />
+</LinearLayout>

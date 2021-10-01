@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dip"
+    android:layout_height="140dip">
+ <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:cardBackgroundColor="@color/white"-->
+    <!--app:cardCornerRadius="4dip"-->
+    <!--app:cardElevation="3dip"-->
+    <!--app:cardPreventCornerOverlap="false"-->
+    <!--app:cardUseCompatPadding="true">-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+        <!--android:orientation="vertical">-->
+        <!--com.cropyme.http.widget.view.RoundAngleImageView-->
+        <ImageView
+            android:id="@+id/ivHead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_common_mic" />
+
+        <ImageView
+            android:id="@+id/ivCenterPlay"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_common_media_play_white"/>
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvOlstarName"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="25dip"-->
+        <!--android:layout_marginTop="5dip"-->
+        <!--android:ellipsize="end"-->
+        <!--android:gravity="center"-->
+        <!--android:maxLines="1"-->
+        <!--android:text="123"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="@dimen/font_size_16" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvLastPrice"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="25dip"-->
+        <!--android:gravity="center"-->
+        <!--android:text="123"-->
+        <!--android:textColor="@color/olstarColorOrange"-->
+        <!--android:textSize="@dimen/font_size_16" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvRate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="28dip"-->
+        <!--android:layout_marginBottom="8dip"-->
+        <!--android:layout_marginTop="5dip"-->
+        <!--android:background="@drawable/shape_rect_corner1_solid_a6a6a6"-->
+        <!--android:gravity="center"-->
+        <!--android:minWidth="70dip"-->
+        <!--android:text="&#45;&#45;"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/font_size_14" />-->
+
+
+    </RelativeLayout>
+<!--</android.support.v7.widget.CardView>-->
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:layout_gravity="bottom"
+            app:srcCompat="@drawable/xml_divider_gradient_black_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/xml_et_bg"
+                android:gravity="center_vertical"
+                android:hint="收件人姓名(最少2位)"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:minHeight="50dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/ccccccc"
+                android:textSize="@dimen/font_size_14" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/xml_et_bg"
+                android:gravity="center_vertical"
+                android:hint="收件人电话(最少11位)"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:minHeight="50dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/ccccccc"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xml_et_bg"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center_vertical"
+                android:hint="选择省份、城市"
+                android:minHeight="50dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/ccccccc"
+                android:textSize="@dimen/font_size_14" />
+
+            <EditText
+                android:id="@+id/etDetailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xml_et_bg"
+                android:gravity="center_vertical"
+                android:hint="详细地址(5-60位)"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:minHeight="50dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/ccccccc"
+                android:textSize="@dimen/font_size_14" />
+
+            <CheckBox
+                android:layout_marginTop="20dip"
+                android:id="@+id/cbIsDefault"
+                style="@style/MyCheckBox"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="  设置成默认收货地址"
+                android:textSize="@dimen/font_size_15"
+                android:textColor="@color/c808080"
+                android:focusableInTouchMode="false" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dip">
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xml_compents_bg"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_size_17" />
+
+        <TextView
+            android:id="@+id/tvEditSave"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rect_solid_corner0_e2214e"
+            android:gravity="center"
+
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_17" />
+
+        <TextView
+            android:id="@+id/tvAdd"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rect_solid_corner0_e2214e"
+            android:gravity="center"
+            android:text="@string/save_delivery_address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_17" />
+    </LinearLayout>
+
+
+</LinearLayout>

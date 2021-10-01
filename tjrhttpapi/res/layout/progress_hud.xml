@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/xml_progress_hud_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+    <!--android:paddingBottom="20dip"-->
+    <!--android:paddingLeft="25dip"-->
+    <!--android:paddingRight="25dip"-->
+    <!--android:paddingTop="20dip"-->
+    <ImageView
+        android:id="@+id/spinnerImageView"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:background="@drawable/page_refreshing" />
+
+<!--     <TextView -->
+<!--         android:id="@+id/progress_hud_message" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginLeft="8dip" -->
+<!--         android:text="" -->
+<!--         android:textSize="14sp" -->
+<!--         android:textColor="#FFFFFF" /> -->
+
+</LinearLayout>

@@ -1,0 +1,223 @@
+apply plugin: 'com.android.application'
+
+
+dependencies {
+    implementation "org.reactivestreams:reactive-streams:1.0.2"
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':tjrsocial')
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation project(':tjrhttpapi')
+//    implementation project(':swipback')
+
+   /* implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'*/
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+   /* implementation 'com.android.support:design:25.3.1'*/
+    implementation 'com.github.markzhai:blockcanary-android:1.5.0'
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    //ImmersionBar沉侵式布局
+    //    compile 'me.kareluo.ui:popmenu:1.1.0'
+    //    引入 recyclerview  时必须版本与 android-support-v7-appcompat 中的 v4的版本一样
+   /* implementation('com.android.support:recyclerview-v7:25.3.1') {
+//注意:这里的RecyclerView 的版本与 v4包的版本一样,目前是 23.2.1
+//        exclude group: 'com.android.support'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }*/
+  /*  implementation 'com.android.support:appcompat-v7:25.3.1'
+    implementation 'com.android.support:cardview-v7:25.3.1'*/
+    implementation 'cn.jzvd:jiaozivideoplayer:6.3.1'
+    //饺子播放器
+    implementation 'cjt.library.wheel:camera:1.1.9'
+    //录制视频
+  //  implementation(name: 'swipback-release', ext: 'aar')
+    //滑动返回
+    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+    //二维码
+
+
+}
+
+//def releaseTime() {
+//    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+//}
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion '30.0.3'
+    useLibrary 'org.apache.http.legacy'
+    //关闭Android Studio的PNG合法性检查的
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    flavorDimensions "versionCode"
+    defaultConfig {
+        // Enabling multidex support.
+//        minSdkVersion9
+        minSdkVersion 21
+        targetSdkVersion 31
+        multiDexEnabled true
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wwct"]
+        vectorDrawables.useSupportLibrary = true
+//        ,"AArch64"
+        ndk {
+            abiFilters "armeabi"
+        }
+//        jackOptions {
+//            enabled true
+//        }
+    }
+
+    repositories {
+        flatDir {
+//            当一个library类型的module需要引用aar文件时,主module要添加 "../module名/libs"，否则会找不到
+            dirs 'libs', "../tjrsocial/libs"
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "5g"
+        preDexLibraries = false
+        additionalParameters = ['--multi-dex',
+                                '--set-max-idx-number=48000']
+
+    }
+
+    productFlavors {
+        wwct {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wwct"]
+        }
+
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+   /* signingConfigs {
+        debug {
+            // No debug config
+            storeFile file('C:\\Users\\Lavesh\\Downloads\\android-master\\android-master\\procoin\\wwct')
+            storePassword "taojinroad2318"
+            keyAlias 'wwct'
+            keyPassword "taojinroad2318"
+        }
+        release {
+            storeFile file('C:\\Users\\Lavesh\\Downloads\\android-master\\android-master\\procoin\\wwct')
+            storePassword "taojinroad2318"
+            keyAlias 'wwct'
+            keyPassword "taojinroad2318"
+        }
+    }*/
+
+//    afterEvaluate {
+//        android.applicationVariants.all { variant ->
+////            println("==r.txt dir: ${project.buildDir}/intermediates/symbols/${variant.dirName}/R.txt")
+//            File rtxtFile = new File(variant.getVariantData().getScope().getSymbolLocation(),"R.txt")
+//
+//            println("==rtxtFile: ${rtxtFile}")
+//        }
+//    }
+
+
+    buildTypes {
+        debug {
+            // 显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "-debug"
+//            minifyEnabled false
+//            zipAlignEnabled false
+//            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+//            proguardFile 'proguard.cfg'
+//            signingConfig signingConfigs.release
+
+//            applicationVariants.all { variant ->
+//                variant.outputs.each { output ->
+//                    def outputFile = output.outputFile
+//                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                        // 输出apk名称为boohee_v1.0_2015-01-15_wandoujia.apk
+//                        def fileName = "${variant.productFlavors[0].name}.apk"
+//                        output.outputFile = new File(outputFile.parent, fileName)
+//                    }
+//                }
+//            }
+//            applicationVariants.all { variant ->//批量修改Apk名字
+//                variant.outputs.all { output ->
+//                    variant.outputs.all {
+//                        outputFileName = "${variant.productFlavors[0].name}.apk"
+//                    }
+//                    }
+//            }
+        }
+    }
+
+
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+//            manifest.srcFile 'AndroidManifest.xml'
+//            java.srcDirs = ['src']
+//            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src/main/java']
+//            renderscript.srcDirs = ['src']
+            res.srcDirs = ['src/main/res', 'src/main/res/xxhdpi', 'src/main/res/drawable-xxhdpi', 'src/main/res/xml']
+            assets.srcDirs = ['assets', 'src/main/assets', 'src/main/assets/']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        // Move the tests to tests/java, tests/res, etc…
+        androidTest.setRoot('tests')
+
+
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    //防止重复的jar包，这个是开源项目的开源协议
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    compileOptions {
+       sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+   }
+    //这里是分包需要使用的分包大小
+//    android.applicationVariants.all {
+//        variant ->
+//            dex.doFirst {
+//                dex ->
+//                    if (dex.additionalParameters == null) {
+//                        dex.additionalParameters = []
+//                    }
+//                    dex.additionalParameters += '--set-max-idx-number=48000'
+//            }
+//    }
+
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theTheme"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <!-- 这个是new的list -->
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.procoin.widgets.PinnedSectionListView
+            android:id="@+id/lvmyfriendlist"
+            style="@style/lvDividerStyle2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:divider="@color/dividerColor"
+            android:fadingEdge="none"
+            android:scrollbars="none"></com.procoin.widgets.PinnedSectionListView>
+    </RelativeLayout>
+
+</LinearLayout>

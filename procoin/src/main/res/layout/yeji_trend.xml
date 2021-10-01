@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvMonth1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:gravity="center"
+            android:text="一个月内"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:background="@drawable/xml_tab_bg_3"
+            android:textColor="@color/xml_usdt_tab_text2"
+            android:textSize="@dimen/font_size_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMonth3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:background="@drawable/xml_tab_bg_3"
+            android:text="三个月内"
+            android:textColor="@color/xml_usdt_tab_text2"
+            android:textSize="@dimen/font_size_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMonth6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="六个月内"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:background="@drawable/xml_tab_bg_3"
+            android:textColor="@color/xml_usdt_tab_text2"
+            android:textSize="@dimen/font_size_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMonth12"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="一年内"
+            android:background="@drawable/xml_tab_bg_3"
+            android:textColor="@color/xml_usdt_tab_text2"
+            android:textSize="@dimen/font_size_12"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.procoin.widgets.piechart.CardHolderChartView
+        android:id="@+id/cardHolderChartView"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="20dip" />
+
+
+</LinearLayout>

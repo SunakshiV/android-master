@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:padding="20dip">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTolMarket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总市值：0.00 USDT"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTolMarketCny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="≈¥0.00"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center_vertical">
+
+            <com.procoin.widgets.PieChartView
+                android:id="@+id/pieChartView"
+                android:layout_width="200dip"
+                android:layout_height="match_parent"
+                app:centerTextColor="#000000"
+                app:centerTextSize="18sp"
+                app:circleWidth="40dp"
+                app:dataTextColor="#ffffff"
+                app:dataTextSize="7sp" />
+
+            <androidx.appcompat.widget.RecyclerView
+                android:id="@+id/rvPieChartList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="币种"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="数量"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="市值(USDT)"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_12" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:nestedScrollingEnabled="false">
+
+        </androidx.appcompat.widget.RecyclerView>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

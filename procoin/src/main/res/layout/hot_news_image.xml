@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.procoin.widgets.PhotoViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/photoViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+    <include layout="@layout/toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivSavePic"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginBottom="50dip"
+        app:srcCompat="@drawable/ic_svg_download"
+        android:layout_gravity="right|bottom"
+        android:visibility="visible">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+</FrameLayout>

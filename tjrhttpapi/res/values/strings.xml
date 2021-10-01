@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, TjrhttpapiActivity!</string>
+    <string name="app_name">Tjrhttpapi</string>
+<string name="loading_date_message">加载中...</string>
+
+<string name="dialog_cancel">取消</string>
+<string name="dialog_ok">确定</string>
+</resources>

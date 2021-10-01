@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--代码中用seekbar.setThumb会有问题，所以用这种方式-->
+    <item android:drawable="@drawable/drag_thumb_success" android:state_selected="true" />
+    <item android:drawable="@drawable/drag_thumb" />
+
+</selector>

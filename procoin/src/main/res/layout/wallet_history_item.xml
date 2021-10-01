@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_compents_bg"
+    android:orientation="vertical"
+    android:padding="20dip">
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvWay"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingLeft="10dip"-->
+        <!--android:paddingRight="10dip"-->
+        <!--android:paddingTop="5dip"-->
+        <!--android:paddingBottom="5dip"-->
+        <!--android:text="跟单获得"-->
+        <!--android:background="@drawable/shape_kbt_get_way_bg"-->
+        <!--android:textColor="@color/cff8f01"-->
+        <!--android:textSize="@dimen/font_size_12" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间"
+                android:textColor="@color/c666175ae"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="--"
+                android:textColor="@color/c3d3a50"
+                android:textSize="@dimen/font_size_14" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="转出BTC"
+                android:textColor="@color/c666175ae"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="--"
+                android:textColor="@color/c3d3a50"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

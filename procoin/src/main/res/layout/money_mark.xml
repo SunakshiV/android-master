@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="20dip">-->
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pageBackground"
+        android:textSize="@dimen/font_size_10"
+        android:lineSpacingExtra="@dimen/text_linespacingextra"
+        android:padding="10dip"
+        android:text="小数点后2位尾数,每次现金支付时随机生成，目的是为收款者确认现金支付者的身份，所以请准确支付完整金额，否则导致订单失效。" />
+
+<!--</LinearLayout>-->

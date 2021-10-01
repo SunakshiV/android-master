@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!-- 滚动条 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pageBackground"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none">
+
+        <!-- 这个自己的详细资料 -->
+
+        <LinearLayout
+            android:id="@+id/myhomepage_myinfo_RelativeLayout_myinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dip"
+            android:paddingTop="@dimen/settingItemVerticalSpacing">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rlUserInfo"
+                    style="@style/inSideSettingItem"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/settingTextStyleWithoutImg"
+                        android:text="头像" />
+
+                    <!--<include-->
+                    <!--android:id="@+id/ivPhoto"-->
+                    <!--layout="@layout/addv_image_layout"-->
+                    <!--android:layout_width="60dip"-->
+                    <!--android:layout_height="60dip"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerInParent="true" />-->
+
+                    <com.procoin.widgets.CircleImageView
+                        style="@style/olstarHead"
+                        android:id="@+id/ivOlstarHead"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center_vertical"
+                        app:circle_border_color="@color/white"
+                        app:circle_border_width="2dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+                <!--<View-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginLeft="15dip"-->
+                    <!--android:layout_marginRight="15dp" />-->
+                <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/personalBg"-->
+                        <!--style="@style/inSideSettingItem">-->
+                        <!--<TextView-->
+                            <!--style="@style/settingTextStyleWithoutImg"-->
+                            <!--android:text="个人主页封面" />-->
+                        <!--<ImageView-->
+                            <!--android:scaleType="centerCrop"-->
+                            <!--android:src="@color/white"-->
+                            <!--android:id="@+id/iv_bg"-->
+                            <!--android:layout_width="30dp"-->
+                            <!--android:layout_height="30dp" />-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="20dip"-->
+                            <!--android:src="@drawable/ic_arrow" />-->
+                    <!--</LinearLayout>-->
+                <!--</FrameLayout>-->
+                <!--<View-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginLeft="15dip"-->
+                    <!--android:layout_marginRight="15dp" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/rlVerify"-->
+                    <!--style="@style/inSideSettingItem"-->
+                    <!--android:paddingLeft="15dp">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/settingTextStyleWithoutImg"-->
+                        <!--android:text="实名认证" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvUserRealName"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="10dip"-->
+                        <!--android:ellipsize="end"-->
+                        <!--android:textColor="@color/c888888"-->
+                        <!--android:textSize="@dimen/font_size_14" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvIdCertify"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="10dip"-->
+                        <!--android:background="@drawable/xml_verify_state_enable_bg"-->
+                        <!--android:paddingBottom="2dip"-->
+                        <!--android:paddingLeft="5dip"-->
+                        <!--android:paddingRight="5dip"-->
+                        <!--android:paddingTop="2dip"-->
+                        <!--android:text="未认证"-->
+                        <!--android:textColor="@color/quotation_red_color"-->
+                        <!--android:textSize="@dimen/font_size_12" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/ivArrow"-->
+                        <!--style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/rlNameinfo"
+                    style="@style/inSideSettingItem">
+
+                    <TextView
+                        style="@style/settingTextStyleWithoutImg"
+                        android:text="昵称" />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/c888888"
+                        android:textSize="@dimen/font_size_15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+
+
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout
+                    style="@style/inSideSettingItem">
+
+                    <TextView
+                        style="@style/settingTextStyleWithoutImg"
+                        android:text="ID" />
+
+                    <TextView
+                        android:id="@+id/tvID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textColor="@color/beebarGray"
+                        android:textSize="@dimen/font_size_15" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout style="@style/inSideSettingItem">
+
+
+                    <TextView
+                        android:id="@+id/tvSextitle"
+                        style="@style/settingTextStyleWithoutImg"
+                        android:text="性别" />
+
+                    <TextView
+                        android:id="@+id/tv_boy"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="20px"
+                        android:background="@drawable/blue_follow"
+                        android:gravity="center"
+                        android:text="男"
+                        android:textColor="@color/beebar_status_white_969696"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/tv_girl"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="20dip"
+                        android:background="@drawable/blue_follow"
+                        android:gravity="center"
+                        android:text="女"
+                        android:textColor="@color/beebar_status_white_969696"
+                        android:textSize="30px" />
+
+                    <!--<Spinner-->
+                    <!--android:id="@+id/spSex"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="-10dp"-->
+                    <!--android:background="@null"-->
+                    <!--android:gravity="right"-->
+                    <!--android:textSize="@dimen/font_size_14" />-->
+
+                </LinearLayout>
+
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/llQRCode"
+                    style="@style/inSideSettingItem"
+                    android:paddingLeft="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/settingTextStyleWithoutImg"
+                        android:text="二维码" />
+
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        app:srcCompat="@drawable/ic_common_mic" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/llBirthday"
+                    style="@style/inSideSettingItem">
+
+                    <TextView
+                        style="@style/settingTextStyleWithoutImg"
+                        android:text="生日" />
+
+                    <TextView
+                        android:id="@+id/tvBirthDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textColor="@color/beebarGray"
+                        android:textSize="@dimen/font_size_15"
+                        android:hint="未设置"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+                <!--<View-->
+                <!--style="@style/dividerLine_horizontal"-->
+                <!--android:layout_marginLeft="15dip"-->
+                <!--android:layout_marginRight="15dp" />-->
+
+
+
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/rlVerify"-->
+                <!--style="@style/inSideSettingItem"-->
+                <!--android:paddingLeft="15dp">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dip"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:ellipsize="end"-->
+                <!--android:text="实名认证"-->
+                <!--android:textColor="@color/c777777"-->
+                <!--android:textSize="@dimen/font_size_14" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvVerifyName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="10dip"-->
+                <!--android:ellipsize="end"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="@dimen/font_size_14" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvVerifyState"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="10dip"-->
+                <!--android:background="@drawable/xml_verify_state_enable_bg"-->
+                <!--android:paddingBottom="2dip"-->
+                <!--android:paddingLeft="5dip"-->
+                <!--android:paddingRight="5dip"-->
+                <!--android:paddingTop="2dip"-->
+                <!--android:text="未认证"-->
+                <!--android:textColor="@color/quotation_red_color"-->
+                <!--android:textSize="@dimen/font_size_12" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/ivArrow"-->
+                <!--style="@style/commonAarrow" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--style="@style/dividerLine_horizontal"-->
+                <!--android:layout_marginLeft="15dip"-->
+                <!--android:layout_marginRight="15dp" />-->
+
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/rlAccount"-->
+                <!--style="@style/inSideSettingItem"-->
+                <!--android:paddingLeft="15dp">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dip"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:ellipsize="end"-->
+                <!--android:text="账号"-->
+                <!--android:textColor="@color/beebarBlack"-->
+                <!--android:textSize="@dimen/font_size_15" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvAccount"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:ellipsize="end"-->
+                <!--android:textColor="@color/beebarGray"-->
+                <!--android:textSize="@dimen/font_size_15" />-->
+                <!--<ImageView-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:src="@drawable/ic_arrow"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--style="@style/dividerLine_horizontal"-->
+                <!--android:layout_marginLeft="15dip"-->
+                <!--android:layout_marginRight="15dp" />-->
+
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:id="@+id/rlUserId"-->
+            <!--style="@style/inSideSettingItem"-->
+            <!--android:paddingLeft="15dp">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:ellipsize="end"-->
+            <!--android:text="ID"-->
+            <!--android:textColor="@color/beebarBlack"-->
+            <!--android:textSize="@dimen/font_size_15" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvID"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ellipsize="end"-->
+            <!--android:textColor="@color/beebarGray"-->
+            <!--android:textSize="@dimen/font_size_15" />-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/settingItemVerticalSpacing">
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/rlBirthdayInfo"-->
+                <!--style="@style/homeMineItem">-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvBirthdaytitle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="出生日期"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="@dimen/font_size_16" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvBirthday"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:ellipsize="end"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="@string/novalue"-->
+                <!--android:textColor="@color/c8c8c8c"-->
+                <!--android:textSize="@dimen/font_size_14" />-->
+                <!--</RelativeLayout>-->
+
+
+
+                <LinearLayout
+                    android:id="@+id/llDescribes"
+                    style="@style/inSideSettingItem"
+                    android:background="@color/white"
+                    >
+
+
+                    <TextView
+                        android:text="个人简介"
+                        style="@style/settingTextStyleWithoutImg"/>
+
+
+                    <ImageView
+                        android:layout_marginLeft="20dip"
+                        app:srcCompat="@drawable/ic_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dp" />
+
+                <TextView
+                    android:id="@+id/tvDescribes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/text_linespacingextra"
+                    android:ellipsize="end"
+                    android:hint="请编辑个人简介"
+                    android:textColor="@color/c888888"
+                    android:padding="15dip"
+                    android:textSize="@dimen/font_size_13" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

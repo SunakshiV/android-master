@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/theTheme"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center_vertical"
+        android:text="投票项"
+		android:padding="5dip"
+        android:background="@drawable/ic_btn_chatsend_down"
+        android:textColor="@color/c6f6f6f"
+        android:textSize="@dimen/text_size_button_h3" />
+
+    <TextView 
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_button_h1"
+        android:text="问题"
+        />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+<include layout="@layout/toolbar"/>
+    <TextView
+        android:id="@+id/tvSymbol1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:text="转入数量到存币宝"
+        android:textColor="@color/c1d3155"
+        android:textSize="@dimen/font_size_14" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip">
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/xml_et_bg"
+            android:gravity="center_vertical"
+            android:hint="请最低转入100"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:paddingRight="80dip"
+            android:textColor="@color/c1d3155"
+            android:textColorHint="#c8c8c8"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSymbol2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="50dip"
+            android:text="--"
+            android:textColor="@color/c666175ae"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvAll"
+            android:layout_width="35dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_12" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvEnableAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:text="可用数量：0.00 "
+        android:textColor="@color/c666175ae"
+        android:textSize="@dimen/font_size_12" />
+
+    <TextView
+        android:id="@+id/tvIntoWallet"
+        style="@style/btn_style_1"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="20dip"
+        android:text="确认转入" />
+
+</LinearLayout>

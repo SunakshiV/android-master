@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="20dip">-->
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pageBackground"
+        android:textSize="@dimen/font_size_10"
+        android:lineSpacingExtra="@dimen/text_linespacingextra"
+        android:padding="10dip"
+        android:text="跟单净分成=跟单分成-技术服务费" />
+
+<!--</LinearLayout>-->

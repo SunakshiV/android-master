@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#aa000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingRight="30dp"
+        android:gravity="right|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize">
+    <TextView
+        android:id="@+id/tv_close"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_40"
+        android:textColor="@color/white"
+        android:text="×"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:text="拖动图片完成验证"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/bg_swipe"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.procoin.widgets.swipecaptcha.SwipeCaptchaFrameLayout2
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/swipeCaptchaFrameLayout"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

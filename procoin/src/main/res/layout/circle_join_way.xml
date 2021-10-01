@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dip">
+
+        <RadioButton
+            android:id="@+id/cbWay1"
+            style="@style/MyCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:checked="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="15dip"
+            android:text="无需申请加入圈子"
+            android:textColor="@color/c232323"
+            android:textSize="@dimen/font_size_15" />
+
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_marginLeft="30dip" />
+
+        <RadioButton
+            android:id="@+id/cbWay2"
+            style="@style/MyCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:checked="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="15dip"
+            android:text="需要身份验证加入圈子"
+            android:textColor="@color/c232323"
+            android:textSize="@dimen/font_size_15" />
+
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_marginLeft="30dip" />
+    </RadioGroup>
+
+
+</LinearLayout>

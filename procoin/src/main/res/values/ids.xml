@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lvStock" type="id"/>
+        <!-- ToggleView -->
+    <item name="toggleHandle" type="id"/>
+    <item name="toggleOff" type="id"/>
+    <item name="toggleOn" type="id"/>
+    
+    <item name="toggleView" type="id"/>
+    
+    
+    <item name="ivNew" type="id"/>
+    <item name="squareConcernVertical" type="id"/>
+
+    <item name="list_bottomTxt" type="id"/>
+    <item name="ivHead" type="id"/>
+
+    <item name="tvContent" type="id"/>
+
+    <item name="ivOlstarHead" type="id"/>
+
+    <item name="olstarName" type="id"/>
+    <item name="olstarCode" type="id"/>
+
+    <item name="toolbar" type="id"/>
+
+    <item name="tvFollow" type="id"/>
+
+    <item name="tvSubmit" type="id"/>
+
+</resources>

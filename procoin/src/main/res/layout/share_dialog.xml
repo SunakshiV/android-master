@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_share_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.procoin.widgets.CircleImageView
+                        android:id="@+id/ivHead"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/ic_default_head" />
+
+                    <TextView
+                        android:id="@+id/tvId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:maxLines="1"
+                        android:text="ID:0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_16"
+                        android:textStyle="bold" />
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dip"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:text="(注册填写我的ID即可关注我，也可以搜索我的ID添加关注)"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/font_size_12" />-->
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:gravity="bottom"
+                        >
+
+                        <TextView
+                            android:id="@+id/tvIam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="我是"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_12" />
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:maxLines="1"
+                            android:text="--"
+                            android:textColor="@color/cff8f01"
+                            android:textSize="@dimen/font_size_38"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvContent1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="12dip"
+                        android:maxLines="1"
+                        android:text="已入驻W.W.C.T 一键跟上我的实盘交易"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_16" />
+
+
+                    <TextView
+                        android:id="@+id/tvContent2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dip"
+                        android:layout_marginTop="5dip"
+                        android:maxLines="1"
+                        android:text="我赚多少 你就赚多少"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_16" />
+
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dip"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip">
+
+                <ImageView
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    app:srcCompat="@drawable/app_logo" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="W.W.C.T"
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:text="环球数字资产交易平台"
+                        android:textColor="@color/ca3a3a3"
+                        android:textSize="@dimen/font_size_10" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivQr"
+                    android:layout_width="65dip"
+                    android:layout_height="65dip" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvInvite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_compents_card_bg"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="邀请好友"
+            android:textColor="@color/c3d3d3d"
+            android:textSize="@dimen/font_size_16" />
+
+        <LinearLayout
+            android:id="@+id/ll_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_wechat_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivWechat"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop" />
+                <!--android:src="@drawable/ic_beebar_wechat"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="微信好友"
+                    android:textColor="@color/c3d3d3d"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_wechatC_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop" />
+                <!--android:src="@drawable/ic_beebar_wechat_circle"-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="朋友圈"
+                    android:textColor="@color/c3d3d3d"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_qq_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop" />
+                <!--android:src="@drawable/ic_beebar_qq"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="QQ好友"
+                    android:textColor="@color/c3d3d3d"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_zone_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop" />
+                <!--android:src="@drawable/ic_beebar_qzone"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="QQ空间"
+                    android:textColor="@color/c3d3d3d"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sina_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop" />
+                <!--android:src="@drawable/ic_beebar_sina"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="微博"
+                    android:textColor="@color/c3d3d3d"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/dividerLine_horizontal" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_compents_card_bg"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="取消"
+            android:textColor="@color/beebarBlack" />
+    </LinearLayout>
+</LinearLayout>

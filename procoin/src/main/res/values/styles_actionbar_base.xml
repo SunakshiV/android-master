@@ -1,0 +1,53 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <!-- actionBar -->
+
+<!--     <style user_name="Theme.Taojinroad.ActionBar.Base" parent="Theme.AppCompat.Light"> -->
+<!--         <item user_name="actionBarStyle">@style/ActionBar.Light.Taojinroad</item> -->
+<!--         <item user_name="actionDropDownStyle">@style/MyActionDropDownStyle</item> -->
+<!--         <item user_name="homeAsUpIndicator">@drawable/abc_ic_ab_back_holo_dark</item> -->
+<!--         返回图标，要加android 否则无效 -->
+<!--         <item user_name="homeAsUpIndicator">@drawable/ic_launcher</item> -->
+<!--         菜单文字颜色 -->
+<!--         <item user_name="actionMenuTextColor">@color/blue</item> -->
+<!--         <item user_name="actionMenuTextAppearance">@style/Theme.Taojinroad.ActionBar.Base.ActionBar.Menu</item> -->
+<!--     </style> -->
+<!--      <style user_name="Theme.Taojinroad.ActionBar.OverLay.Base" parent="Theme.Taojinroad.ActionBar.Base"> -->
+<!--         <item user_name="windowActionBarOverlay">true</item> -->
+<!--         <item user_name="actionBarStyle">@style/ActionBar.Light.Taojinroad.OverLay</item> -->
+<!--     </style> -->
+
+<!--     <style user_name="Theme.Taojinroad.ActionBar.Base.ActionBar.Menu" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"> -->
+<!--         <item user_name="android:textSize">16sp</item> -->
+<!--         <item user_name="android:textStyle">normal</item> -->
+<!--     </style> -->
+
+<!--     <style user_name="Theme.Taojinroad.ActionBar.Home.Base" parent="Theme.Taojinroad.ActionBar"> -->
+         
+<!--     </style> -->
+
+<!--     <style user_name="MyPopupMenuStyle.Base" parent="Widget.AppCompat.Light.PopupMenu"> -->
+<!--         <item user_name="android:popupBackground">@color/red</item> -->
+<!--     </style> -->
+
+<!--     <style user_name="ActionBar.Light.Taojinroad.base" parent="Widget.AppCompat.Light.ActionBar"> -->
+<!--         <item user_name="titleTextStyle">@style/ActionBar.Title.Taojinroad</item> -->
+<!--         <item user_name="background">@color/actionbar_background</item> -->
+<!--         <item user_name="indeterminateProgressStyle">@style/ActionBar.ProgressStyle.Taojinroad</item> -->
+<!--     </style> -->
+<!--       <style user_name="ActionBar.Light.Taojinroad.Overlay.base" parent="ActionBar.Light.Taojinroad.base"> -->
+<!--         <item user_name="background">@color/actionbar_background_overlay</item> -->
+<!--     </style> -->
+
+<!--     <style user_name="MySpinnerDropDownItemStyle.base" parent="Widget.AppCompat.Light.Base.DropDownItem.Spinner"></style> -->
+
+<!--     <style user_name="MyDropDownListViewStyle.base" parent="Widget.AppCompat.Base.ListView.DropDown"></style> -->
+
+<!--     <style user_name="MyActionDropDownStyle.base" parent="Widget.AppCompat.Base.Spinner"></style> -->
+
+</resources>

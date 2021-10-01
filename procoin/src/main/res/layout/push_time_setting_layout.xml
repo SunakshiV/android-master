@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#B0000000"-->
+    <!--android:gravity="bottom"-->
+    <!--android:orientation="vertical">-->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <Button
+                android:id="@+id/btn_datetime_cancel"
+                style="@style/ss_btnDatePickerStyle"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:text="取 消"
+                android:textColor="@color/c959595"></Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="选择时间段"
+                android:textColor="@color/c444444"
+                android:textSize="@dimen/font_size_15" />
+
+            <Button
+                android:id="@+id/btn_datetime_sure"
+                style="@style/ss_btnDatePickerStyle"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="确 定"
+                android:textColor="@color/quotation_zhang_color"></Button>
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_datetime_cancel"-->
+                <!--style="@style/ss_btnDatePickerStyle"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:background="@null"-->
+                <!--android:text="取 消"-->
+                <!--android:textColor="@color/c959595"></Button>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_datetime_sure"-->
+                <!--style="@style/ss_btnDatePickerStyle"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:background="@null"-->
+                <!--android:text="确 定"-->
+                <!--android:textColor="@color/c959595"></Button>-->
+        <!--</RelativeLayout>-->
+
+        <LinearLayout
+            android:id="@+id/timePicker1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp">
+
+            <com.procoin.widgets.wheelview.WheelView
+                android:id="@+id/startTime"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.procoin.widgets.wheelview.WheelView
+                android:id="@+id/endTime"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+<!--</LinearLayout>-->

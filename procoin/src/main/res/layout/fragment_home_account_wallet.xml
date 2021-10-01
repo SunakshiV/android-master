@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--frameLayout 里面不能加入android:layout_marginTop="10dip"属性，否则RecyclerViewitem只显示一项-->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/llCopyOrder"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="visible">-->
+
+        <androidx.appcompat.widget.RecyclerView
+            android:id="@+id/rvFollowList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvNoDataCopyOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="200dip"
+            android:text="暂无数据"
+            android:textColor="@color/c666175ae"
+            android:visibility="gone" />
+
+        <!--</LinearLayout>-->
+
+
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

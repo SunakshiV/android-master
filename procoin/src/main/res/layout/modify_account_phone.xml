@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvStep1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:background="@color/ceeeeee"
+            android:gravity="center"
+            android:text="1.验证身份"
+            android:textColor="@color/c666666"
+            android:textSize="@dimen/font_size_13" />
+
+        <ImageView
+            android:id="@+id/ivStep1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_pay_pass_2" />
+
+        <TextView
+            android:id="@+id/tvStep2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="2.更改手机号"
+            android:textColor="@color/c666666"
+            android:textSize="@dimen/font_size_13" />
+
+        <ImageView
+            android:id="@+id/ivStep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_pay_pass_3" />
+
+        <TextView
+            android:id="@+id/tvStep3"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="3.完成"
+            android:textColor="@color/c666666"
+            android:background="@color/white"
+            android:textSize="@dimen/font_size_13" />
+
+
+    </LinearLayout>
+
+    <View style="@style/dividerLine_horizontal" />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/llStep1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="已绑定手机号:"
+                android:textColor="@color/c232323"
+                android:textSize="@dimen/font_size_13" />
+
+            <TextView
+                android:id="@+id/tvAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="----"
+                android:textColor="@color/c232323"
+                android:textSize="@dimen/font_size_16" />
+
+        </LinearLayout>
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip" />
+
+        <LinearLayout
+            android:id="@+id/llModifyPayPass"
+            android:layout_height="50dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:layout_width="match_parent">
+
+            <EditText
+                android:id="@+id/et_verify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入验证码"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColor="#232323"
+                android:textColorHint="#c8c8c8"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/tv_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_verify"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="6dp"
+                android:text="获取验证码"
+                android:textColor="@color/btn_verify"
+                android:textSize="@dimen/font_size_10" />
+        </LinearLayout>
+
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip" />
+
+
+
+        <TextView
+            style="@style/btn_style_4"
+            android:id="@+id/tvNext1"
+            android:text="下一步"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="44dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llStep2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:layout_marginLeft="15dip"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="中国"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/ic_arrow_subscribe_price"
+            android:textColor="#232323"
+            android:textSize="@dimen/font_size_14"
+            android:layout_marginTop="15dp"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="50dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/tvCountryCode"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:textColor="#232323"
+                android:textSize="@dimen/font_size_14"
+                android:text="+86"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/ic_arrow_subscribe_price"/>
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#dcdcdc"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <EditText
+                android:layout_marginLeft="12dp"
+                android:id="@+id/et_newPhone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入新手机号码"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColor="#232323"
+                android:textColorHint="#c8c8c8"
+                android:textSize="@dimen/font_size_14" />
+
+        </LinearLayout>
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip" />
+        <LinearLayout
+            android:id="@+id/llModifyPayPass2"
+            android:layout_height="50dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:layout_width="match_parent">
+
+            <EditText
+                android:id="@+id/et_newSms"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入验证码"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColor="#232323"
+                android:textColorHint="#c8c8c8"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/tv_newVerfiy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_verify"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="6dp"
+                android:text="获取验证码"
+                android:textColor="@color/btn_verify"
+                android:textSize="@dimen/font_size_10" />
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvNext2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:layout_marginTop="44dp"-->
+            <!--android:background="@drawable/btn_login"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="下一步"-->
+            <!--android:textColor="@color/btn_login"-->
+            <!--android:textSize="@dimen/font_size_14" />-->
+
+        <TextView
+            style="@style/btn_style_4"
+            android:id="@+id/tvNext2"
+            android:text="下一步"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="44dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/llStep3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="visible">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="20dip"-->
+            <!--android:layout_marginTop="30dip"-->
+            <!--android:gravity="center"-->
+            <!--android:text="请再次输入6位支付密码"-->
+            <!--android:textColor="@color/c232323" />-->
+
+        <!--<com.tjr.imredz.widgets.transactionpassword.GridPasswordView-->
+            <!--android:id="@+id/gpdPayPassAgain"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:layout_marginLeft="10dip"-->
+            <!--android:layout_marginRight="10dip" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvComplete"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:layout_marginTop="44dp"-->
+            <!--android:background="@drawable/btn_login"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="完成"-->
+            <!--android:textColor="@color/btn_login"-->
+            <!--android:textSize="@dimen/font_size_14" />-->
+    <!--</LinearLayout>-->
+</LinearLayout>

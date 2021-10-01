@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">W.W.C.T</string>
+    <string name="test">languageTest</string>
+    <string name="languageset">languageSetting</string>
+    <string name="followSystem">Auto</string>
+    <string name="save">Save</string>
+    <string name="userProtocol">《用户服务协议》</string>
+    <string name="circleRule">《W.W.C.T软件圈主规则》</string>
+    <string name="label_login_activity">Sign In</string>
+    <string name="label_signup_activity">Sign Up</string>
+    <string name="label_phone_number">Phone Number</string>
+    <string name="hint_phone_number">Please enter your cell phone number</string>
+    <string name="label_verify_code">短信验证码</string>
+    <string name="hint_verify_code">输入验证码</string>
+    <string name="btn_verify_code">获取验证码</string>
+    <string name="label_password_number">密码</string>
+    <string name="label_password_confirm">确认密码</string>
+    <string name="hint_paassword_confirm">请重新输入密码</string>
+    <string name="label_forget_password">忘记密码</string>
+</resources>

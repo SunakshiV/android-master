@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="btnBackbg" format="reference" /><!--左边按钮的背景  -->
+    <attr name="rlTopbg" format="reference" /><!--顶部的背景  -->
+    <attr name="btnAddbg" format="reference" /><!--右边按钮的背景  -->
+    <declare-styleable name="StrokeTextView">
+
+        <!-- 自定义的属性名称 和对应的单位 -->
+        <attr name="outerColor" format="color|reference" />
+        <attr name="innerColor" format="color|reference" />
+
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvCurr"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:gravity="center"
+            android:text="分时"
+            android:background="@drawable/shape_point_bg_fe5400"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_10"></TextView>
+
+
+
+
+    <TextView
+        android:id="@+id/tvFs"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:gravity="center"
+        android:text="分时"
+        android:visibility="gone"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/shape_point_bg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_10"></TextView>
+
+    <TextView
+        android:id="@+id/tvDayKline"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="日k"
+        android:background="@drawable/shape_point_bg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_10"></TextView>
+
+    <TextView
+        android:id="@+id/tvWeekKline"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:gravity="center"
+        android:layout_marginTop="5dip"
+        android:visibility="gone"
+        android:text="周k"
+        android:background="@drawable/shape_point_bg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_10"></TextView>
+
+    <TextView
+        android:id="@+id/tvMonthKline"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:gravity="center"
+        android:text="月k"
+        android:visibility="gone"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/shape_point_bg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_10"></TextView>
+
+
+
+
+</LinearLayout>

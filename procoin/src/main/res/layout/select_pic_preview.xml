@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <com.procoin.widgets.PhotoViewPager
+        android:id="@+id/vp_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.appcompat.widget.Toolbar style="@style/toolbar">
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/actionbar_light_title_color"
+            android:textSize="@dimen/font_size_16" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#cc000000"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_extra"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:orientation="vertical"-->
+            <!--&gt;-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/rv_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp" />-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:background="#20ffffff" />-->
+        <!--</LinearLayout>-->
+
+        <View style="@style/dividerLine_horizontal"
+            android:background="#30ffffff"/>
+
+        <CheckBox
+            android:id="@+id/ckbSeclected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginRight="15dip"
+            android:button="@drawable/selector_checkbox_select_pic"
+            android:text="  选择"
+            android:checked="true"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_15"/>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_select"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:gravity="right"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingBottom="15dp"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:paddingTop="15dp">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_select"-->
+                <!--android:layout_width="15dp"-->
+                <!--android:layout_height="15dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:src="@drawable/ic_redz_photo_unselect" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_select"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginLeft="6dp"-->
+                <!--android:paddingRight="15dp"-->
+                <!--android:text="选择"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/font_size_15" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</FrameLayout>

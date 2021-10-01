@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 底部图标背景 -->
+    <item android:state_selected="true"><shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+
+            <solid android:color="#d7706c" />
+
+            <padding android:bottom="2dp" android:left="5dp" android:right="5dp" android:top="2dp" />
+        </shape></item>
+    <item android:state_selected="false"><shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+
+            <solid android:color="#78c9de" />
+
+            <padding android:bottom="2dp" android:left="5dp" android:right="5dp" android:top="2dp" />
+        </shape></item>
+
+</selector>

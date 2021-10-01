@@ -1,0 +1,105 @@
+    <!--android:background="@drawable/shape_cropy_order_bg"-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/xml_compents_bg"
+        android:id="@+id/llItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="15dip">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvSymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_14"
+          />
+
+            <TextView
+                android:id="@+id/tvMultiNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:paddingTop="2dip"
+                android:paddingBottom="2dip"
+                android:text="3X"
+                android:layout_marginLeft="8dip"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_10"
+                android:background="@drawable/shape_nultinum_bg"
+                />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="盈亏"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_14"
+            />
+
+            <TextView
+                android:id="@+id/tvProfitRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dip"
+                android:text="0.00%"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_14"
+                 />
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dip">
+
+        <TextView
+            android:id="@+id/tvOrientation"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="@color/c1d3155"
+            android:textSize="@dimen/font_size_18"
+            />
+
+
+        <TextView
+            android:id="@+id/tvProfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dip"
+            android:text="0.0000"
+            android:textColor="@color/quotation_die_color"
+            android:textSize="@dimen/font_size_20"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

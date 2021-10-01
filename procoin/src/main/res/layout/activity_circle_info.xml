@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:elevation="0dip">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="@color/transparent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.procoin.widgets.BackgroundImageView
+                        android:id="@+id/ivCircleBg"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_common_mic"
+                        app:arcHeight="120"
+                        app:blockHeight="0.3" />
+
+                    <com.procoin.http.widget.view.RoundAngleImageView
+                        android:id="@+id/ivHead"
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="70dip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_default_head" />
+                </FrameLayout>
+
+                <include
+                    layout="@layout/toolbar_with_text_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/actionBarSize"
+                    app:layout_collapseMode="pin" />
+
+                <!--<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--style="@style/toolbar"-->
+                <!--app:navigationIcon="@drawable/ic_common_back_gray"-->
+                <!--&gt;-->
+                <!--&lt;!&ndash;layout_gravity编译器没有这个属性,不知道为何,估计是as的问题,但其实有效果&ndash;&gt;-->
+                <!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:id="@+id/tvMenu"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:background="@drawable/abc_item_background_holo_dark"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="15dip"-->
+                <!--android:paddingRight="15dip"-->
+                <!--android:text=""-->
+                <!--android:textColor="@color/actionbar_light_title_color"-->
+                <!--android:textSize="@dimen/font_size_14" />-->
+
+
+                <!--</android.support.v7.widget.Toolbar>-->
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:gravity="bottom"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip">
+
+                    <TextView
+                        android:id="@+id/tvCircleName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="----"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCircleId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dip"
+                        android:text="(圈子ID:--)"
+                        android:textColor="@color/c959595"
+                        android:textSize="@dimen/font_size_13" />
+
+                    <TextView
+                        android:id="@+id/tvReviewState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="--"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_13" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCircleBrief"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:lineSpacingExtra="@dimen/text_linespacingextra"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:text="简介:----"
+                    android:textColor="@color/c444444"
+                    android:textSize="@dimen/font_size_13" />
+
+                <LinearLayout
+                    android:id="@+id/llContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="15dip"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/cf7f7f7"
+                        android:gravity="center"
+                        android:paddingBottom="15dip"
+                        android:paddingTop="15dip">
+
+                        <ImageView
+                            android:id="@+id/iv1"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="8dip"
+                            app:srcCompat="@drawable/ic_default_head" />
+
+                        <TextView
+                            android:id="@+id/tvTitleArticle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/iv1"
+                            android:text="文章"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_size_16" />
+
+                        <TextView
+                            android:id="@+id/tvArticleAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvTitleArticle"
+                            android:layout_toRightOf="@id/iv1"
+                            android:text="共0篇"
+                            android:textColor="@color/c808080"
+                            android:textSize="@dimen/font_size_14" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_weight="1"
+                        android:background="@color/cf7f7f7"
+                        android:gravity="center"
+                        android:paddingBottom="15dip"
+                        android:paddingTop="15dip">
+
+                        <ImageView
+                            android:id="@+id/iv2"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="8dip"
+                            app:srcCompat="@drawable/ic_default_head" />
+
+                        <TextView
+                            android:id="@+id/tvTitleProgram"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/iv2"
+                            android:text="节目"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_size_16" />
+
+                        <TextView
+                            android:id="@+id/tvShowAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvTitleProgram"
+                            android:layout_toRightOf="@id/iv2"
+                            android:text="共0个"
+                            android:textColor="@color/c808080"
+                            android:textSize="@dimen/font_size_14" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--<View-->
+                <!--style="@style/dividerLine_horizontal"-->
+                <!--android:layout_marginLeft="20dip"-->
+                <!--android:layout_marginRight="20dip"-->
+                <!--android:layout_marginTop="15dip" />-->
+
+                <LinearLayout
+                    android:id="@+id/llAllMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/settingItemMinHeight"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip">
+
+                    <ImageView
+                        android:layout_width="20dip"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_circle_member" />
+
+                    <TextView
+                        android:id="@+id/tvMemberAmount"
+                        style="@style/settingTextStyle"
+                        android:layout_marginLeft="5dip"
+                        android:text="共0名成员" />
+
+                    <TextView
+                        android:id="@+id/tvInvate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_rect_corner1_stroke1_divider"
+                        android:drawableLeft="@drawable/ic_circle_share"
+                        android:gravity="center"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:paddingTop="5dip"
+                        android:text="邀请"
+                        android:textColor="@color/c262626"
+                        android:textSize="@dimen/font_size_13"
+                        android:visibility="gone"
+
+                        />
+                </LinearLayout>
+
+                <View
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip" />
+
+
+                <LinearLayout
+                    android:id="@+id/llApplyJoin"
+                    style="@style/inSideSettingItem"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/tvApplyText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="新申请加入"
+                            android:textColor="@color/c262626"
+                            android:textSize="@dimen/font_size_15"
+                            android:layout_marginRight="30dip"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vlineApplyJoin"
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/llSetInCricleWay"
+                    style="@style/inSideSettingItem"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_marginLeft="0dip"
+                        android:text="设置群加入方式" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vlineSetInCricleWay"
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/llVip"
+                    style="@style/inSideSettingItem"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_marginLeft="0dip"
+                        android:text="开通VIP" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vlineVip"
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/llNews"
+                    style="@style/inSideSettingItem"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_marginLeft="0dip"
+                        android:text="消息免打扰" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/toggleViewNews"
+                        style="@style/switchCompat" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vLineNews"
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/llSpeak"
+                    style="@style/inSideSettingItem"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_marginLeft="0dip"
+                        android:text="禁止成员发言" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/toggleViewSpeak"
+                        style="@style/switchCompat" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vLineSpeak"
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/llBlacklist"
+                    style="@style/inSideSettingItem"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_marginLeft="0dip"
+                        android:text="管理黑名单" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vLineBlacklist"
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/llClearChat"
+                    style="@style/inSideSettingItem"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/settingTextStyle"
+                        android:layout_marginLeft="0dip"
+                        android:text="清空聊天内容" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vLineClearChat"
+                    style="@style/dividerLine_horizontal"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/llClearChat"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+
+    <!--<View style="@style/dividerLine_horizontal" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingBottom="15dp"-->
+    <!--android:paddingTop="15dp"-->
+    <!--android:text="清空聊天内容"-->
+    <!--android:textColor="@color/red"-->
+    <!--android:textSize="@dimen/font_size_14" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/llExitCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View style="@style/dividerLine_horizontal" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="退出圈子"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llApply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View style="@style/dividerLine_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="申请加入"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+
+</LinearLayout>

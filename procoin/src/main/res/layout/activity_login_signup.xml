@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="注册"
+        android:textColor="#232323"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="欢迎来到 W.W.C.T交易平台"
+        android:textColor="#959595"
+        android:textSize="@dimen/font_size_14"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/llStep1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="中国"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/ic_arrow_subscribe_price"
+            android:textColor="#232323"
+            android:textSize="@dimen/font_size_14"
+            android:layout_marginTop="15dp"
+            />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+
+            <TextView
+                android:id="@+id/tvCountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="+86"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/ic_arrow_subscribe_price"
+                android:textColor="#232323"
+                android:textSize="@dimen/font_size_14" />
+
+            <View
+                style="@style/dividerLine_vertical"
+                android:layout_height="35dip"/>
+            <EditText
+                android:id="@+id/et_phone"
+                android:textColorHint="#c8c8c8"
+                android:hint="请输入手机号码"
+                android:textSize="@dimen/font_size_14"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColor="#232323"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <!--<LinearLayout-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<EditText-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:id="@+id/et_verify"-->
+                <!--android:textColorHint="#c8c8c8"-->
+                <!--android:hint="请输入验证码"-->
+                <!--android:textSize="@dimen/font_size_14"-->
+                <!--android:inputType="phone"-->
+                <!--android:maxLines="1"-->
+                <!--android:imeOptions="actionDone"-->
+                <!--android:textColor="#232323"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:background="@null"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_verify"-->
+                <!--android:textColor="@color/btn_verify"-->
+                <!--android:background="@drawable/btn_verify"-->
+                <!--android:paddingTop="6dp"-->
+                <!--android:paddingBottom="6dp"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="@dimen/font_size_10"-->
+                <!--android:text="获取验证码"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+        <!--<View-->
+            <!--style="@style/dividerLine_horizontal"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"/>-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llStep2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
+            <EditText
+                android:id="@+id/et_password"
+                android:textColorHint="#c8c8c8"
+                android:textColor="#232323"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_14"
+                android:hint="密码必须是8-16位数字、字母组合"
+
+                android:background="@null"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/ivShowOrHidePsw"
+                android:layout_width="35dip"
+                android:scaleType="centerInside"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                app:srcCompat="@drawable/cover_uncover" />
+        </LinearLayout>
+
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
+        <EditText
+            android:id="@+id/et_confirmpassword"
+            android:textColorHint="#c8c8c8"
+            android:textColor="#232323"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_size_14"
+            android:hint="请再次输入密码"
+            android:background="@null"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/ivShowOrHidePsw2"
+                android:layout_width="35dip"
+                android:scaleType="centerInside"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                app:srcCompat="@drawable/cover_uncover" />
+
+        </LinearLayout>
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
+            <EditText
+                android:id="@+id/etInviteCode"
+                android:textColorHint="#c8c8c8"
+                android:textColor="#232323"
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_14"
+                android:hint="请输入邀请码(必填)"
+                android:background="@null"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="top">
+        <!--<CheckBox-->
+            <!--android:id="@+id/cbSign"-->
+            <!--style="@style/MyCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="  我同意并接受"-->
+            <!--android:textColor="@color/c666175ae"-->
+            <!--android:textSize="@dimen/font_size_12"/>-->
+
+        <TextView
+            android:id="@+id/tvProtocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="@dimen/text_linespacingextra"
+            android:text=""
+            android:textColor="@color/c666175ae"
+            android:textSize="@dimen/font_size_12" />
+    </LinearLayout>
+        <!--<CheckBox-->
+        <!--android:id="@+id/tv_sign"-->
+        <!--android:textColor="@color/c222222"-->
+        <!--android:textSize="@dimen/font_size_14"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:lineSpacingExtra="@dimen/text_linespacingextra"/>-->
+    <!--</LinearLayout>-->
+
+    <TextView
+        style="@style/btn_style_4"
+        android:id="@+id/tv_signin"
+        android:text="注册"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>

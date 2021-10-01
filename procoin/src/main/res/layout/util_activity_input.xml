@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/touchView"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_whole"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_reply"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/v_corner2dp_bg333333"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_11"
+                android:text="问"
+                android:layout_width="17dp"
+                android:layout_height="17dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="5dp"
+                android:id="@+id/tv_ask"
+                android:textColor="@color/c666666"
+                android:textSize="@dimen/font_size_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:maxLength="500"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/et_input"
+                android:textColor="@color/vtext_black"
+                android:textSize="@dimen/font_size_15"
+                android:textColorHint="@color/c959595"
+                android:hint="请输入些什么"
+                android:includeFontPadding="false"
+                android:background="@null"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <com.procoin.widgets.CircleImageView
+                android:id="@+id/civ_emoji"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/btn_face_selector" />
+            <TextView
+                android:id="@+id/tv_send"
+                android:background="@drawable/v_corner2dp_bg333333"
+                android:text="发表"
+                android:layout_marginLeft="12dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/containerBottom"
+            android:layout_width="match_parent"
+            android:layout_height="300dip"
+            android:background="@color/black"
+            android:visibility="gone">
+            <include layout="@layout/circle_chat_face" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

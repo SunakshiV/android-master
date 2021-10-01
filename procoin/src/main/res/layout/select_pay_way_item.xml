@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:gravity="center_vertical"
+    android:background="@drawable/xml_pay_way_selected_bg"
+    android:id="@+id/llItem"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:id="@+id/ivImg"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:gravity="center"
+            app:srcCompat="@color/c3d3a50"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="银行卡"
+            android:textColor="@color/c3d3a50"
+            android:layout_marginLeft="5dip"
+            android:textSize="@dimen/font_size_12"/>
+
+        <TextView
+            android:id="@+id/tvRecommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:paddingTop="2dip"
+            android:paddingBottom="2dip"
+            android:gravity="center"
+            android:text="推荐"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_8"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/shape_pay_way_recommend_bg"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip">
+        <TextView
+            android:id="@+id/tvBestPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="2dip"
+            android:paddingBottom="2dip"
+            android:gravity="center"
+            android:text="价格最优"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_10"
+            android:background="@drawable/shape_pay_way_best_price_bg"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSelected"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_svg_selected" />
+    </RelativeLayout>
+</LinearLayout>

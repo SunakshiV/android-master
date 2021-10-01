@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_compents_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/llItem">
+
+    <LinearLayout
+        android:paddingTop="15dip"
+        android:paddingBottom="15dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip">
+
+        <TextView
+            android:id="@+id/tvRank"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold"
+            android:textColor="@color/cdddbdb"
+            android:layout_marginRight="15dip"
+            android:text="1"/>
+
+        <ImageView
+            android:id="@+id/ivRank"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="15dip"
+            android:text="1"/>
+
+
+        <com.procoin.widgets.CircleImageView
+            android:id="@+id/ivhead"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/ic_default_head"/>
+
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dip">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="--"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_16"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFollowCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_12"
+                android:layout_marginTop="2dip"
+                android:textColor="@color/c661d3155"
+                android:text="--"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvGrade"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_18"
+            android:textColor="@color/c626073"
+            android:textStyle="bold"
+            android:text="--"
+            android:visibility="invisible"
+            android:layout_marginLeft="15dip"/>
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvFollow"-->
+            <!--android:layout_width="70dip"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/shape_follow_bg"-->
+            <!--android:layout_height="30dip"-->
+            <!--android:textSize="@dimen/font_size_11"-->
+            <!--android:textColor="@color/follow_text_color"-->
+            <!--android:textStyle="bold"-->
+            <!--android:text="关注"/>-->
+
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--style="@style/dividerLine_horizontal"-->
+        <!--android:layout_marginLeft="50dip"/>-->
+
+
+</LinearLayout>

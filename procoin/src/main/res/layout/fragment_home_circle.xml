@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackground"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize"
+        android:background="@drawable/xml_actionbar_bg_bottom_line"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:text="首页"
+                android:textColor="@color/black"
+                android:textSize="@dimen/actionBarTitleSize" />
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_publish"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:src="@drawable/ic_redz_new_home_publish"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_height="25dp" />-->
+
+            <LinearLayout
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="0.5dip"
+                android:background="@drawable/ripple_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_redz_new_home_search" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="0.5dip"
+                android:background="@drawable/ripple_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_add" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--<include layout="@layout/include_redz_no_web"/>-->
+        <!--<include layout="@layout/include_redz_dynamic_no_content"/>-->
+
+        <LinearLayout
+            android:id="@+id/llNoCircle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你还没加入任何圈子" />
+
+            <TextView
+                android:id="@+id/tvCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_login"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="去创建"
+                android:textColor="@color/btn_login"
+                android:textSize="@dimen/font_size_14" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

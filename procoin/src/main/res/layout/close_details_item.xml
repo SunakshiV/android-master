@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_compents_bg"
+    android:orientation="vertical"
+    android:paddingTop="15dip"
+    android:paddingBottom="15dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平仓盈亏"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvProfit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="----"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平仓价"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvCloseCostPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="----"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平仓手数"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvCloseDealAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="----"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平仓手续费"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvCloseFeePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="----"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平仓时间"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvCloseTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="----"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="盈利分成"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tvProfitShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="----"
+            android:textColor="@color/c3d3a50"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c272734"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dip">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_lp_head_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.Toolbar
+                style="@style/toolbar2"
+                android:layout_height="60dip"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:minHeight="60dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    app:srcCompat="@drawable/ic_lp_app_title" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tvMenu"
+                    android:layout_width="50dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_svg_more" />
+
+                <!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:id="@+id/tvMenu"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:background="@drawable/abc_item_background_holo_dark"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="15dip"-->
+                <!--android:paddingRight="15dip"-->
+                <!--android:text="活动规则"-->
+                <!--android:textColor="@color/c99ffffff"-->
+                <!--android:textSize="@dimen/font_size_14" />-->
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本期累计"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_14" />
+
+                <androidx.appcompat.widget.RecyclerView
+                    android:id="@+id/horizontalNumList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </androidx.appcompat.widget.RecyclerView>
+
+                <!--<HorizontalNumListList&ndash;&gt;-->
+                <!--android:id="@+id/horizontalNumList"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<!HorizontalNumListList>&ndash;&gt;-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="YYB"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvPbTextSurpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="超过 0%"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_10" />
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="132dip"
+                    android:layout_height="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/pb_lp_bg" />
+
+                <TextView
+                    android:id="@+id/tvPbTextNotSurpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不超过 0%"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_10" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvMyPower"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="我的YYB 0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+
+                <TextView
+                    android:id="@+id/tvSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="走势>>"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip">
+
+                <com.procoin.module.kbt.app.lightningprediction.chart.MinuteTimeLineChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvVotePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="15dip"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="往期记录"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+
+                <androidx.appcompat.widget.RecyclerView
+                    android:id="@+id/horizontalHistoryList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </androidx.appcompat.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="105dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip">
+
+                <androidx.appcompat.widget.RecyclerView
+                    android:id="@+id/rvCommentList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="70dip"
+                    android:nestedScrollingEnabled="false" />
+
+
+                <LinearLayout
+                    android:id="@+id/llSendComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:background="@drawable/shape_point_lp_comment_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="19dip"
+                        android:layout_height="19dip"
+                        app:srcCompat="@drawable/ic_svg_lp_say" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="说两句"
+                        android:textColor="@color/c99ffffff"
+                        android:textSize="@dimen/font_size_9" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dip"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:visibility="gone"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="入场倒计时："
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <TextView
+                        android:id="@+id/tvStopTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/cff8f01"
+                        android:textSize="@dimen/font_size_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvPredictionSurpass"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_lp_not_surpass"
+                        android:gravity="center"
+                        android:minHeight="61dp"
+                        android:text="超过"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_22"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvPredictionNotSurpass"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_lp_surpass"
+                        android:gravity="center"
+                        android:minHeight="61dp"
+                        android:text="不超"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_22"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dip"
+                        android:text="您本场预测： "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_26"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvMyVote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dip"
+                        android:text="超过"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_26"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dip"
+                        android:text="请等待结果公布 "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <TextView
+                        android:id="@+id/tvResultTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dip"
+                        android:text=""
+                        android:textColor="@color/cff8f01"
+                        android:textSize="@dimen/font_size_14" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

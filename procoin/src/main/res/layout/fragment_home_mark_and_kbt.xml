@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--android:background="@drawable/xml_actionbar_bg_bottom_line"-->
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ivOptionalSort"
+                android:layout_width="60dip"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_home_optional_edit" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:text="行情"
+                android:textColor="@color/actionbar_light_title_color"
+                android:textSize="@dimen/actionBarTitleSize" />
+
+            <LinearLayout
+                android:id="@+id/ivSearch"
+                android:layout_width="60dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_home_search" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/shape_mark_and_kbt_bg"
+        android:minHeight="35dip">
+
+
+        <TextView
+            android:id="@+id/tvOptional"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xml_mark_kbt_bg"
+            android:gravity="center"
+            android:text="自选"
+            android:textColor="@color/xml_mark_kbt_tab_text_color"
+            android:textSize="@dimen/font_size_12"
+            android:textStyle="bold" />
+
+        <View style="@style/dividerLine_vertical" />
+
+        <TextView
+            android:id="@+id/tvHS"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xml_mark_kbt_bg"
+            android:gravity="center"
+            android:text="沪深"
+            android:textColor="@color/xml_mark_kbt_tab_text_color"
+            android:textSize="@dimen/font_size_12"
+            android:textStyle="bold" />
+
+        <View style="@style/dividerLine_vertical" />
+        <TextView
+            android:id="@+id/tvHK"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xml_mark_kbt_bg"
+            android:gravity="center"
+            android:text="港股"
+            android:textColor="@color/xml_mark_kbt_tab_text_color"
+            android:textSize="@dimen/font_size_12"
+            android:textStyle="bold" />
+        <View style="@style/dividerLine_vertical" />
+        <TextView
+            android:id="@+id/tvFutures"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xml_mark_kbt_bg"
+            android:gravity="center"
+            android:text="期货"
+            android:textColor="@color/xml_mark_kbt_tab_text_color"
+            android:textSize="@dimen/font_size_12"
+            android:textStyle="bold" />
+
+        <View style="@style/dividerLine_vertical" />
+
+        <TextView
+            android:id="@+id/tvDigital"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xml_mark_kbt_bg"
+            android:gravity="center"
+            android:text="数字货币"
+            android:textColor="@color/xml_mark_kbt_tab_text_color"
+            android:textSize="@dimen/font_size_12"
+            android:textStyle="bold" />
+
+
+
+        <!--<View style="@style/dividerLine_vertical" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvMarket"-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/xml_mark_kbt_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:text="火币"-->
+            <!--android:textColor="@color/xml_mark_kbt_tab_text_color"-->
+            <!--android:textSize="@dimen/font_size_14"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<View style="@style/dividerLine_vertical" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvBuyBack"-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/xml_mark_kbt_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:text="回购"-->
+            <!--android:textColor="@color/xml_mark_kbt_tab_text_color"-->
+            <!--android:textSize="@dimen/font_size_14"-->
+            <!--android:textStyle="bold" />-->
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

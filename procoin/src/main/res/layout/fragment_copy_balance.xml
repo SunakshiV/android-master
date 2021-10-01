@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center_vertical">
+
+            <com.procoin.widgets.PieChartView
+                android:id="@+id/pieChartView"
+                android:layout_width="200dip"
+                android:layout_height="match_parent"
+                app:centerTextColor="#000000"
+                app:centerTextSize="18sp"
+                app:circleWidth="40dp"
+                app:dataTextColor="#ffffff"
+                app:dataTextSize="7sp" />
+
+            <androidx.appcompat.widget.RecyclerView
+                android:id="@+id/rvPieChartList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="用户名"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_12" />
+
+            <RelativeLayout
+                android:id="@+id/rlTolCost"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvTolCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="总投入"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_12" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSort1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tvTolCost"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dip"
+                    app:srcCompat="@drawable/ic_svg_sort_default" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlEnableBalance"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvEnableBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="可用"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_12" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSort2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tvEnableBalance"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dip"
+                    app:srcCompat="@drawable/ic_svg_sort_default" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlNextEnableBalance"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvNextEnableBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="下笔可用"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_12" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSort3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tvNextEnableBalance"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dip"
+                    app:srcCompat="@drawable/ic_svg_sort_default" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/rlProfit">
+
+                <TextView
+                    android:id="@+id/tvProfit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="盈利"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_12" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSort4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tvProfit"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dip"
+                    app:srcCompat="@drawable/ic_svg_sort_default" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false">
+
+        </androidx.appcompat.widget.RecyclerView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

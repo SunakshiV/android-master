@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="sectorViewStyle" format="reference"/>
+    <declare-styleable name="SectorView">
+         <attr name="sectorviewradius"  format="float"/>
+        <attr name="animationOffset" format="integer"/>
+        <attr name="duration" format="integer"/>
+        <attr name="interpolator" format="integer"/>
+        <attr name="gravity" format="integer"/>
+    </declare-styleable>
+
+<!--    <attr user_name="sectorViewStyle" format="reference" /> -->
+
+<!--     <declare-styleable user_name="SectorView"> -->
+<!--         <attr user_name="radius"/> -->
+<!--         <attr user_name="animationOffset" format="integer" /> -->
+<!--         <attr user_name="duration" /> -->
+<!--         <attr user_name="interpolator"/> -->
+<!--         <attr user_name="gravity" /> -->
+<!--     </declare-styleable> -->
+</resources>

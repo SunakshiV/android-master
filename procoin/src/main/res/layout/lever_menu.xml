@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_lever_price_bg"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.RecyclerView
+        android:id="@+id/rvMultiNumList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.RecyclerView>
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvFive"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:minHeight="35dip"-->
+        <!--android:text="5X"-->
+        <!--android:background="@drawable/xml_lever_multiple_bg"-->
+        <!--android:layout_marginTop="5dip"-->
+        <!--android:textColor="@color/c6175ae"-->
+        <!--android:textSize="@dimen/font_size_14" />-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvTen"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:minHeight="35dip"-->
+        <!--android:text="10X"-->
+        <!--android:textColor="@color/c6175ae"-->
+        <!--android:textSize="@dimen/font_size_14"-->
+        <!--android:background="@drawable/xml_lever_multiple_bg"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvTwenty"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:minHeight="35dip"-->
+        <!--android:text="20X"-->
+        <!--android:textColor="@color/c6175ae"-->
+        <!--android:textSize="@dimen/font_size_14"-->
+        <!--android:layout_marginBottom="5dip"-->
+        <!--android:background="@drawable/xml_lever_multiple_bg"/>-->
+
+
+</LinearLayout>

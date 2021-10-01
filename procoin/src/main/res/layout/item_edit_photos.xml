@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.procoin.widgets.GvItemFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.procoin.http.widget.view.RoundAngleImageView
+        android:id="@+id/ivImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_common_mic" />
+
+    <com.procoin.widgets.CircleImageView
+        android:id="@+id/civ_delete"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_redz_send_delete" />
+
+    <ImageView
+        android:id="@+id/ivSelect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_redz_send_add"
+        android:visibility="gone"/>
+</com.procoin.widgets.GvItemFrameLayout>

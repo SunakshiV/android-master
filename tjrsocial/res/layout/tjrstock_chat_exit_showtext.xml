@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/talk_dragpic_text_RelativeLayout_all"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 这个是顶部的导航 -->
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        style="@style/mainTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.procoin.social.widget.SAutoBgButton
+            android:id="@+id/btnDlBack"
+            style="@style/StyleWhiteButton_cbfbfbf"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_iv_back_white"
+            android:minHeight="40dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_button_h1" />
+
+        <TextView
+            android:id="@+id/talk_dragpic_text_TextView_title"
+            style="@style/mainTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="输入文字" />
+
+        <com.procoin.social.widget.SAutoBgButton
+            android:id="@+id/btnDlAdd"
+            style="@style/StyleWhiteButton_cbfbfbf"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_ok_white_68x68" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/talk_dragpic_text_RelativeLayout_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTop" >
+
+        <EditText
+            android:id="@+id/etSay"
+            style="@style/mEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:hint="写些什么吧..."
+            android:minHeight="200dip"
+            android:padding="5dip" />
+
+        <TextView
+            android:id="@+id/tvNum"
+            style="@style/noOnTouch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip"
+            android:text="140/140"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</LinearLayout>

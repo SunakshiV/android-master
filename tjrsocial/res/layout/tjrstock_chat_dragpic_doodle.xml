@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/talk_dragpic_doodle_RelativeLayout_all"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 这个是顶部的导航 -->
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        style="@style/mainTop"
+        android:orientation="horizontal" >
+
+        <com.procoin.social.widget.SAutoBgButton
+            android:id="@+id/btnBack"
+            style="@style/StyleWhiteButton_cbfbfbf"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_iv_back_white" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/mainTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="画图" />
+
+        <com.procoin.social.widget.SAutoBgButton
+            android:id="@+id/btnAdd"
+            style="@style/StyleWhiteButton_cbfbfbf"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_ok_white_68x68" >
+        </com.procoin.social.widget.SAutoBgButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMidall"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/trmenu"
+        android:layout_below="@+id/rlTop" >
+
+        <RelativeLayout
+            android:id="@+id/rlMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/ivStock"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/trmenu"
+        android:layout_marginBottom="-1.5dip"
+        android:layout_marginLeft="-1dip"
+        android:layout_marginRight="-1dip" >
+
+        <HorizontalScrollView
+            android:id="@+id/hsDoodleitem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_chat_pop_bg"
+            android:orientation="horizontal"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/llDoodleitem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:id="@+id/llDoodleTextItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_chat_pop_bg"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tvAddbubble"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:drawableLeft="@drawable/ic_chat_doodle"
+                android:gravity="center"
+                android:text="会话气泡"
+                android:textColor="@color/c6f6f6f"
+                android:textSize="@dimen/font_size_16" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_gravity="right"
+                android:layout_marginRight="40dp"
+                android:drawableLeft="@drawable/ic_chat_textcoloer"
+                android:gravity="center"
+                android:text="文字颜色"
+                android:textColor="@color/c6f6f6f"
+                android:textSize="@dimen/font_size_16" >
+            </TextView>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TableRow
+        android:id="@+id/trmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_top_or_bottom_background"
+        android:minHeight="45dp" >
+
+        <TextView
+            android:id="@+id/tvDoodle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="涂鸦"
+            android:textColor="@color/c6f6f6f"
+            android:textSize="@dimen/text_size_title_h1" />
+
+        <TextView
+            android:id="@+id/tvDoodleicon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@+id/tvDoodle"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="图标"
+            android:textColor="@color/c6f6f6f"
+            android:textSize="@dimen/text_size_title_h1" />
+
+        <TextView
+            android:id="@+id/tvDoodletitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@+id/tvDoodleicon"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="文字"
+            android:textColor="@color/c6f6f6f"
+            android:textSize="@dimen/text_size_title_h1" />
+
+        <TextView
+            android:id="@+id/tvDoodleundo"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@+id/tvDoodletitle"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="撤销"
+            android:textColor="@color/c6f6f6f"
+            android:textSize="@dimen/text_size_title_h1" />
+
+        <TextView
+            android:id="@+id/tvDoodleclear"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/tvDoodleundo"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="清空"
+            android:textColor="@color/c6f6f6f"
+            android:textSize="@dimen/text_size_title_h1" />
+    </TableRow>
+
+</RelativeLayout>

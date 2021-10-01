@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="15dip">
+
+
+            <ImageView
+                android:id="@+id/ivQr"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="15dip"
+                android:visibility="visible"
+              />
+
+            <LinearLayout
+                android:id="@+id/llBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="15dip"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银行账号"
+                    android:textColor="@color/c969696"
+                    android:textSize="@dimen/font_size_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvBankNo"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_24"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivCopyBankAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_copy" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:text="银行卡信息"
+                    android:textColor="@color/c969696"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tvBankName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_24"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:text="收款人"
+                    android:textColor="@color/c969696"
+                    android:textSize="@dimen/font_size_14" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_24"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivCopyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_copy" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:background="#FFFEDEA9"
+                android:drawableLeft="@drawable/ic_warning"
+                android:drawablePadding="5dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:text="请准确支付以下金额，否则会导致订单失败"
+                android:textColor="@color/cffa200"
+                android:textSize="@dimen/font_size_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dip"
+                android:paddingRight="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="支付金额"
+                    android:textColor="@color/c969696"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tvMoney"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:minHeight="40dip"
+                    android:text="￥00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_25"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/llQuestionMark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        app:srcCompat="@drawable/ic_question_mark_2" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llAliPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="支付宝账号"
+                        android:textColor="@color/c969696"
+                        android:textSize="@dimen/font_size_15" />
+
+                    <TextView
+                        android:id="@+id/tvAliPayAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:minHeight="40dip"
+                        android:text="333333333333"
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_15"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="支付宝名称"
+                        android:textColor="@color/c969696"
+                        android:textSize="@dimen/font_size_15" />
+
+                    <TextView
+                        android:id="@+id/tvAliUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:minHeight="40dip"
+                        android:text="222222222"
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_15"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llWechatPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="微信账号"
+                        android:textColor="@color/c969696"
+                        android:textSize="@dimen/font_size_15" />
+
+                    <TextView
+                        android:id="@+id/tvWechatAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:minHeight="40dip"
+                        android:text=""
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_15"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="微信名称"
+                        android:textColor="@color/c969696"
+                        android:textSize="@dimen/font_size_15" />
+
+                    <TextView
+                        android:id="@+id/tvWechatUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:minHeight="40dip"
+                        android:text=""
+                        android:textColor="@color/c6175ae"
+                        android:textSize="@dimen/font_size_15"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="订单号"
+                    android:textColor="@color/c969696"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tvOrderNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:minHeight="40dip"
+                    android:text=""
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_15"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOrderState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="订单状态"
+                    android:textColor="@color/c969696"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tvOrderState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:minHeight="40dip"
+                    android:text=""
+                    android:textColor="@color/cffa200"
+                    android:textSize="@dimen/font_size_15"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="剩余时间"
+                    android:textColor="@color/c969696"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:minHeight="40dip"
+                    android:text=""
+                    android:textColor="@color/cffa200"
+                    android:textSize="@dimen/font_size_15"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llExplain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="15dip"
+                android:background="@color/cf4f4f4"
+                android:orientation="vertical"
+                android:padding="10dip"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="●  "
+                        android:textColor="@color/cbebebe"
+                        android:textSize="@dimen/font_size_10" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="转账时请勿添加任何备注"
+                        android:textColor="@color/cbebebe"
+                        android:textSize="@dimen/font_size_13" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="●  "
+                        android:textColor="@color/cbebebe"
+                        android:textSize="@dimen/font_size_10" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请在规定时间内完成支付，支付完成后点击【标记为已支付】"
+                        android:textColor="@color/cbebebe"
+                        android:textSize="@dimen/font_size_13" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/llBottomBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="15dip"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvSaveQr"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="保存二维码图片"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_15"
+            android:background="@drawable/selector_rect_solid_corner0_3d3a50"/>
+
+        <TextView
+            android:id="@+id/tvGoPay"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            android:background="@drawable/selector_rect_solid_corner0_3d3a50"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="去支付"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_15" />
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/selector_rect_solid_corner0_3d3a50"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="标记为已支付"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_15" />
+    </LinearLayout>
+
+
+</LinearLayout>

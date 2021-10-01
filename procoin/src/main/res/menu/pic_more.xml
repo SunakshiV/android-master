@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_more"
+        android:title="@string/more"
+        app:showAsAction="always">
+        <!--          android:icon="@drawable/abc_ic_menu_moreoverflow_normal_holo_light" -->
+        <menu>
+            <item
+                android:id="@+id/action_save"
+                android:title="@string/saveToSd"
+                app:showAsAction="ifRoom"/>
+            <!--<item-->
+                <!--android:id="@+id/action_edit"-->
+                <!--android:title="@string/editPic"-->
+                <!--app:showAsAction="ifRoom"/>-->
+
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/talk_dragpic_text_RelativeLayout_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tvNum"
+        style="@style/noOnTouch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="10dip"
+        android:gravity="right"
+        android:paddingRight="15dip"
+        android:paddingTop="5dip"
+        android:text="140/140"
+        android:textColor="@color/c808080" />
+
+    <EditText
+        android:id="@+id/etSay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/xml_et_bg"
+        android:gravity="top"
+        android:hint="写些什么吧...(140个字以内)"
+        android:lineSpacingExtra="@dimen/text_linespacingextra"
+        android:paddingBottom="8dp"
+        android:text=""
+        android:textColor="@color/c444444"
+        android:textSize="@dimen/font_size_15" />
+
+</LinearLayout>

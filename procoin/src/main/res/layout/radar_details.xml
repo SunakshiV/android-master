@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dip">
+
+            <com.procoin.widgets.RadarView
+                android:id="@+id/rdv"
+                android:layout_width="match_parent"
+                android:layout_height="230dip"
+                android:background="#FFF5F5F5" />
+
+            <View
+                style="@style/dividerLine_horizontal"
+                android:layout_marginTop="20dip" />
+
+            <TextView
+                android:id="@+id/tvCopyBalanceScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="跟单盈利额"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:lineSpacingExtra="@dimen/text_linespacingextra"
+                android:text="释义：跟随高手的用户最近30天盈亏总金额。"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/tvTolIncomeScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="盈利能力"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:lineSpacingExtra="@dimen/text_linespacingextra"
+                android:text="释义：高手最近30天平均每笔交易的收益率。数值越大，代表个人盈利能力越强。"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/tvCopyRateScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="跟单收益率"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:lineSpacingExtra="@dimen/text_linespacingextra"
+                android:text="释义：跟随高手的用户最近30天平均每笔交易的收益率。数值越大，代表跟随高手的用户收益越好。"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/tvProfitShareScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="跟单胜率"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:lineSpacingExtra="@dimen/text_linespacingextra"
+                android:text="释义：跟随高手盈利的几率。数值越大，代表跟单获利的可能性就越高。"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/tvCopyNumScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="人气指数"
+                android:textColor="@color/c1d3155"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:lineSpacingExtra="@dimen/text_linespacingextra"
+                android:text="释义：高手最近30天跟单人数，数值越大，代表跟随者越多，人气越高。"
+                android:textColor="@color/c661d3155"
+                android:textSize="@dimen/font_size_14" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

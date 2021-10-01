@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dip">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="@color/transparent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dip"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_open_cropyme" />
+
+                <android.support.v7.widget.Toolbar
+                    style="@style/toolbar"
+                    app:layout_collapseMode="pin"
+                  />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:text="开通须知"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_22"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dip"
+                    android:text="带单功能"
+                    android:textColor="@color/cbebebe"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tvUsdtAmount"
+                    android:layout_marginTop="15dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="开通条件：总资产不低于--USDT"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_14" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="15dip">
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/cbSign"-->
+                        <!--style="@style/MyCheckBox"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="  我已阅读"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:textColor="@color/c666175ae"-->
+                        <!--android:textSize="@dimen/font_size_12"/>-->
+
+                    <TextView
+                        android:id="@+id/tvProtocol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:lineSpacingExtra="@dimen/text_linespacingextra"
+                        android:text=""
+                        android:textColor="@color/c666175ae"
+                        android:textSize="@dimen/font_size_12" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvRules"
+                    android:layout_marginTop="15dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/text_linespacingextra"
+                    android:text=""
+                    android:textColor="@color/cbebebe"
+                    android:textSize="@dimen/font_size_12" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/llOpenCropy"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/selector_rect_solid_corner0_3d3a50"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="立即开通"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:gravity="center"
+            app:srcCompat="@drawable/ic_arrow_bold" />
+    </LinearLayout>
+</LinearLayout>

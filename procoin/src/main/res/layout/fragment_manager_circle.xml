@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<View style="@style/dividerLine_horizontal" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/tv_cancel"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/xml_compents_card_bg"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingBottom="16dp"-->
+        <!--android:paddingTop="16dp"-->
+        <!--android:text="取消"-->
+        <!--android:textColor="@color/beebarBlack" />-->
+</LinearLayout>

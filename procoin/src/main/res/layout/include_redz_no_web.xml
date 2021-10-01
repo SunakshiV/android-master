@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="gone"
+    android:id="@+id/fl_no_web"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:scaleType="centerCrop"
+    app:srcCompat="@drawable/ic_redz_no_web"
+    android:layout_gravity="center"
+    android:layout_width="200dp"
+    android:layout_height="200dp" />
+    <TextView
+        android:textSize="@dimen/font_size_14"
+        android:textColor="#959595"
+        android:text="当前没有网络"
+        android:gravity="center"
+        android:layout_marginTop="95dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_compents_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="20dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.procoin.widgets.CircleImageView
+            android:id="@+id/ivHead"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/ic_default_head" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="--"
+            android:textColor="@color/c1d3155"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip">
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量  23.265150 USDT"
+            android:textColor="@color/c1d3155"
+            android:textSize="@dimen/font_size_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvQuota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAmount"
+            android:layout_marginTop="5dip"
+            android:text="限额  "
+            android:textColor="@color/c1d3155"
+            android:textSize="@dimen/font_size_14" />
+
+        <LinearLayout
+            android:id="@+id/llPayWay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvQuota"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:text="单价"
+            android:textColor="@color/c1d3155"
+            android:textSize="@dimen/font_size_14" />
+
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvPriceText"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_19" />
+
+        <TextView
+            android:id="@+id/tvBuy"
+            style="@style/btn_style_6"
+            android:layout_width="68dip"
+            android:layout_height="34dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvPrice"
+            android:layout_marginTop="12dip"
+            android:text="购买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

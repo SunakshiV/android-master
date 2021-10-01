@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.procoin.module.copy.CropyOrderInfoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dip">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentScrim="@color/transparent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        android:id="@+id/llHicvp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_collapseMode="parallax"
+                        app:layout_collapseParallaxMultiplier="1">
+
+                        <FrameLayout
+                            android:id="@+id/flHicvp"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dip"
+                            android:background="@color/c6175ae"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <com.procoin.widgets.CycleGalleryViewPager
+                                android:id="@+id/hicvp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <com.procoin.widgets.indicator.CircleIndicator
+                                android:id="@+id/indicator"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="30dip"
+                                android:padding="1dip"
+                                app:fillColor="@color/white"
+                                app:pageColor="@color/c959595"
+                                app:snap="false"
+                                app:strokeWidth="0dip" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <!--toolbar 不能少因为下面设置了一个-20dip，为了抵消这个-20dip-->
+                    <android.support.v7.widget.Toolbar
+                        style="@style/toolbar"
+                        android:background="@color/transparent"
+                        app:layout_collapseMode="pin"
+                        app:navigationIcon="@null">
+
+
+                    </android.support.v7.widget.Toolbar>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="-20dip"
+                    android:background="@drawable/product_details_bg"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="30dip"
+                        android:layout_height="4dip"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dip"
+                        android:layout_marginTop="15dip"
+                        android:background="@drawable/shape_home_bar_bg" />
+
+
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+            <!--app:behavior_overlapTop="20dip"-->
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dividerColor"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llLiteApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dip"
+                            android:text="小应用"
+                            android:textColor="@color/c1d3155"
+                            android:textSize="@dimen/font_size_20"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvApp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_marginTop="10dip"
+                            android:background="@color/white"
+                            android:nestedScrollingEnabled="false" />
+                    </LinearLayout>
+                    <!--android:layout_marginTop="20dip"-->
+                    <LinearLayout
+                        android:id="@+id/llNotice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingBottom="20dip">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingLeft="20dip"
+                            android:text="公告"
+                            android:textColor="@color/c1d3155"
+                            android:textSize="@dimen/font_size_20"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <ViewFlipper
+                            android:id="@+id/flipper"
+                            android:layout_width="0dip"
+                            android:layout_height="30dip"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="15dip"
+                            android:flipInterval="5000"></ViewFlipper>
+
+                        <TextView
+                            android:id="@+id/tvNoticeMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="更多"
+                            android:layout_marginRight="15dip"
+                            android:drawableRight="@drawable/ic_arrow"
+                            android:drawablePadding="3dip"
+                            android:textColor="@color/c661d3155"
+                            android:textSize="@dimen/font_size_12" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingLeft="20dip"
+                        android:text="大V排行榜"
+                        android:textColor="@color/c1d3155"
+                        android:textSize="@dimen/font_size_20"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/llList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="invisible">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rv_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:nestedScrollingEnabled="false" />
+
+                            <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="20dip"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="排行只展示前十位"-->
+                            <!--android:textColor="#663d3a50"-->
+                            <!--android:textSize="@dimen/font_size_12" />-->
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/llNodata"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="30dip"
+                            android:layout_marginTop="30dip"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="250dip"
+                                android:layout_height="200dip"
+                                app:srcCompat="@drawable/ic_rank_nodata" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dip"
+                                android:gravity="center"
+                                android:lineSpacingExtra="@dimen/text_linespacingextra"
+                                android:text="真实力将公示，我们静候为您加冕"
+                                android:textColor="@color/cd6d6d6"
+                                android:textSize="@dimen/font_size_12" />
+
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <View
+                        style="@style/dividerLine_horizontal"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginTop="20dip"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="5dip"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:src="@drawable/xml_divider_gradient_black_2" />-->
+
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_gravity="bottom" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+

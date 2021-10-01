@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_home_account_menu_logo"
+        app:showAsAction="always">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/action_bank"-->
+                <!--android:title="银证转账"-->
+                <!--app:showAsAction="ifRoom"/>-->
+            <item
+                android:id="@+id/action_bonus_record"
+                android:title="分红记录"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:id="@+id/action_use_power"
+                android:orderInCategory="100"
+                app:showAsAction="collapseActionView"
+                android:title="提货行权"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="35dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingTop="20dip">
+
+    <!--private String repoAmount;//剩余可回购KBT数量-->
+    <!--private String holdAmount;//持有KBT数量-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剩余可回购YYB数量"
+        android:textColor="@color/c663d3a50"
+        android:textSize="@dimen/font_size_12" />
+    <TextView
+        android:id="@+id/tvRepoAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textColor="@color/c3d3a50"
+        android:textSize="@dimen/font_size_16"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="15dip"
+        android:background="@color/cfafafa">
+
+        <EditText
+            android:id="@+id/etMoney"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:hint="请输入回购YYB数量"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:paddingLeft="10dip"
+            android:paddingRight="100dip"
+            android:text=""
+            android:textColor="#232323"
+            android:textColorHint="#e6e6e6"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="YYB"
+                android:textColor="@color/ccc3d3a50"
+                android:textSize="@dimen/font_size_14" />
+
+            <View
+                style="@style/dividerLine_vertical"
+                android:layout_height="14dip"
+                android:background="@color/ce6e6e6" />
+
+            <TextView
+                android:id="@+id/tvAll"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/cff8f01"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvHoldAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="持有YYB数量：0.00"
+        android:textColor="@color/c663d3a50"
+        android:textSize="@dimen/font_size_12" />
+
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dip">-->
+
+            <!--<CheckBox-->
+                <!--android:id="@+id/cbSign"-->
+                <!--style="@style/MyCheckBox"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="  我同意并接受"-->
+                <!--android:textColor="@color/c663d3a50"-->
+                <!--android:textSize="@dimen/font_size_12" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvProtocol"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:lineSpacingExtra="@dimen/text_linespacingextra"-->
+                <!--android:text=""-->
+                <!--android:textColor="@color/c663d3a50"-->
+                <!--android:textSize="@dimen/font_size_12" />-->
+        <!--</LinearLayout>-->
+
+    <TextView
+        style="@style/btn_style_4"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:layout_marginTop="20dip"
+        android:text="确定" />
+</LinearLayout>
+

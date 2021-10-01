@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!-- 滚动条 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/myhomepage_myinfo_ScrollView_allmyinfomation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnLogout"
+        android:background="@color/white"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none">
+
+        <!-- 这个自己的详细资料 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="25dip">
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dip"-->
+            <!--android:paddingLeft="15dip"-->
+            <!--android:text="K线样式设置"-->
+            <!--android:textColor="@color/cb2b2b2"-->
+            <!--android:textSize="@dimen/font_size_14" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dip"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/llkongxin"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/homeListViewItemMaxHeight"-->
+            <!--android:background="@drawable/xml_home_mine_item_bg_top_bottom_line"-->
+            <!--android:clickable="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="15dip"-->
+            <!--android:paddingRight="15dip">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="24dip"-->
+            <!--android:layout_height="24dip"-->
+            <!--android:src="@drawable/ic_stocksetting_kongxin_bg" />-->
+
+            <!--<TextView-->
+            <!--style="@style/settingTextStyle"-->
+            <!--android:layout_marginLeft="8dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="空心阳线" />-->
+
+            <!--<CheckBox-->
+            <!--android:id="@+id/cbkongxin"-->
+            <!--style="@style/MyCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:checked="true"-->
+            <!--android:clickable="false"-->
+            <!--android:focusable="false"-->
+            <!--android:focusableInTouchMode="false" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/llshixin"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/homeListViewItemMaxHeight"-->
+            <!--android:background="@drawable/xml_home_mine_item_bg_bottomline"-->
+            <!--android:clickable="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="15dip"-->
+            <!--android:paddingRight="15dip">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="24dip"-->
+            <!--android:layout_height="24dip"-->
+            <!--android:src="@drawable/ic_stocksetting_shixin_bg" />-->
+
+            <!--<TextView-->
+            <!--style="@style/settingTextStyle"-->
+            <!--android:layout_marginLeft="8dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="实心阳线" />-->
+
+            <!--<CheckBox-->
+            <!--android:id="@+id/cbshixin"-->
+            <!--style="@style/MyCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="false"-->
+            <!--android:focusable="false"-->
+            <!--android:focusableInTouchMode="false" />-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:paddingLeft="15dip"
+                android:text="行情刷新频率设置"
+                android:textColor="@color/cb2b2b2"
+                android:textSize="@dimen/font_size_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical">
+
+                <View style="@style/dividerLine_horizontal" />
+
+                <com.procoin.widgets.AppListView
+                    android:id="@+id/lvList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@color/dividerColor"
+                    android:dividerHeight="0.5dip"
+                    android:scrollbars="none" />
+
+                <View style="@style/dividerLine_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

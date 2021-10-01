@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlNotice"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="15dip"
+    android:paddingTop="15dip">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_centerInParent="true"
+        android:background="@color/ccacbcc"></View>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/cf8f9fb"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="@string/circle_unread_message_tip"
+        android:textColor="@color/c9d9d9d"
+        android:textSize="@dimen/font_size_12"></TextView>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!-- 这个私聊图片和 语音 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bubble="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView style="@style/circleChatTimeTextView" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="10dip"
+    android:orientation="horizontal"
+    android:gravity="right">
+
+    <!-- 时间 -->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvDate"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="@dimen/chatroom_height"-->
+    <!--android:layout_marginTop="@dimen/chatroom_height"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingLeft="5dip"-->
+    <!--android:paddingRight="5dip"-->
+    <!--android:text="今天 23:00"-->
+    <!--android:textColor="@color/c999999"-->
+    <!--android:textSize="@dimen/font_size_12" />-->
+    <ProgressBar
+        android:id="@+id/sendingPb"
+        style="?android:attr/progressBarStyleLargeInverse"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"/>
+    <ImageView
+        android:id="@+id/ivReSend"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginRight="15dip"
+        android:layout_gravity="center_vertical"
+        bubble:srcCompat="@drawable/ic_chat_resend"/>
+        <!--<com.cropyme.ui.bubbleview.CircleChatVoiceBubbleRelativeLayout-->
+            <!--android:id="@+id/rlVoice"-->
+            <!--android:layout_marginLeft="3dip"-->
+            <!--style="@style/circleChatVoiceStyle"-->
+            <!--bubble:arrowLocation="right"-->
+            <!--bubble:bubbleColor="@color/c96c7f2"-->
+            <!-->-->
+            <com.procoin.module.circle.ui.PlayVoiceUtilView
+                android:id="@+id/rlVoice"
+                android:layout_marginRight="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:minHeight="40dip"
+                android:background="@drawable/xml_circle_chat_bg_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="3dip"
+                android:text="7&apos;&apos;" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/ivPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    bubble:srcCompat="@drawable/circle_voice_right_play" />
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    style="?android:attr/progressBarStyleSmallInverse"
+                    android:layout_width="18dip"
+                    android:layout_height="18dip"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+            </FrameLayout>
+            </com.procoin.module.circle.ui.PlayVoiceUtilView>
+
+        <!--</com.cropyme.ui.bubbleview.CircleChatVoiceBubbleRelativeLayout>-->
+    <com.procoin.widgets.CircleImageView style="@style/circleChatHeadView" />
+
+
+</LinearLayout>
+    </LinearLayout>

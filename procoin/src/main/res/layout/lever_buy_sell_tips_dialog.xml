@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip">
+
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/xml_tjrapi_dialog_out_bg"
+        android:orientation="vertical"
+        android:paddingBottom="15dip"
+        android:paddingLeft="18dip"
+        android:paddingRight="18dip"
+        android:paddingTop="15dip">
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_tjrapi_dialog_out_bg"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="@dimen/text_linespacingextra"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:scrollbars="vertical"
+            android:text="看涨(做多)概要"
+            android:textColor="@color/c1d3155"
+            android:textSize="@dimen/font_size_16" />
+        <!-- 内容 -->
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:lineSpacingExtra="4dp"
+            android:maxHeight="250dip"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="@color/c1d3155"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tvProtocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:lineSpacingExtra="@dimen/text_linespacingextra"
+            android:text=""
+            android:textColor="@color/c666175ae"
+            android:textSize="@dimen/font_size_12" />
+
+        <LinearLayout
+            android:id="@+id/llBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xml_tjrapi_dialog_btn"
+                android:gravity="center"
+                android:minHeight="35dip"
+                android:paddingLeft="18dip"
+                android:paddingRight="18dip"
+                android:text="@string/dialog_cancel"
+                android:textColor="@color/c005a87"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xml_tjrapi_dialog_btn"
+                android:gravity="center"
+                android:minHeight="35dip"
+                android:paddingLeft="18dip"
+                android:paddingRight="18dip"
+                android:text="@string/dialog_ok"
+                android:textColor="@color/c005a87"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Close 按钮 -->
+
+</RelativeLayout>

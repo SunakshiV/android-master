@@ -1,0 +1,14 @@
+<resources>
+
+    <declare-styleable name="ProcessButton">
+        <attr name="progressText" format="string" />
+        <attr name="completeText" format="string" />
+        <attr name="colorProgress" format="color" />
+        <attr name="colorComplete" format="color" />
+    </declare-styleable>
+    <declare-styleable name="FlatButton">
+        <attr name="colorPressed" format="color" />
+        <attr name="colorNormal" format="color" />
+    </declare-styleable>
+
+</resources>

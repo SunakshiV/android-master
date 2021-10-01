@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackground">
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:paddingTop="40dip"
+        android:id="@+id/tvCroptitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#bb000000"
+        android:gravity="center"
+        android:paddingBottom="15dip"
+        android:text="剪辑图片"
+        android:textColor="#fffafafa"
+        android:textSize="20.0sp" />
+
+    <com.procoin.widgets.layout.SquareLayout
+        android:id="@+id/square_ayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvCroptitle" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/xml_crop_iv_bg" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </com.procoin.widgets.layout.SquareLayout>
+
+    <LinearLayout
+        android:id="@+id/operation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/square_ayout"
+        android:background="#bb000000"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/crop_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="15.0dip"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_myhome_camera_del" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <FrameLayout
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/crop_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="15.0dip"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_myhome_camera_ok" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

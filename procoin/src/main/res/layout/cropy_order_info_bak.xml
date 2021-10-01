@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.procoin.com.procoin.module.copy.CropyOrderInfoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--android:fitsSystemWindows="true"-->
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dip">
+                <!-- app:layout_behavior="com.tjr.imredz.util.FlingBehavior""-->
+
+                <!--android:theme="@style/AppThemeToolBar.Translucent"-->
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentScrim="@color/transparent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                    <!--app:contentScrim="?attr/colorPrimary"-->
+                    <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/c6175ae"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvProfitText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="盈亏"
+                            android:layout_marginTop="60dip"
+                            android:textColor="@color/cbebebe"
+                            android:textSize="@dimen/font_size_12" />
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="60dip">-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/tvProfitText"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerInParent="true"-->
+                                <!--android:text="盈亏"-->
+                                <!--android:textColor="@color/cbebebe"-->
+                                <!--android:textSize="@dimen/font_size_12" />-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/tvProfit"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginLeft="5dip"-->
+                                <!--android:layout_toRightOf="@id/tvProfitText"-->
+                                <!--android:background="@drawable/shape_profit_rate_zhang_bg"-->
+                                <!--android:gravity="center_vertical"-->
+                                <!--android:paddingLeft="10dip"-->
+                                <!--android:paddingRight="10dip"-->
+                                <!--android:text="+0.00%"-->
+                                <!--android:textColor="@color/white"-->
+                                <!--android:textSize="@dimen/font_size_12" />-->
+
+                        <!--</RelativeLayout>-->
+                        <!--android:layout_marginTop="12dip"-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:id="@+id/tvProfitBalance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="0.0"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_size_36"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/tvProfitBalance"
+                                android:layout_alignBottom="@+id/tvProfitBalance"
+                                android:layout_marginLeft="5dip"
+                                android:layout_toEndOf="@+id/tvProfitBalance"
+                                android:layout_toRightOf="@+id/tvProfitBalance"
+                                android:text="USDT"
+                                android:textColor="#66ffffff"
+                                android:textSize="@dimen/font_size_12" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dip"
+                            android:layout_marginTop="15dip"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dip"
+                                android:layout_toLeftOf="@+id/line"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="跟单投入"
+                                    android:textColor="@color/cbebebe"
+                                    android:textSize="@dimen/font_size_12" />
+
+                                <TextView
+                                    android:id="@+id/tvCopyOrderBalance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dip"
+                                    android:text="--"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_size_16" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/line"
+                                style="@style/dividerLine_vertical"
+                                android:layout_width="1px"
+                                android:layout_height="30dip"
+                                android:layout_centerInParent="true"
+                                android:background="@color/cf0f1f7" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dip"
+                                android:layout_toRightOf="@+id/line"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="余额"
+                                    android:textColor="@color/cbebebe"
+                                    android:textSize="@dimen/font_size_12" />
+
+                                <TextView
+                                    android:id="@+id/tvBalance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dip"
+                                    android:text="--"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_size_16" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tvAppendBalance"
+                            android:layout_width="130dip"
+                            android:layout_height="40dip"
+                            android:layout_marginBottom="50dip"
+                            android:background="@drawable/shape_append_balance_bg"
+                            android:gravity="center"
+                            android:text="追加持仓金额"
+                            android:textColor="@color/append_balance_textcolor"
+                            android:textSize="@dimen/font_size_14" />
+
+                    </LinearLayout>
+
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:minHeight="@dimen/actionBarSize"-->
+                    <!--android:background="@drawable/shadow_bottom"/>-->
+
+                    <android.support.v7.widget.Toolbar
+                        style="@style/toolbar"
+                        app:layout_collapseMode="pin"
+                        app:navigationIcon="@drawable/ic_common_back_white">
+
+                        <TextView
+                            android:id="@+id/tvToolbarTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="跟单详情"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_size_18" />
+
+                        <!--<ImageView-->
+                        <!--android:id="@+id/iv_share"-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:layout_gravity="right"-->
+                        <!--android:layout_marginRight="12dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:src="@drawable/ic_redz_new_share_white" />-->
+
+
+                    </android.support.v7.widget.Toolbar>
+
+                    <!--<View-->
+                    <!--android:id="@+id/toolBarLine"-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_marginTop="@dimen/actionBarSize"-->
+                    <!--android:visibility="gone"/>-->
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/product_details_bg"
+                app:behavior_overlapTop="20dip"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="20dip"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="20dip"
+                        android:paddingTop="20dip">
+
+
+                        <com.procoin.widgets.CircleImageView
+                            android:id="@+id/ivhead"
+                            android:layout_width="44dip"
+                            android:layout_height="44dip"
+                            android:src="@drawable/ic_default_head" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_size_16"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvFollowCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dip"
+                                android:text="--"
+                                android:textColor="@color/c6175ae"
+                                android:textSize="@dimen/font_size_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvGrade"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textColor="@color/c626073"
+                                android:textSize="@dimen/font_size_18"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dip"
+                                android:text="综合评分"
+                                android:textColor="@color/cbebebe"
+                                android:textSize="@dimen/font_size_12" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="本次跟单持仓(被动)"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/c222222"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <TextView
+                        android:id="@+id/tvNoHold"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:gravity="center"
+                        android:text="暂无持仓"
+                        android:visibility="gone"
+                        android:textColor="@color/cbebebe"
+                        android:textSize="@dimen/font_size_12" />
+
+
+                    <LinearLayout
+                        android:id="@+id/llHold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_marginTop="12dip"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingLeft="15dip"
+                            android:text="持有"
+                            android:textColor="@color/cbebebe"
+                            android:textSize="@dimen/font_size_12" />
+
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="市值"
+                            android:textColor="@color/cbebebe"
+                            android:textSize="@dimen/font_size_12" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="15dip"
+                            android:text="盈亏"
+                            android:textColor="@color/cbebebe"
+                            android:textSize="@dimen/font_size_12" />
+
+
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvPositionList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dip"
+                        android:nestedScrollingEnabled="false"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="20dip"
+                        android:text="跟单设置"
+                        android:textStyle="bold"
+                        android:textColor="@color/c222222"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_marginTop="12dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvMaxBalance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="每笔跟单金额上限：¥0.00"
+                                android:textColor="@color/cbebebe"
+                                android:textSize="@dimen/font_size_14" />
+
+                            <TextView
+                                android:id="@+id/tvStopWin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dip"
+                                android:text="止盈：0%"
+                                android:textColor="@color/cbebebe"
+                                android:textSize="@dimen/font_size_14" />
+
+                            <TextView
+                                android:id="@+id/tvStopLoss"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dip"
+                                android:text="止损：0%"
+                                android:textColor="@color/cbebebe"
+                                android:textSize="@dimen/font_size_14" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvModify"
+                            android:layout_width="78dip"
+                            android:layout_height="30dip"
+                            android:background="@drawable/shape_modify_stop_win_bg"
+                            android:gravity="center"
+                            android:text="修改"
+                            android:textColor="@color/modify_stop_win_textcolor"
+                            android:textSize="@dimen/font_size_14" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvStopOrder"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_marginTop="30dip"
+                        android:background="@drawable/selector_rect_solid_corner0_3d3a50"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="停止跟单"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_17" />
+
+                    <View
+                        style="@style/dividerLine_horizontal"
+                        android:layout_height="10dip"
+                        android:layout_marginTop="30dip"
+                        android:background="@color/pageBackground" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="20dip"
+                        android:paddingTop="20dip">
+
+                        <View
+                            android:layout_width="4dip"
+                            android:layout_height="16dip"
+                            android:background="@color/c6175ae" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:text="交易明细"
+                            android:textColor="@color/c6175ae"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/font_size_17" />
+
+                    </LinearLayout>
+
+                    <com.procoin.widgets.LoadMoreRecycleView
+                        android:id="@+id/rvTradeHis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+
+                    <!--<View-->
+                    <!--style="@style/dividerLine_horizontal"-->
+                    <!--android:layout_height="5dip"-->
+                    <!--android:background="@color/pageBackground"-->
+                    <!--android:layout_marginBottom="12dip" />-->
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="5dip"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:src="@drawable/xml_divider_gradient_black_2" />-->
+
+        <View
+            style="@style/dividerLine_horizontal"
+            android:layout_gravity="bottom" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+

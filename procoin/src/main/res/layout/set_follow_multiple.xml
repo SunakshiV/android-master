@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:text="跟单倍数设置"
+        android:textColor="@color/c3d3a50"
+        android:textSize="@dimen/font_size_16" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:text="倍数"
+            android:textColor="@color/c663d3a50"
+            android:textSize="@dimen/font_size_16" />
+
+            <EditText
+                android:id="@+id/etMultiple"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="45dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/xml_et_bg"
+                android:gravity="left|center_vertical"
+                android:hint="请输入正整数"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:paddingLeft="10dip"
+                android:textColor="@color/c6175ae"
+                android:textColorHint="#c8c8c8"
+                android:textSize="@dimen/font_size_18"
+                android:text=""/>
+
+
+        <TextView
+            android:id="@+id/tvRandomNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:text="倍"
+            android:textColor="@color/c663d3a50"
+            android:textSize="@dimen/font_size_16" />
+    </LinearLayout>
+
+
+
+    <TextView
+        style="@style/btn_style_4"
+        android:layout_marginBottom="30dip"
+        android:layout_marginTop="30dip"
+        android:text="确认" />
+
+
+</LinearLayout>

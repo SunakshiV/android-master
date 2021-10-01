@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            style="@style/toolbar2"
+            android:background="@color/c6175ae"
+            app:layout_collapseMode="pin">
+
+            <LinearLayout
+                android:id="@+id/llWayBg"
+                android:layout_width="147dip"
+                android:layout_height="30dip"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/ic_legal_money_0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvWay1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="快捷区"
+                    android:textColor="@color/xml_legal_money_tab_text_2"
+                    android:textSize="@dimen/font_size_12" />
+
+                <TextView
+                    android:id="@+id/tvWay2"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="自选区"
+                    android:textColor="@color/xml_legal_money_tab_text_2"
+                    android:textSize="@dimen/font_size_12" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </FrameLayout>
+
+    <com.procoin.widgets.NoScrollViewPager
+        android:id="@+id/flPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+

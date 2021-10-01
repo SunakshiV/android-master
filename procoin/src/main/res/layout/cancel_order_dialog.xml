@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip">
+
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/xml_tjrapi_dialog_out_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="15dip"
+        android:paddingLeft="18dip"
+        android:paddingRight="18dip"
+        android:paddingTop="15dip">
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_tjrapi_dialog_out_bg"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="@dimen/text_linespacingextra"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:scrollbars="vertical"
+            android:text="如果您已向对方付款，请千万不要取消订单"
+            android:textColor="@color/cff8f01"
+            android:textSize="@dimen/font_size_16" />
+        <!-- 内容 -->
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:lineSpacingExtra="4dp"
+            android:maxHeight="250dip"
+            android:scrollbars="vertical"
+            android:text="买家当日累计3笔取消，超出会影响当日买入功能。"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_16" />
+
+        <CheckBox
+            android:id="@+id/cbSign"
+            style="@style/MyCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="   我确认没有付款给对方"
+            android:textColor="@color/c222222"
+            android:textSize="@dimen/font_size_12" />
+        <!-- OK按钮 -->
+
+        <LinearLayout
+            android:id="@+id/llBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xml_tjrapi_dialog_btn"
+                android:gravity="center"
+                android:minHeight="35dip"
+                android:paddingLeft="18dip"
+                android:paddingRight="18dip"
+                android:text="@string/dialog_cancel"
+                android:textColor="@color/c005a87"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xml_tjrapi_dialog_btn"
+                android:gravity="center"
+                android:minHeight="35dip"
+                android:paddingLeft="18dip"
+                android:paddingRight="18dip"
+                android:text="@string/dialog_ok"
+                android:textColor="@color/c005a87"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Close 按钮 -->
+
+</RelativeLayout>

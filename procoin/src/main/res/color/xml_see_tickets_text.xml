@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 查看券文字颜色 -->
+  <item android:color="@color/cf19f0e" android:state_enabled="true" android:state_pressed="false"   />
+    <item android:color="@color/white" android:state_enabled="true" android:state_pressed="true" />
+    <item android:color="@color/white" android:state_enabled="false"/>
+
+</selector>

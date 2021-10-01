@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/theTheme" >
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dip"
+            android:text="num" />
+
+        <TextView
+            android:id="@+id/tvquesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:text="问题 :"
+            android:textColor="@color/c6f6f6f" />
+
+        <EditText
+            android:id="@+id/etWeico"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvquesion"
+            android:layout_below="@id/tvNum"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@color/ic_line_square"
+            android:gravity="top"
+            android:hint="输入问题``"
+            android:maxHeight="100dip"
+            android:minHeight="70dip"
+            android:padding="10dip"
+            android:textSize="@dimen/text_size_content_h2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/thechange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlContent"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tvxuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="选项  : "
+            android:textColor="@color/c6f6f6f" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvxuan"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                style="@style/MyRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单选"
+                android:textColor="@color/c6f6f6f" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                style="@style/MyRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dip"
+                android:text="多选"
+                android:textColor="@color/c6f6f6f" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip">
+
+    <!--
+     总布局 
+     android:layout_below="@+id/title"
+    -->
+    <!--android:background="@drawable/xml_tjrapi_dialog_out_bg"-->
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/llTopBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43dip"
+                android:background="@drawable/shape_lp_not_surpass_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="15dip"
+                android:paddingTop="43dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dip"
+                    android:text="选择入场券"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_16" />
+
+                <androidx.appcompat.widget.RecyclerView
+                    android:id="@+id/rvTickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="20dip"
+                    android:gravity="fill"
+                    />
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dip"-->
+                <!--android:layout_marginRight="20dip"-->
+                <!--android:layout_marginTop="20dip"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/llTicket1"-->
+                <!--android:layout_width="0dip"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/selector_lp_ticket_bg"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingBottom="10dip"-->
+                <!--android:paddingTop="10dip">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/ticketName1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="新手券"-->
+                <!--android:textColor="@color/xml_lp_ticket_not_surpass_text_color"-->
+                <!--android:textSize="@dimen/font_size_16" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/ticketValue1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="100"-->
+                <!--android:textColor="@color/xml_lp_ticket_not_surpass_text_color"-->
+                <!--android:textSize="@dimen/font_size_25"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/llTicket2"-->
+                <!--android:layout_width="0dip"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dip"-->
+                <!--android:layout_marginRight="10dip"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/selector_lp_ticket_bg"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingBottom="10dip"-->
+                <!--android:paddingTop="10dip">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/ticketName2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="职业人"-->
+                <!--android:textColor="@color/xml_lp_ticket_not_surpass_text_color"-->
+                <!--android:textSize="@dimen/font_size_16" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/ticketValue2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="300"-->
+                <!--android:textColor="@color/xml_lp_ticket_not_surpass_text_color"-->
+                <!--android:textSize="@dimen/font_size_25"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/llTicket3"-->
+                <!--android:layout_width="0dip"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/selector_lp_ticket_bg"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingBottom="10dip"-->
+                <!--android:paddingTop="10dip">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/ticketName3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="大师券"-->
+                <!--android:textColor="@color/xml_lp_ticket_not_surpass_text_color"-->
+                <!--android:textSize="@dimen/font_size_16" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/ticketValue3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="500"-->
+                <!--android:textColor="@color/xml_lp_ticket_not_surpass_text_color"-->
+                <!--android:textSize="@dimen/font_size_25"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvMyAbility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="15dip"
+        android:gravity="left"
+        android:text="我的YYB：0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_12" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvKBTBalance"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dip"-->
+        <!--android:layout_marginTop="15dip"-->
+        <!--android:gravity="left"-->
+        <!--android:text="我的KBT：0"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/font_size_12" />-->
+</LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTop"
+                android:layout_width="79dip"
+                android:layout_height="86dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_not_surpass_top_bg"
+                android:gravity="center"
+                android:text="不超"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_20" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMark"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="63dip"
+                app:srcCompat="@drawable/ic_svg_question_mark2"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_lp_dialog_bottom_bg"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:lineSpacingExtra="@dimen/text_linespacingextra"
+                android:text="猜对预计可得XX刻豆，结果以竞猜结束时为准，仅供参考。"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_14" />
+
+
+            <TextView
+                android:id="@+id/btnPrediction"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/shape_lp_not_surpass_btn_bg"
+                android:gravity="center"
+                android:text="预测不超"
+                android:layout_marginTop="5dip"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Close 按钮 -->
+
+</RelativeLayout>

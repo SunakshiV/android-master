@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="买入单价"
+                android:textColor="@color/c969696"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="￥0.00"
+                android:textColor="@color/c969696"
+                android:textSize="@dimen/font_size_16" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买数量"
+                android:textColor="@color/c969696"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0.00USDT"
+                android:textColor="@color/c969696"
+                android:textSize="@dimen/font_size_16"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="15dip"
+            android:gravity="center_vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值金额"
+                android:textColor="@color/c6175ae"
+                android:textSize="@dimen/font_size_16" />
+
+            <FrameLayout
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip">
+                <TextView
+                    android:layout_width="40dip"
+                    android:layout_height="match_parent"
+                    android:text="¥"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/c6175ae"
+                    android:textSize="@dimen/font_size_24"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/etBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="40dip"
+                    android:background="@drawable/xml_et_bg_2"
+                    android:gravity="left|center_vertical"
+                    android:hint="请输入充值金额"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:textColor="@color/c6175ae"
+                    android:textColorHint="#c8c8c8"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:text="."
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvRandomNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:text="00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="visible">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dip"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="0dip"-->
+                <!--android:layout_height="70dip"-->
+                <!--android:layout_weight="1">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="20dip"-->
+                    <!--android:layout_marginRight="20dip"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="充值金额(￥)"-->
+                        <!--android:textColor="@color/c3d3a50"-->
+                        <!--android:textSize="@dimen/font_size_14" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvUsdtBalance"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="目前持有USDT:0.00"-->
+                        <!--android:textColor="@color/c969696"-->
+                        <!--android:textSize="@dimen/font_size_12" />-->
+
+
+                <!--</LinearLayout>-->
+                <!--&lt;!&ndash;android:background="@drawable/xml_et_bg"&ndash;&gt;-->
+                <!--<EditText-->
+                    <!--android:id="@+id/etMoney"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginLeft="20dip"-->
+                    <!--android:background="@null"-->
+                    <!--android:gravity="right|center_vertical"-->
+                    <!--android:hint="请输入充值金额"-->
+                    <!--android:imeOptions="actionNext"-->
+                    <!--android:inputType="number"-->
+                    <!--android:maxLength="15"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:textColor="@color/c3d3a50"-->
+                    <!--android:textColorHint="#c8c8c8"-->
+                    <!--android:textSize="@dimen/font_size_18"-->
+                    <!--android:textStyle="bold" />-->
+            <!--</FrameLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="3dip"-->
+                <!--android:text="."-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="@dimen/font_size_18"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvRandomNum"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="3dip"-->
+                <!--android:layout_marginRight="20dip"-->
+                <!--android:text="00"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="@dimen/font_size_18"-->
+                <!--android:textStyle="bold" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--style="@style/dividerLine_horizontal"-->
+            <!--android:layout_marginLeft="15dip"-->
+            <!--android:layout_marginRight="15dip" />-->
+
+
+        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="50dip"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="bottom"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingLeft="12dip"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingRight="12dip">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="充值金额(￥)"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="@dimen/font_size_15"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/c808080"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/etMoney"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColorHint="#c8c8c8"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:hint="请输入充值金额"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="@dimen/font_size_18"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingBottom="8dip"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:maxLines="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:imeOptions="actionNext"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="#232323"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingLeft="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="right|bottom"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="@drawable/xml_et_bg"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="0dip"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:maxLength="18"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="match_parent" />&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="."&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginLeft="3dip"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="@dimen/font_size_16"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/black"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/tvRandomNum"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="00"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="@dimen/font_size_15"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginLeft="3dip"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;123.4566(≈￥4566456)&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/tvUsdtBalance"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="目前持有USDT:0.00"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="right"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="@dimen/font_size_12"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="5dip"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/c808080"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingLeft="12dip"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingRight="12dip"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<View&ndash;&gt;-->
+        <!--&lt;!&ndash;style="@style/dividerLine_horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="15dp"/>&ndash;&gt;-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="70dip"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="20dip"-->
+            <!--android:paddingRight="20dip">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="市价"-->
+                <!--android:textColor="@color/c3d3a50"-->
+                <!--android:textSize="@dimen/font_size_14" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvPrice"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical|right"-->
+                <!--android:text="￥0.00"-->
+                <!--android:textColor="@color/c3d3a50"-->
+                <!--android:textSize="@dimen/font_size_18"-->
+                <!--android:textStyle="bold" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--style="@style/dividerLine_horizontal"-->
+            <!--android:layout_marginLeft="15dip"-->
+            <!--android:layout_marginRight="15dip" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="70dip"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="20dip"-->
+            <!--android:paddingRight="20dip">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="数量"-->
+                <!--android:textColor="@color/c3d3a50"-->
+                <!--android:textSize="@dimen/font_size_14" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvAmount"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical|right"-->
+                <!--android:text="0.00"-->
+                <!--android:textColor="@color/c3d3a50"-->
+                <!--android:textSize="@dimen/font_size_18"-->
+                <!--android:textStyle="bold" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--style="@style/dividerLine_horizontal"-->
+            <!--android:layout_marginLeft="15dip"-->
+            <!--android:layout_marginRight="15dip" />-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:paddingTop="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择支付方式"
+            android:textColor="@color/c6175ae"
+            android:textSize="@dimen/font_size_16"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"/>
+
+        <androidx.appcompat.widget.RecyclerView
+            android:layout_marginTop="15dip"
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+        <TextView
+            style="@style/btn_style_1"
+            android:layout_marginTop="30dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="购买"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
